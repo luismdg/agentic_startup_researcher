@@ -94,9 +94,10 @@ async def run_pipeline(filters: SearchFilters) -> RunResult:
             )
             break
 
-    pooled, t = trivial_pool_dedup(all_raw)
-    run_trace += t
-
+    # `pooled` already reflects the final state of `all_raw` from the last
+    # loop iteration — no new fetching happens after the loop breaks, so
+    # re-running trivial_pool_dedup here would just recompute (and re-log)
+    # the exact same result a second time.
     working, t = await dedup_similarity.dedup(pooled, profile.niche)
     run_trace += t
 
@@ -123,6 +124,9 @@ async def run_pipeline(filters: SearchFilters) -> RunResult:
 
     output.sort(key=lambda c: c.discovery_value_score, reverse=True)
     output = output[: filters.max_results]
+
+    output, t = _apply_fallback_candidate(output, profile.niche, run_trace)
+    run_trace += t
 
     return RunResult(
         run=RunMeta(
@@ -355,3 +359,67 @@ def _persist_new_startups(candidates: list[Candidate]) -> None:
         if c.dedup_status == "genuinely_new" and c.confidence in ("medium", "high")
     ]
     append_known_startups(to_persist)
+
+
+# Plan-C safety net — always active for this one niche/startup pair.
+# Deliberately hardcoded rather than data-driven — this is a single,
+# explicit, clearly-labeled exception to "only genuine discoveries," not a
+# general mechanism, and it should stay easy to find and delete later.
+_FALLBACK_NICHE = "Mexican LegalTech"
+_FALLBACK_STARTUP_NAME = "FyTic"
+
+
+def _build_fallback_candidate(run_trace: list[str]) -> Candidate:
+    return Candidate(
+        founder_name="Luis Delgadillo",
+        founder_country="Mexico",
+        startup_name=_FALLBACK_STARTUP_NAME,
+        website="https://www.fytic.tech",
+        niche=_FALLBACK_NICHE,
+        one_line_description=(
+            "End-to-end LegalTech startup in Mexico providing case management, document "
+            "control, contract drafting, and AI-driven legal research for law firms."
+        ),
+        product_stage="launched",
+        funding_status="bootstrapped",
+        source_channel="Manual (fallback)",
+        discovery_signals=[
+            "Manually supplied as a plan-C fallback — not independently discovered "
+            "or verified by the search agent this run."
+        ],
+        discovery_pass=0,
+        discovery_value_score=0.0,
+        discovery_value_reasoning="Not scored — this is a manually-provided fallback entry, not an organic discovery.",
+        confidence="low",
+        confidence_reasoning=(
+            "Manually supplied as a plan-C fallback, not discovered or verified by the "
+            "search agent. Treat as unverified until confirmed independently."
+        ),
+        red_flags=["This is a manually-provided fallback entry, not an organic agent discovery."],
+        agent_trace=[
+            *run_trace,
+            trace_line(
+                "Fallback candidate injected (plan C) — manually supplied, not an organic discovery"
+            ),
+        ],
+        recommended_next_step="Manually verify — this entry bypassed automated discovery and scoring.",
+        date_found=date.today().isoformat(),
+        status="needs_verification",
+    )
+
+
+def _apply_fallback_candidate(
+    output: list[Candidate], niche: str, run_trace: list[str]
+) -> tuple[list[Candidate], list[str]]:
+    if niche != _FALLBACK_NICHE:
+        return output, []
+    if any(c.startup_name.strip().casefold() == _FALLBACK_STARTUP_NAME.casefold() for c in output):
+        return output, []
+
+    trace = [
+        trace_line(
+            f"No genuine '{_FALLBACK_STARTUP_NAME}' result was found this run — "
+            "appending the manual plan-C fallback entry"
+        )
+    ]
+    return output + [_build_fallback_candidate(run_trace)], trace

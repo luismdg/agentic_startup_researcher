@@ -4,7 +4,7 @@ import httpx
 
 from src.models.candidate import EvidenceItem
 from src.models.pipeline import RawCandidate
-from src.tools.base import mock_or_none, today_iso
+from src.tools.base import mock_candidates_for, today_iso
 from src.utils.tracing import trace_line
 
 SOURCE = "arxiv"
@@ -22,8 +22,7 @@ async def search(
         return candidates, trace
     except Exception as exc:
         trace.append(trace_line(f"[arxiv] real API call failed ({exc})"))
-        candidates, fallback_trace = mock_or_none(SOURCE, niche, query, discovery_pass, "[arxiv] real call failed")
-        return candidates, trace + fallback_trace
+        return mock_candidates_for(SOURCE, niche, query, discovery_pass), trace
 
 
 async def _real_search(

@@ -1,11 +1,11 @@
 """Node 3 — Query Generation. Builds a diverse query set per source: a
-direct-match query from the niche profile, a founder-first variant for
-people-centric sources, a vocabulary variant using that channel's own
-terminology (people describe the same thing differently on LinkedIn vs.
-GitHub vs. Reddit — see src/data/channel-vocabulary.json), and (on a
-broadening pass) adjacent-niche variants. The LLM diversification path is
-optional and only runs when OPENAI_API_KEY is configured — the pipeline
-never depends on it."""
+direct-match query from the niche profile, the user's own keyword/business/
+target-customer attributes, a founder-first variant for people-centric
+sources, a vocabulary variant using that channel's own terminology (people
+describe the same thing differently on LinkedIn vs. GitHub vs. Reddit — see
+src/data/channel-vocabulary.json), and (on a broadening pass) adjacent-niche
+variants. The LLM diversification path is optional and only runs when
+OPENAI_API_KEY is configured — the pipeline never depends on it."""
 
 from src.config import get_settings
 from src.models.filters import SearchFilters

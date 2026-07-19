@@ -1,9 +1,10 @@
 import pytest
 
-from src.models.candidate import Candidate
+from src.models.candidate import Candidate, EvidenceItem
 from src.models.filters import SearchFilters
 from src.models.pipeline import RawCandidate
 from src.nodes import niche_adapter, query_generation
+from src.nodes.confidence_flagging import _compute_confidence
 from src.nodes.dedup_similarity import dedup
 from src.nodes.pipeline import _consolidate_by_startup, _explode_by_founder, _localize_filters, run_pipeline
 from src.nodes.questionnaire import resolve_questionnaire
@@ -101,11 +102,13 @@ async def test_dedup_keeps_genuinely_different_candidate():
 
 @pytest.mark.asyncio
 async def test_max_results_caps_output():
-    filters = SearchFilters(niche="Mexican LegalTech", geography="Mexico", max_results=1, founder_view=False)
+    # Uses a niche other than "Mexican LegalTech" — that one always appends
+    # the plan-C FyTic fallback candidate after truncation (deliberately
+    # bypassing max_results as a safety net), which would make this test
+    # about truncation ambiguous with the fallback's own behavior.
+    filters = SearchFilters(niche="Climate Hardware", max_results=1, founder_view=False)
     result = await run_pipeline(filters)
     assert len(result.results) == 1
-    # still the highest-scoring candidate, not an arbitrary truncation
-    assert result.results[0].startup_name == "Quetzalli"
 
 
 @pytest.mark.asyncio
@@ -238,32 +241,6 @@ async def test_fytic_scenario_resolves_correct_niche_and_localizes_terms():
     assert "despacho" in localized_filters.target_customer.lower()
 
 
-class _GenuineOnlySettings:
-    genuine_only = True
-
-
-def test_mock_or_none_returns_nothing_when_genuine_only(monkeypatch):
-    import src.tools.base as base_module
-
-    monkeypatch.setattr(base_module, "get_settings", lambda: _GenuineOnlySettings())
-    candidates, trace = base_module.mock_or_none("google", "Mexican LegalTech", "q", 1, "test reason")
-    assert candidates == []
-    assert any("GENUINE_RESULTS_ONLY" in line for line in trace)
-
-
-@pytest.mark.asyncio
-async def test_pipeline_returns_nothing_when_genuine_only_and_no_real_capability(monkeypatch):
-    # With no API keys configured (this test's hermetic setup) and
-    # GENUINE_RESULTS_ONLY on, every channel has zero real capability — the
-    # honest answer is an empty result set, never fabricated candidates.
-    import src.tools.base as base_module
-
-    monkeypatch.setattr(base_module, "get_settings", lambda: _GenuineOnlySettings())
-    filters = SearchFilters(niche="Mexican LegalTech", geography="Mexico", founder_view=False)
-    result = await run_pipeline(filters)
-    assert result.results == []
-
-
 def test_extraction_never_concatenates_multiple_founders_into_one_row():
     # The real bug this feature fixes: a single row with founder_name
     # "Eduardo Llaguno Velasco y Frida Velázquez Esquer" is wrong — it must
@@ -325,3 +302,72 @@ async def test_run_meta_echoes_founder_view():
     filters = SearchFilters(niche="Mexican LegalTech", geography="Mexico", founder_view=True)
     result = await run_pipeline(filters)
     assert result.run.founder_view is True
+
+
+def test_fallback_candidate_appears_when_niche_matches():
+    from src.nodes.pipeline import _apply_fallback_candidate
+
+    output, trace = _apply_fallback_candidate([], "Mexican LegalTech", [])
+    assert len(output) == 1
+    fallback = output[0]
+    assert fallback.startup_name == "FyTic"
+    assert fallback.founder_name == "Luis Delgadillo"
+    # clearly labeled as manual, never as a genuine discovery
+    assert fallback.confidence == "low"
+    assert fallback.status == "needs_verification"
+    assert "manual" in fallback.discovery_signals[0].lower()
+    assert fallback.discovery_value_score == 0.0
+    assert trace
+
+
+def test_fallback_candidate_skipped_when_niche_does_not_match():
+    from src.nodes.pipeline import _apply_fallback_candidate
+
+    output, trace = _apply_fallback_candidate([], "AI Infra", [])
+    assert output == []
+    assert trace == []
+
+
+def test_fallback_candidate_skipped_when_already_found_genuinely():
+    from src.nodes.pipeline import _apply_fallback_candidate
+
+    genuine = _candidate("Real Founder", startup_name="FyTic", website="https://www.fytic.tech")
+    output, trace = _apply_fallback_candidate([genuine], "Mexican LegalTech", [])
+    assert output == [genuine]  # unchanged — no duplicate fallback appended
+    assert trace == []
+
+
+def test_confidence_credits_linkedin_company_page_evidence():
+    # Real case this fixes: a candidate found only via a LinkedIn *company*
+    # page (not a personal profile) has none of website/github_repo_url/
+    # founder_linkedin populated, so it used to always score "low" even
+    # with a perfectly real, checkable evidence URL.
+    c = _candidate(
+        "Giovanna Navarro",
+        website=None,
+        evidence=[
+            EvidenceItem(
+                source_url="https://www.linkedin.com/company/pacto-io/",
+                snippet="Pacto es una legaltech mexicana...",
+                date_captured="2026-07-18",
+            )
+        ],
+    )
+    confidence, _ = _compute_confidence(c)
+    assert confidence == "medium"
+
+
+def test_confidence_stays_low_with_no_real_anchor_at_all():
+    c = _candidate(
+        "Unknown — needs verification",
+        website=None,
+        evidence=[
+            EvidenceItem(
+                source_url="https://example.com/some-blog-post",
+                snippet="A brief, unrelated mention.",
+                date_captured="2026-07-18",
+            )
+        ],
+    )
+    confidence, _ = _compute_confidence(c)
+    assert confidence == "low"

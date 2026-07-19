@@ -7,7 +7,6 @@ src.orchestration.web_research_agent, or read from the synthetic
 
 from datetime import date
 
-from src.config import get_settings
 from src.models.candidate import EvidenceItem, TractionSignals
 from src.models.pipeline import RawCandidate
 from src.services.data_store import load_mock_search_results
@@ -26,18 +25,6 @@ def mock_candidates_for(
         if entry.get("source") == source and entry.get("niche") == niche
     ]
     return [_entry_to_raw_candidate(entry, query, discovery_pass) for entry in matches]
-
-
-def mock_or_none(
-    source: str, niche: str, query: str, discovery_pass: int, reason: str
-) -> tuple[list[RawCandidate], list[str]]:
-    """The final fallback every tool calls when it has no (more) real data
-    to offer. Returns synthetic mock candidates by default — but if
-    GENUINE_RESULTS_ONLY is set, it never substitutes fabricated data for a
-    real search that found nothing or failed; it honestly returns empty."""
-    if get_settings().genuine_only:
-        return [], [trace_line(f"{reason} — GENUINE_RESULTS_ONLY is set, returning no results instead of mock data")]
-    return mock_candidates_for(source, niche, query, discovery_pass), []
 
 
 def _entry_to_raw_candidate(entry: dict, query: str, discovery_pass: int) -> RawCandidate:

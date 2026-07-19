@@ -131,16 +131,16 @@ it upgrades every channel except the already-free GitHub/arXiv/Reddit to **real 
 browsing** — the model actually searches the live web (via OpenAI's hosted web-search tool) and
 extracts structured candidates from what it finds, per channel:
 
-| Source | Real path | Without any key |
+| Source | Real path | Without a key |
 |---|---|---|
 | GitHub | nothing needed (public API works unauthenticated) | still attempts a real call; falls back to mock only if it fails |
 | arXiv | nothing needed (free, keyless) | always real |
 | Reddit | nothing needed (`reddit.com/search.json` is free/keyless), `OPENAI_API_KEY` as a fallback path | mock |
-| Google | `OPENAI_API_KEY` (agentic browsing), or `GOOGLE_API_KEY`+`GOOGLE_CSE_ID` as an alternate | mock |
+| Google | `OPENAI_API_KEY` (agentic browsing) | mock |
 | LinkedIn | `OPENAI_API_KEY` (agentic browsing of public linkedin.com pages) | mock |
 | Twitter/X | `OPENAI_API_KEY` (agentic browsing — no viable free API exists anymore) | mock |
-| YouTube | `OPENAI_API_KEY` (agentic browsing), or `YOUTUBE_API_KEY` (Data API v3) as an alternate | mock |
-| Product Hunt | `OPENAI_API_KEY` (agentic browsing), or `PRODUCTHUNT_TOKEN` as an alternate | mock |
+| YouTube | `OPENAI_API_KEY` (agentic browsing) | mock |
+| Product Hunt | `OPENAI_API_KEY` (agentic browsing) | mock |
 | Accelerators | `OPENAI_API_KEY` (agentic browsing of cohort/directory pages) | mock |
 
 Every real path fails safe: a bad/missing tool, a network error, malformed output — anything —
@@ -170,33 +170,26 @@ dictionary covers this app's own common filter vocabulary for Spanish/Portuguese
 still behaves sensibly with zero configuration. Check `agent_trace` for the `"Localized terms
 to..."` line to see exactly what was translated.
 
-`.env` is read automatically on startup (via `python-dotenv`) — set variables there instead of
-your shell if you'd rather not export them every session:
+`.env` is read automatically on startup (via `python-dotenv`) — set the variable there instead of
+your shell if you'd rather not export it every session:
 
 ```
 OPENAI_API_KEY=sk-...
-GITHUB_TOKEN=
-GOOGLE_API_KEY=
-GOOGLE_CSE_ID=
-PRODUCTHUNT_TOKEN=
-YOUTUBE_API_KEY=
-GENUINE_RESULTS_ONLY=false
 ```
 
-### `GENUINE_RESULTS_ONLY` — never show synthetic data
+### Plan C — the hardcoded FyTic fallback
 
-By default, a channel with no real capability configured (or whose real call fails) falls back
-to mock data so the pipeline never errors out — useful for demos, bad for trusting what you see.
-Set `GENUINE_RESULTS_ONLY=true` and that fallback is disabled entirely: any channel with nothing
-real to offer just contributes zero candidates, silently, with the reason logged in `agent_trace`.
-**With no API keys configured at all, this means every search returns empty results** — that's
-correct, not broken: it means the system currently has no real way to search anything. This repo
-ships with it turned on in `.env` by default, since a "genuine or nothing" mode without a real key
-behind it will just show you that plainly rather than quietly filling the gap with fake companies.
+Always on, not configurable. If a run's genuine search for the `"Mexican LegalTech"` niche didn't
+turn up anything named `"FyTic"`, one hardcoded candidate gets appended to the results as
+insurance. It is never treated as a real discovery: `confidence` is forced to `"low"`,
+`status` to `"needs_verification"`, `discovery_value_score` to `0`, and `discovery_signals`/
+`confidence_reasoning` both say outright that it was manually supplied, not found or verified by
+the agent. If a genuine result for FyTic already exists, nothing is added. Edit the hardcoded
+details in `src/nodes/pipeline.py::_build_fallback_candidate` if you need to change them.
 
 ### If you want to find your own startup for real
 
-You need at least one real key — nothing here can find a real company without one:
+You need `OPENAI_API_KEY` — nothing else here can find a real company beyond it:
 
 1. **Get an OpenAI API key** at [platform.openai.com](https://platform.openai.com/api-keys) and
    put it in `.env` as `OPENAI_API_KEY=sk-...` — **never paste the key itself into a chat with
@@ -205,7 +198,7 @@ You need at least one real key — nothing here can find a real company without 
    Hunt, and Accelerators.
 2. **GitHub and Reddit already work with zero keys** — both hit free, unauthenticated public
    APIs. If your startup has a public repo or has been mentioned on Reddit, these alone might
-   find it. (`GITHUB_TOKEN` only helps if you hit GitHub's unauthenticated rate limit.)
+   find it.
 3. Restart `uvicorn` after editing `.env` so it picks up the new key.
 4. Check `GET /search/questionnaire` for your niche + stage, then submit `POST /search` with a
    niche close to your startup's actual space and any keywords/city/tech_stack that narrow it
@@ -291,8 +284,8 @@ in your `.env`, and dedup runs against a fixed snapshot rather than the real, gr
 endpoint, `max_results` truncation, the `has_clients` filter, the dedup + inverted-scoring logic
 (a bare-repo, zero-visibility mock candidate must outrank a launched, Product-Hunt-covered one —
 the spec's own worked example), that idea-stage searches actually pull in Reddit/Twitter/YouTube
-candidates, that query wording differs per channel's vocabulary, `GENUINE_RESULTS_ONLY` suppressing
-mock fallback, and `founder_view`'s consolidate/explode behavior (multiple co-founders of the same
+candidates, that query wording differs per channel's vocabulary, the always-on FyTic plan-C
+fallback, and `founder_view`'s consolidate/explode behavior (multiple co-founders of the same
 startup found separately must merge into one row, never get concatenated into a single
 `founder_name` string, and only repeat as separate rows when `founder_view: true`).
 

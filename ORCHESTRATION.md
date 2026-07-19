@@ -1,8 +1,9 @@
-# VC Brain — Orchestration Design & API Reference
+# VC Brain — Orchestration Design
 
-This is the technical reference for building a frontend against this backend, and for
-understanding how a request actually flows through the system. For setup/run instructions, see
-`README.md`.
+This is the technical reference for how a request actually flows through the system: the 10-node
+pipeline, the OpenAI orchestration layer, the tools/data layers. For the request/response JSON
+contract (what to send to `POST /search`, what you get back), see `API.md`. For setup/run
+instructions, see `README.md`.
 
 ---
 
@@ -13,11 +14,8 @@ that actively searches the live web (via an OpenAI agentic browsing layer) acros
 channels — GitHub, Google, LinkedIn, Twitter/X, YouTube, Reddit, Product Hunt, accelerator
 directories, arXiv — for early-stage, low-visibility startups/founders matching a niche. It
 returns a ranked, deduplicated list, favoring hard-to-find candidates over well-documented ones.
-
-Two endpoints:
-- `GET /search/questionnaire` — given a niche (+ stage), returns which optional filter fields are
-  actually worth showing in the frontend's form.
-- `POST /search` — runs the full pipeline, returns ranked candidates.
+Two endpoints, `GET /search/questionnaire` and `POST /search` — see `API.md` for their exact
+request/response shapes.
 
 ---
 
@@ -26,7 +24,7 @@ Two endpoints:
 ### 2.1 Pipeline overview
 
 ```
- SearchFilters (frontend request)
+ SearchFilters (frontend request — see API.md for the JSON shape)
         │
  [Node 1] Filter Intake              src/nodes/filter_intake.py
         │   validates against filter-options.json, never hard-rejects
@@ -42,9 +40,9 @@ Two endpoints:
         ▼
  ┌──── Pass loop (1–2 passes, Section 7 adaptive broadening/narrowing) ────┐
  │ [Node 3] Query Generation         src/nodes/query_generation.py         │
- │      direct-match + founder-first + keyword + channel-vocabulary        │
- │      query variants per source (src/data/channel-vocabulary.json)       │
- │      + optional LLM diversification if OPENAI_API_KEY is set            │
+ │      per source: base → keyword → founder-first →                       │
+ │      channel-vocabulary (src/data/channel-vocabulary.json) →            │
+ │      optional LLM diversification                                       │
  │           │                                                             │
  │ [Node 4] Multi-Source Fetch       src/nodes/multi_source_fetch.py       │
  │      parallel fan-out to src/tools/*.py (see 2.3 below)                 │
@@ -84,7 +82,13 @@ Two endpoints:
         │   false → startup-centric rows as-is
         │   true  → _explode_by_founder(): one row per named founder
         ▼
- RunResult (sorted by discovery_value_score, truncated to max_results)
+ sorted by discovery_value_score, truncated to max_results
+        ▼
+ [post] Fallback Candidate (plan C)   src/nodes/pipeline.py::_apply_fallback_candidate
+        │   always on — appends one hardcoded, clearly-labeled candidate only if
+        │   genuine search found nothing for it
+        ▼
+ RunResult
 ```
 
 ### 2.2 Orchestration library — `src/orchestration/`
@@ -113,21 +117,25 @@ This is what makes sources "real" instead of mocked, using only `OPENAI_API_KEY`
   everything else via one batched OpenAI call — or a small built-in Spanish/Portuguese/German
   dictionary when no key is configured.
 
+**Plan-C fallback candidate**: a hardcoded, always-on safety net, not part of the discovery
+pipeline itself — see `src/nodes/pipeline.py::_apply_fallback_candidate` and the diagram's
+`[post]` step above. See README §"Plan C — the hardcoded FyTic fallback".
+
 ### 2.3 Tools layer — `src/tools/*.py`
 
 Every tool exposes `async def search(query, niche, discovery_pass, filters_context) ->
 (list[RawCandidate], list[str])` and follows the same fallback contract: try the best available
-real path, fall back to the next, and only ever fall back to mock data if
-`GENUINE_RESULTS_ONLY` is not set (see README §3).
+real path, fall back to the next, and always fall back to mock data if nothing real is available
+or every real path fails (see README §3).
 
 | Source | Priority order |
 |---|---|
 | `github` | real API (unauthenticated works) → mock |
 | `arxiv` | real API (free, keyless) → mock |
 | `reddit` | real `reddit.com/search.json` (free, keyless) → OpenAI agent → mock |
-| `google` | OpenAI agent → Google Custom Search API (if keyed) → mock |
-| `producthunt` | OpenAI agent → Product Hunt GraphQL API (if keyed) → mock |
-| `youtube` | OpenAI agent → YouTube Data API v3 (if keyed) → mock |
+| `google` | OpenAI agent → mock |
+| `producthunt` | OpenAI agent → mock |
+| `youtube` | OpenAI agent → mock |
 | `linkedin` | OpenAI agent only (no viable public API) → mock |
 | `twitter` | OpenAI agent only (no viable free API) → mock |
 | `accelerators` | OpenAI agent only (no unified directory API) → mock |
@@ -142,202 +150,3 @@ real path, fall back to the next, and only ever fall back to mock data if
 | `known-startups.json` | Persistent dedup memory — grows after every run; also the thing to check first if a real result seems to be missing (see README §5) |
 | `mock-search-results.json` | Synthetic candidate pool used whenever a source has no real path available |
 
----
-
-## 3. Frontend contract
-
-### 3.1 `GET /search/questionnaire`
-
-**Query params:**
-
-| Param | Type | Required |
-|---|---|---|
-| `niche` | string | yes |
-| `stage_signal` | string | no |
-
-**Response:**
-
-```json
-{
-  "niche": "AI Infra",
-  "resolved_via": "exact",
-  "always_show": ["niche", "geography", "city", "channels", "stage_signal", "keywords"],
-  "recommended_fields": ["target_customer", "team_size_max", "team_size_min", "tech_stack"],
-  "suggested_keywords": ["GPU scheduling", "inference", "vector database", "model serving"],
-  "trace": ["[02:18:02] Node 2 (niche_adapter): exact profile match for 'AI Infra'"]
-}
-```
-
-Call this once the user has picked a niche (and stage, if already chosen) to decide which of the
-optional fields below to actually render, before submitting the full form to `POST /search`.
-
-### 3.2 `POST /search` — request body
-
-`niche` and `founder_view` are **required**. Everything else is optional.
-
-| Field | Type | Required | Default | Notes |
-|---|---|---|---|---|
-| `niche` | string | **yes** | — | Free text accepted; fuzzy/substring-matched to the nearest known niche or a generic fallback |
-| `founder_view` | boolean | **yes** | — | `false` = one row per startup (co-founders consolidated); `true` = one row per founder (startup repeats across co-founders) |
-| `geography` | string \| null | no | `null` | Also drives term localization (§2.2) |
-| `city` | string \| null | no | `null` | |
-| `channels` | string[] | no | `[]` | Advisory; the pipeline's own source selection is niche/stage-driven |
-| `stage_signal` | string \| null | no | `null` | `"Idea"` / `"MVP"` / `"Launched"` / `"Unknown"` — `"Idea"`/`"Unknown"`/unset adds YouTube/Twitter/Reddit |
-| `keywords` | string[] | no | `[]` | Always-available free text, localized and folded into every source's queries |
-| `founded_after` | integer \| null | no | `null` | Hard filter — only excludes when the candidate's founded year is known |
-| `founded_before` | integer \| null | no | `null` | Same as above |
-| `has_clients` | boolean \| null | no | `null` | Hard filter — only excludes on a known mismatch |
-| `team_size_min` | integer \| null | no | `null` | Hard filter — only excludes on a known mismatch |
-| `team_size_max` | integer \| null | no | `null` | Hard filter — only excludes on a known mismatch |
-| `business_model` | string \| null | no | `null` | Localized; folded into query text |
-| `target_customer` | string \| null | no | `null` | Localized; folded into query text |
-| `tech_stack` | string[] | no | `[]` | Localized; folded into query text |
-| `funding_stage_filter` | string \| null | no | `null` | `"bootstrapped"` / `"pre-seed"` / `"seed"` — hard filter, only excludes on a known mismatch |
-| `max_results` | integer | no | `10` | Bounded 1–15 |
-
-**Minimal valid request:**
-
-```json
-{ "niche": "AI Infra", "founder_view": false }
-```
-
-### 3.3 `POST /search` — response body
-
-```
-RunResult
-├── run: RunMeta
-│   ├── niche: string                 — echoes the input niche string as submitted
-│   ├── run_date: string (ISO date)
-│   ├── passes_executed: integer      — 1 or 2 (Section 7 adaptive broadening/narrowing)
-│   └── founder_view: boolean         — echoes which view mode produced these results
-└── results: Candidate[]              — sorted by discovery_value_score, length ≤ max_results
-```
-
-**`Candidate` fields:**
-
-| Group | Field | Type |
-|---|---|---|
-| Identity | `founder_name` | string — the primary founder for this row |
-| | `co_founders` | string[] — any other named founders, never merged into `founder_name` |
-| | `founder_city` / `founder_country` | string \| null |
-| | `founder_linkedin` | string \| null |
-| | `founder_education` | string \| null |
-| | `founder_prior_ventures` | string[] |
-| | `startup_name` | string |
-| | `website` | string \| null |
-| | `domain_registered_date` | string \| null |
-| | `estimated_founded_year` | integer \| null |
-| Product & stage | `niche` | string — the niche this candidate was actually matched against |
-| | `one_line_description` | string |
-| | `product_stage` | `"idea"` \| `"mvp"` \| `"launched"` \| `"unknown"` |
-| | `team_size_estimate` | integer \| null |
-| | `tech_stack_signals` | string[] |
-| | `has_clients` | boolean \| null |
-| Traction | `traction_signals.github_repo_url` | string \| null |
-| | `traction_signals.github_commit_activity` | string \| null |
-| | `traction_signals.linkedin_followers` | integer \| null |
-| | `traction_signals.twitter_followers` | integer \| null |
-| | `traction_signals.press_mentions` | string[] |
-| | `traction_signals.job_postings_found` | string[] |
-| Funding | `funding_status` | `"bootstrapped"` \| `"pre-seed"` \| `"seed"` \| `"unknown"` |
-| | `funding_amount_estimate` | string \| null |
-| | `investors_mentioned` | string[] |
-| Discovery process | `source_channel` | string |
-| | `search_queries_used` | string[] |
-| | `discovery_signals` | string[] |
-| | `discovery_pass` | integer |
-| Dedup (Node 6) | `dedup_status` | `"genuinely_new"` \| `"possible_duplicate"` |
-| | `possible_duplicate_of` | string \| null |
-| | `dedup_signals_matched` | string[] |
-| Scoring (Node 7) | `discovery_value_score` | number, 0–100 |
-| | `discovery_value_reasoning` | string |
-| Trust | `confidence` | `"low"` \| `"medium"` \| `"high"` |
-| | `confidence_reasoning` | string |
-| | `evidence` | `{source_url, snippet, date_captured}[]` |
-| | `red_flags` | string[] |
-| | `agent_trace` | string[] — full ordered log of every query/decision behind this result |
-| | `recommended_next_step` | string |
-| | `date_found` | string (ISO date) |
-| | `status` | `"new_lead"` \| `"needs_verification"` \| `"activated"` |
-
-### 3.4 Full example response
-
-`founder_view: false` — one row per startup, two co-founders consolidated into one entry:
-
-```json
-{
-  "run": {
-    "niche": "Mexican LegalTech",
-    "run_date": "2026-07-18",
-    "passes_executed": 1,
-    "founder_view": false
-  },
-  "results": [
-    {
-      "founder_name": "Eduardo Llaguno Velasco",
-      "co_founders": ["Frida Velázquez Esquer"],
-      "founder_city": null,
-      "founder_country": "Mexico",
-      "founder_linkedin": null,
-      "founder_education": null,
-      "founder_prior_ventures": [],
-      "startup_name": "Iurefficient",
-      "website": "https://www.iurefficient.com",
-      "domain_registered_date": null,
-      "estimated_founded_year": 2026,
-      "niche": "Mexican LegalTech",
-      "one_line_description": "Plataforma que centraliza la gestión de casos, análisis de documentos y comunicación con clientes mediante inteligencia artificial.",
-      "product_stage": "launched",
-      "team_size_estimate": null,
-      "tech_stack_signals": [],
-      "has_clients": null,
-      "traction_signals": {
-        "github_repo_url": null,
-        "github_commit_activity": null,
-        "linkedin_followers": null,
-        "twitter_followers": null,
-        "press_mentions": [],
-        "job_postings_found": []
-      },
-      "funding_status": "unknown",
-      "funding_amount_estimate": null,
-      "investors_mentioned": [],
-      "source_channel": "Google search",
-      "search_queries_used": ["software para abogados gestor de expedientes jurídicos Mexico"],
-      "discovery_signals": ["Small, recently active site with no press coverage"],
-      "discovery_pass": 1,
-      "dedup_status": "genuinely_new",
-      "possible_duplicate_of": null,
-      "dedup_signals_matched": [],
-      "discovery_value_score": 71.4,
-      "discovery_value_reasoning": "Little to no press/follower presence — strong cold-start signal; recently registered domain; no confirmed vc backing found.",
-      "confidence": "medium",
-      "confidence_reasoning": "At least one concrete artifact confirms this candidate exists, but corroboration is limited.",
-      "evidence": [
-        {
-          "source_url": "https://www.iurefficient.com",
-          "snippet": "Plataforma de gestión legal con inteligencia artificial para despachos.",
-          "date_captured": "2026-07-18"
-        }
-      ],
-      "red_flags": [],
-      "agent_trace": [
-        "[02:18:02] Node 1 (filter_intake): received niche='Mexican LegalTech'",
-        "[02:18:02] Node 2 (niche_adapter): exact profile match for 'Mexican LegalTech'",
-        "[02:18:02] Localized terms to Spanish via OpenAI: ['Law Firms'] -> ['despachos legales']",
-        "[02:18:03] [google] OpenAI research agent extracted 1 candidate(s)",
-        "[02:18:03] Consolidated 2 results for 'Iurefficient' into one row — founders: ['Eduardo Llaguno Velasco', 'Frida Velázquez Esquer']",
-        "[02:18:03] Node 9 (confidence_flagging): 'Iurefficient' -> confidence=medium, red_flags=0"
-      ],
-      "recommended_next_step": "Needs light verification (confirm team/product details) before outreach.",
-      "date_found": "2026-07-18",
-      "status": "new_lead"
-    }
-  ]
-}
-```
-
-With `"founder_view": true` on the same underlying find, this single row would instead be
-returned as **two** rows — `founder_name: "Eduardo Llaguno Velasco"` with
-`co_founders: ["Frida Velázquez Esquer"]`, and `founder_name: "Frida Velázquez Esquer"` with
-`co_founders: ["Eduardo Llaguno Velasco"]` — everything else identical.

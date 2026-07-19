@@ -46,11 +46,19 @@ def _compute_confidence(c: Candidate) -> tuple[Confidence, str]:
     if evidence_count == 0:
         return "low", "No verifiable evidence sources were captured for this candidate."
 
+    # A real LinkedIn presence is a legitimate anchor even when it's a
+    # company page rather than a personal profile — the extraction schema
+    # has no separate "company LinkedIn" field, so that evidence otherwise
+    # never counts toward anything, systematically under-scoring confidence
+    # for candidates found on LinkedIn specifically (one of the primary channels).
+    has_linkedin_evidence = bool(c.founder_linkedin) or any(
+        "linkedin.com" in (e.source_url or "").lower() for e in c.evidence
+    )
     anchors = sum(
         [
             bool(c.traction_signals.github_repo_url),
             bool(c.website),
-            bool(c.founder_linkedin),
+            has_linkedin_evidence,
         ]
     )
     if anchors >= 2 and evidence_count >= 2:

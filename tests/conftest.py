@@ -4,9 +4,9 @@ import src.nodes.dedup_similarity as dedup_module
 import src.nodes.pipeline as pipeline_module
 import src.nodes.query_generation as query_generation_module
 import src.orchestration.localization as localization_module
+import src.orchestration.web_research_agent as web_research_agent_module
 import src.tools.accelerators as accelerators_tool
 import src.tools.arxiv as arxiv_tool
-import src.tools.base as tools_base_module
 import src.tools.github as github_tool
 import src.tools.google as google_tool
 import src.tools.linkedin as linkedin_tool
@@ -20,7 +20,6 @@ import src.utils.similarity as similarity_module
 class _FakeSettings:
     openai_enabled = False
     openai_api_key = None
-    genuine_only = False  # tests rely on mock fallback data being available
 
 
 # A fixed snapshot, independent of the real (mutable) known-startups.json —
@@ -68,10 +67,7 @@ def hermetic_mock_mode(monkeypatch):
     monkeypatch.setattr(similarity_module, "get_settings", lambda: _FakeSettings())
     monkeypatch.setattr(query_generation_module, "get_settings", lambda: _FakeSettings())
     monkeypatch.setattr(localization_module, "get_settings", lambda: _FakeSettings())
-    # regardless of the developer's real .env (e.g. GENUINE_RESULTS_ONLY=true
-    # locally), tests need mock fallback to actually produce data by default —
-    # the dedicated genuine-only tests override this again within themselves
-    monkeypatch.setattr(tools_base_module, "get_settings", lambda: _FakeSettings())
+    monkeypatch.setattr(web_research_agent_module, "get_settings", lambda: _FakeSettings())
     # don't let test runs mutate the real known-startups.json memory file
     monkeypatch.setattr(pipeline_module, "append_known_startups", lambda entries: None)
     # dedup against a fixed snapshot instead of the real, growing memory file

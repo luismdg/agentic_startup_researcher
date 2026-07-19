@@ -4,7 +4,7 @@ from src.config import mock_mode
 from src.models.candidate import EvidenceItem
 from src.models.pipeline import RawCandidate
 from src.orchestration.web_research_agent import research_channel
-from src.tools.base import mock_or_none, today_iso
+from src.tools.base import mock_candidates_for, today_iso
 from src.utils.tracing import trace_line
 
 SOURCE = "reddit"
@@ -20,8 +20,7 @@ async def search(
 ) -> tuple[list[RawCandidate], list[str]]:
     trace: list[str] = []
     if mock_mode(SOURCE):
-        candidates, fallback_trace = mock_or_none(SOURCE, niche, query, discovery_pass, "[reddit] mock mode")
-        return candidates, trace + fallback_trace
+        return mock_candidates_for(SOURCE, niche, query, discovery_pass), trace
 
     try:
         candidates = await _real_search(query, niche, discovery_pass, trace)
@@ -38,9 +37,8 @@ async def search(
     if candidates:
         return candidates, trace
 
-    trace.append(trace_line("[reddit] OpenAI agentic browsing returned nothing"))
-    candidates, fallback_trace = mock_or_none(SOURCE, niche, query, discovery_pass, "[reddit] no real results")
-    return candidates, trace + fallback_trace
+    trace.append(trace_line("[reddit] OpenAI agentic browsing returned nothing — falling back to mock data"))
+    return mock_candidates_for(SOURCE, niche, query, discovery_pass), trace
 
 
 async def _real_search(
