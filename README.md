@@ -211,6 +211,69 @@ You need at least one real key — nothing here can find a real company without 
    niche close to your startup's actual space and any keywords/city/tech_stack that narrow it
    down.
 
+#### Worked example: searching for a real, low-visibility, unfunded startup
+
+This is a filter-crafting example, not a scoring change — nothing here is FyTic-specific in the
+code, and it shouldn't be. The discovery-value formula (Section 6b) treats every candidate the
+same regardless of what you search for; what actually changes your odds of finding a genuinely
+obscure startup is **how well your filters match the language that startup actually uses**, not
+the category name you'd use to describe it to an investor.
+
+The most common way a real, thinly-documented startup gets missed: its own content may never
+literally say the niche name. A 3-post-old LinkedIn presence with a title like "Co-founder at
+[Startup]" won't say "LegalTech" anywhere — but it *will* use the product-level language its
+target customers actually search with. That's what `keywords`/`business_model`/`target_customer`
+are for: they get localized to the search geography's language (Section 3 above) and folded
+directly into the literal query text (Node 3), so the search matches real phrasing instead of an
+abstract category label.
+
+For a pre-seed, unfunded, Mexico-based LegalTech SaaS with minimal public content, a request
+built from its own realistic product/SEO vocabulary — not from guessing at buzzwords — looks
+like this:
+
+```json
+{
+  "niche": "Mexican LegalTech",
+  "founder_view": false,
+  "geography": "Mexico",
+  "channels": ["Google", "LinkedIn"],
+  "stage_signal": "MVP",
+  "keywords": [
+    "software para abogados",
+    "gestor de expedientes jurídicos",
+    "sistema para despachos de abogados",
+    "redacción de contratos con inteligencia artificial",
+    "investigación jurídica con inteligencia artificial"
+  ],
+  "business_model": "SaaS",
+  "target_customer": "law firms",
+  "funding_stage_filter": "bootstrapped",
+  "max_results": 10
+}
+```
+
+Why each piece matters here, specifically:
+- **`keywords`** are the actual Spanish product-language a Mexican legal-tech SaaS would use in
+  its own site/posts (case management, document drafting, AI legal research) — not the English
+  category label. This is the single biggest lever for finding something whose content never
+  says the niche name outright.
+- **`niche: "Mexican LegalTech"`** still matters even so — it drives which *sources* get
+  prioritized and which channel vocabulary gets used (Section on channel vocabulary above), it
+  doesn't require the target's content to literally contain the word.
+- **`business_model: "SaaS"`** stays in English (global jargon, never translated) while
+  **`target_customer: "law firms"`** gets localized to `"despachos legales"` automatically —
+  exactly the term real Spanish-language content would use.
+- **`funding_stage_filter: "bootstrapped"`** reflects "no funding, no awards" honestly — and
+  since `_apply_user_filters` only ever excludes a candidate when its funding status is *known*
+  and *conflicts*, this never risks dropping a real candidate just because funding data wasn't
+  found (which is the common case for a genuinely unfunded startup).
+- **Nothing here guesses at team size, founding year, or has_clients** — over-constraining with
+  assumed values is the fastest way to accidentally filter out the very candidate you're looking
+  for.
+
+This is a template for approaching *any* low-visibility startup, not a lookup table — swap in the
+real product vocabulary, geography, and constraints for whatever you're actually searching for.
+
 Check each result's `agent_trace` field to see exactly which queries ran and which source (real
 vs. mock) produced each candidate — every result is traceable back to its source. If a channel
 falls back to mock unexpectedly, the trace will say why (e.g. the web-search tool name didn't
@@ -238,6 +301,13 @@ startup found separately must merge into one row, never get concatenated into a 
 - Genuinely new, medium/high-confidence results get appended to `src/data/known-startups.json`
   after each run, so future runs dedup against everything you've already found — this file will
   grow as you use the tool. Delete entries from it manually if you want to reset that memory.
+- **If a real startup you know exists never appears in results**, before assuming the search is
+  broken, check whether it (or a name/domain close to it) is already sitting in
+  `known-startups.json`. Node 6 will match a fresh find against that memory on domain/name/founder
+  and either drop it as a duplicate or flag it `possible_duplicate` — correct behavior for
+  avoiding re-surfacing something already found, but it also means a stale or coincidentally
+  similarly-named entry can silently suppress a real one. Worth a quick grep before debugging
+  anything else.
 - The richer attributes (`founded_after`/`founded_before`, `has_clients`, `team_size_min/max`,
   `funding_stage_filter`) only ever drop a candidate when *both* the filter is set *and* the
   candidate's value is actually known — sparse cold-start data is never penalized just for being
