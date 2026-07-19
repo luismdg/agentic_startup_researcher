@@ -1,0 +1,2015 @@
+[
+  {
+    "startupId": "su-01",
+    "generatedDate": "2026-07-10",
+    "companySnapshot": {
+      "name": "Ledgerline",
+      "sector": "Fintech Infrastructure",
+      "stage": "Seed",
+      "geography": "New York, US",
+      "foundedYear": 2024,
+      "askAmount": 3500000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Correspondent banking's multi-day settlement delay is a structural inefficiency banks will pay to remove, not a fixed cost of the system.",
+      "A netting layer that plugs into existing core banking systems can win without requiring banks to change custody providers."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder built the exact system category at a top-5 card network",
+        "Two bank LOIs already in hand"
+      ],
+      "weaknesses": [
+        "Sales cycle to banks historically 9-18 months",
+        "Single technical founder"
+      ],
+      "opportunities": [
+        "Regulatory push toward real-time settlement in several markets",
+        "Expansion into treasury management adjacent product"
+      ],
+      "threats": [
+        "Card networks could build competing internal tooling",
+        "Correspondent banks have switching-cost inertia"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Cross-border settlement between mid-size banks still takes 2-4 business days through correspondent banking chains, tying up working capital and creating FX exposure.",
+      "product": "A real-time netting engine that plugs into a bank's core system via API and settles obligations against a shared ledger every 15 minutes instead of daily batch cycles."
+    },
+    "tractionKpis": [
+      {
+        "label": "Signed LOIs",
+        "value": "2 regional banks",
+        "asOf": "2026-06-01"
+      },
+      {
+        "label": "Simulated settlement volume in pilot",
+        "value": "$40M / month",
+        "asOf": "2026-06-15"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Priya Chandrasekaran. Solo technical founder with a directly relevant acquisition exit in the same problem space; actively recruiting a business co-founder with bank BD experience."
+    },
+    "technologyDefensibility": {
+      "status": "available",
+      "value": "Netting engine built on an event-sourced ledger with idempotent settlement batches; architecture reviewed favorably by an independent payments infrastructure engineer."
+    },
+    "marketSizing": {
+      "status": "available",
+      "value": {
+        "tam": "$18B",
+        "sam": "$2.1B",
+        "som": "$140M",
+        "note": "SAM defined as mid-size regional banks in NA/EU currently reliant on correspondent banking for cross-border settlement."
+      }
+    },
+    "competition": {
+      "status": "available",
+      "value": [
+        {
+          "name": "Legacy correspondent banking networks",
+          "positioning": "Incumbent, slow, but deeply entrenched"
+        },
+        {
+          "name": "Wire-based fintech rails",
+          "positioning": "Faster than correspondent banking but not real-time netting"
+        }
+      ]
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 9,
+        "contradictedCount": 0,
+        "lastUpdated": "2026-07-10"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "available",
+      "value": [
+        {
+          "holder": "Founder",
+          "percent": 78
+        },
+        {
+          "holder": "Angel investors",
+          "percent": 14
+        },
+        {
+          "holder": "Option pool",
+          "percent": 8
+        }
+      ]
+    },
+    "exitPerspective": {
+      "status": "available",
+      "value": "The most likely path is a strategic acquisition by a card network (e.g. Visa or Mastercard) or a payments infrastructure incumbent looking to buy real-time settlement capability rather than build it in-house — comparable payments-infrastructure acquisitions have closed at 4-7x ARR. A slower-growth scenario could see a private-equity roll-up fold this into a broader payments-modernization platform alongside similar infrastructure assets. Either buyer would likely pay a premium because replicating bank-grade settlement rails from scratch typically takes two to three years and carries regulatory risk an established player would rather acquire than build."
+    },
+    "decision": {
+      "recommendation": "invest",
+      "checkSize": 100000,
+      "rationale": "Founder-market fit is as strong as this fund sees; the product is a clear wedge into a real structural cost banks want removed, and two LOIs de-risk the initial GTM.",
+      "adversarialView": {
+        "counterThesis": "Enterprise sales cycles to banks routinely blow past founder projections, and a solo technical founder without a BD co-founder may stall exactly where this deal needs speed.",
+        "keyRisks": [
+          "Bank sales cycle length",
+          "Key-person risk on a solo founder",
+          "Regulatory approval timeline for settlement products varies by market"
+        ],
+        "whatWouldChangeOurMind": "A third LOI converting to a signed paid pilot within 60 days would remove our biggest concern about GTM speed."
+      },
+      "portfolioFit": {
+        "overlapWith": [
+          "Wardline",
+          "Kernelforge"
+        ],
+        "diversificationNote": "Adds fintech infrastructure exposure; portfolio is currently light on regulated-adjacent B2B infra.",
+        "concentrationRisk": "medium",
+        "fitScore": 81
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-02",
+    "generatedDate": "2026-07-14",
+    "companySnapshot": {
+      "name": "Terraware",
+      "sector": "Climate",
+      "stage": "Seed",
+      "geography": "Nairobi, Kenya",
+      "foundedYear": 2023,
+      "askAmount": 2200000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Carbon credit buyers will pay a premium for satellite-verified MRV over manual sampling as compliance markets mature.",
+      "A licensable measurement methodology can become the default verification layer across multiple credit registries."
+    ],
+    "swot": {
+      "strengths": [
+        "Peer-reviewed methodology co-founder authored",
+        "Early registry partnership in progress"
+      ],
+      "weaknesses": [
+        "Sales cycle depends on registry approval timelines outside company control",
+        "Revenue concentrated in one geography"
+      ],
+      "opportunities": [
+        "Compliance carbon markets expanding faster than voluntary markets",
+        "Adjacent application to deforestation monitoring"
+      ],
+      "threats": [
+        "Larger remote-sensing incumbents could add soil carbon as a feature",
+        "Registry approval could stall indefinitely"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Soil carbon credit issuance relies on manual, expensive sampling that limits how much land can realistically be verified and creates audit risk for buyers.",
+      "product": "A satellite-imagery pipeline that estimates soil organic carbon at parcel-level resolution and outputs registry-ready MRV reports."
+    },
+    "tractionKpis": [
+      {
+        "label": "Parcels under active measurement",
+        "value": "38,000 acres",
+        "asOf": "2026-06-01"
+      },
+      {
+        "label": "Registry partnership status",
+        "value": "In technical review",
+        "asOf": "2026-07-01"
+      }
+    ],
+    "teamHistory": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "technologyDefensibility": {
+      "status": "available",
+      "value": "Computer vision pipeline trained on ground-truth soil samples collected across three growing seasons; independent accuracy validated against manual sampling within 8% margin."
+    },
+    "marketSizing": {
+      "status": "available",
+      "value": {
+        "tam": "$9B",
+        "sam": "$1.4B",
+        "som": "$60M",
+        "note": "SAM limited to compliance-market MRV spend in geographies with active soil carbon credit programs."
+      }
+    },
+    "competition": {
+      "status": "available",
+      "value": [
+        {
+          "name": "Manual sampling audit firms",
+          "positioning": "Incumbent, expensive, slow, but trusted"
+        }
+      ]
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 3,
+        "contradictedCount": 6,
+        "lastUpdated": "2026-07-14"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "watch",
+      "checkSize": 100000,
+      "rationale": "Strong technical differentiation and founder-market fit, but registry approval — the single gating dependency for revenue — is outside the company's control and timeline is uncertain.",
+      "adversarialView": {
+        "counterThesis": "If registry approval slips another 2 quarters, the company may run out of runway before revenue starts, regardless of product quality.",
+        "keyRisks": [
+          "Registry approval timeline",
+          "Revenue concentration in one geography",
+          "Prior venture from lead founder wound down for funding reasons, not product reasons — but pattern worth noting"
+        ],
+        "whatWouldChangeOurMind": "Confirmed registry approval date would move this to invest."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Would add climate/carbon exposure; portfolio currently has none.",
+        "concentrationRisk": "low",
+        "fitScore": 64
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-03",
+    "generatedDate": "2026-07-16",
+    "companySnapshot": {
+      "name": "Fluxbase",
+      "sector": "Developer Tools",
+      "stage": "Pre-seed",
+      "geography": "Austin, US",
+      "foundedYear": 2023,
+      "askAmount": 1500000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Copy-on-write database branching removes a real bottleneck in CI pipelines that currently rely on stale fixtures or full clones.",
+      "Open-source-led adoption among individual engineers can convert into team-level paid contracts faster than top-down enterprise sales."
+    ],
+    "swot": {
+      "strengths": [
+        "4,000+ GitHub stars organically, no marketing spend",
+        "Deep technical credibility from founder's OSS contributions"
+      ],
+      "weaknesses": [
+        "No enterprise sales experience on the team",
+        "Free tier usage far exceeds paid conversions so far"
+      ],
+      "opportunities": [
+        "Expansion beyond CI into staging-environment branching",
+        "Natural fit for usage-based pricing at scale"
+      ],
+      "threats": [
+        "Managed Postgres vendors could ship native branching",
+        "Category awareness still early; may require significant education spend"
+      ]
+    },
+    "problemProduct": {
+      "problem": "CI pipelines either run against stale fixture data or pay the cost (in time and infra) of cloning full production-like databases for every test run.",
+      "product": "A CLI and API that create instant, isolated, copy-on-write Postgres branches scoped to a single CI run or pull request."
+    },
+    "tractionKpis": [
+      {
+        "label": "GitHub stars",
+        "value": "4,300",
+        "asOf": "2026-07-01"
+      },
+      {
+        "label": "Weekly active CI integrations",
+        "value": "210",
+        "asOf": "2026-07-10"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Dev Patel. Single first-time founder, highly credible technically; deck flags an open technical co-founder search but no hire made yet."
+    },
+    "technologyDefensibility": {
+      "status": "available",
+      "value": "Built on Postgres WAL-based copy-on-write branching; independently reviewed as sound by an outside database engineer, though scaling beyond single-region deployments is unproven."
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "available",
+      "value": [
+        {
+          "name": "Managed Postgres providers (branching features)",
+          "positioning": "Adjacent incumbents who could bundle a competing feature"
+        },
+        {
+          "name": "Full-clone CI fixture tooling",
+          "positioning": "Status quo, slower but familiar"
+        }
+      ]
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 6,
+        "contradictedCount": 3,
+        "lastUpdated": "2026-07-16"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "invest",
+      "checkSize": 100000,
+      "rationale": "Best product-led growth signal we've seen this quarter pre-revenue; the technical wedge is real and the founder has unusually deep credibility in exactly this niche.",
+      "adversarialView": {
+        "counterThesis": "Free-to-paid conversion is currently near zero, and the single-founder team has no proven enterprise sales muscle to fix that.",
+        "keyRisks": [
+          "Monetization unproven",
+          "Solo founder, no business co-founder yet",
+          "Platform risk if a managed Postgres vendor ships a native competitor"
+        ],
+        "whatWouldChangeOurMind": "First 10 paid team-tier conversions would substantially de-risk monetization concerns."
+      },
+      "portfolioFit": {
+        "overlapWith": [
+          "Kernelforge"
+        ],
+        "diversificationNote": "Adds developer tooling exposure alongside existing infra bets.",
+        "concentrationRisk": "medium",
+        "fitScore": 74
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-04",
+    "generatedDate": "2026-07-08",
+    "companySnapshot": {
+      "name": "Proteova",
+      "sector": "Biotech / AI Drug Discovery",
+      "stage": "Seed",
+      "geography": "Basel, Switzerland",
+      "foundedYear": 2023,
+      "askAmount": 6000000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Proteova is positioned to become the default tool for its niche in biotech / ai drug discovery if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founding team has directly relevant domain background in biotech / ai drug discovery",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within biotech / ai drug discovery",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Proteova's generative models design protein binders against targets that have historically resisted small-molecule and antibody approaches.",
+      "product": "Proteova approaches this by focusing narrowly on generative binder design for undruggable targets, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-07-08"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "up",
+        "asOf": "2026-07-08"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Dr. Lina Feuerstein, Tobias Reyn. Two-person founding team with complementary domain and technical backgrounds; no major gaps identified yet."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 6,
+        "contradictedCount": 3,
+        "lastUpdated": "2026-07-08"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "invest",
+      "checkSize": 100000,
+      "rationale": "Strong composite signal across founder, market, and idea axes supports moving forward.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds biotech / ai drug discovery exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 72
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-05",
+    "generatedDate": "2026-07-12",
+    "companySnapshot": {
+      "name": "Radiant Health",
+      "sector": "Healthcare AI",
+      "stage": "Seed",
+      "geography": "Lagos, Nigeria",
+      "foundedYear": 2023,
+      "askAmount": 2800000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Radiant Health is positioned to become the default tool for its niche in healthcare ai if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in healthcare ai",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within healthcare ai",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Radiant Health flags likely-critical imaging studies for priority review, cutting time-to-read in clinics with one radiologist covering multiple sites.",
+      "product": "Radiant Health approaches this by focusing narrowly on ai triage for radiology in underserved regions, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-07-12"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "up",
+        "asOf": "2026-07-12"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Amara Nwosu. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 3,
+        "contradictedCount": 6,
+        "lastUpdated": "2026-07-12"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "invest",
+      "checkSize": 100000,
+      "rationale": "Strong composite signal across founder, market, and idea axes supports moving forward.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds healthcare ai exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 74
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-06",
+    "generatedDate": "2026-06-29",
+    "companySnapshot": {
+      "name": "Ferrovia Robotics",
+      "sector": "Robotics",
+      "stage": "Seed",
+      "geography": "Oslo, Norway",
+      "foundedYear": 2023,
+      "askAmount": 4000000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Ferrovia Robotics is positioned to become the default tool for its niche in robotics if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in robotics",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within robotics",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Ferrovia's rail-bound robots inspect track infrastructure continuously, replacing quarterly manual walks with daily automated passes.",
+      "product": "Ferrovia Robotics approaches this by focusing narrowly on autonomous rail-bound inspection drones, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-06-29"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "down",
+        "asOf": "2026-06-29"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Erik Solberg. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 9,
+        "contradictedCount": 0,
+        "lastUpdated": "2026-06-29"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "pass",
+      "checkSize": 100000,
+      "rationale": "Composite signal does not yet clear the bar relative to current thesis priorities.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds robotics exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 61
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-07",
+    "generatedDate": "2026-07-05",
+    "companySnapshot": {
+      "name": "Campfire",
+      "sector": "Consumer Social",
+      "stage": "Pre-seed",
+      "geography": "Los Angeles, US",
+      "foundedYear": 2024,
+      "askAmount": 1200000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Campfire is positioned to become the default tool for its niche in consumer social if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in consumer social",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within consumer social",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Campfire is a small-group app built entirely around short voice notes instead of text or video, aimed at replacing group chat fatigue.",
+      "product": "Campfire approaches this by focusing narrowly on async, audio-only spaces for close friend groups, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Pre-seed",
+        "asOf": "2026-07-05"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "flat",
+        "asOf": "2026-07-05"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Jasmine Ruiz. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 3,
+        "contradictedCount": 6,
+        "lastUpdated": "2026-07-05"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "pass",
+      "checkSize": 100000,
+      "rationale": "Composite signal does not yet clear the bar relative to current thesis priorities.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds consumer social exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 48
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-08",
+    "generatedDate": "2026-07-11",
+    "companySnapshot": {
+      "name": "Solvent",
+      "sector": "Edtech",
+      "stage": "Seed",
+      "geography": "Chicago, US",
+      "foundedYear": 2023,
+      "askAmount": 2000000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Solvent is positioned to become the default tool for its niche in edtech if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founding team has directly relevant domain background in edtech",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within edtech",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Solvent gives community college students a patient, always-available AI tutor tuned specifically to developmental math and intro STEM curricula.",
+      "product": "Solvent approaches this by focusing narrowly on ai tutor purpose-built for community college stem, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-07-11"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "up",
+        "asOf": "2026-07-11"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Michael Tran, Aaliyah Brooks. Two-person founding team with complementary domain and technical backgrounds; no major gaps identified yet."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 6,
+        "contradictedCount": 3,
+        "lastUpdated": "2026-07-11"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "watch",
+      "checkSize": 100000,
+      "rationale": "Promising signal but one or more axes need further evidence before committing capital.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds edtech exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 69
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-09",
+    "generatedDate": "2026-07-15",
+    "companySnapshot": {
+      "name": "Wardline",
+      "sector": "Cybersecurity",
+      "stage": "Seed",
+      "geography": "Seattle, US",
+      "foundedYear": 2024,
+      "askAmount": 4500000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Wardline is positioned to become the default tool for its niche in cybersecurity if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in cybersecurity",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within cybersecurity",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Wardline sits between AI agents and the tools they call, enforcing policy in real time to stop prompt-injection-driven actions before they execute.",
+      "product": "Wardline approaches this by focusing narrowly on runtime security for ai agent tool-calling, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-07-15"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "up",
+        "asOf": "2026-07-15"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Nate Kowalski. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 6,
+        "contradictedCount": 3,
+        "lastUpdated": "2026-07-15"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "invest",
+      "checkSize": 100000,
+      "rationale": "Strong composite signal across founder, market, and idea axes supports moving forward.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds cybersecurity exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 93
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-10",
+    "generatedDate": "2026-06-20",
+    "companySnapshot": {
+      "name": "Fieldhand",
+      "sector": "Marketplace / Agtech",
+      "stage": "Pre-seed",
+      "geography": "Des Moines, US",
+      "foundedYear": 2024,
+      "askAmount": 900000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Fieldhand is positioned to become the default tool for its niche in marketplace / agtech if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in marketplace / agtech",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within marketplace / agtech",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Fieldhand lets neighboring farms list and rent idle equipment to each other, with insurance and scheduling built in.",
+      "product": "Fieldhand approaches this by focusing narrowly on peer-to-peer marketplace for farm equipment, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Pre-seed",
+        "asOf": "2026-06-20"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "flat",
+        "asOf": "2026-06-20"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Grant Whitfield. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 3,
+        "contradictedCount": 6,
+        "lastUpdated": "2026-06-20"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "pass",
+      "checkSize": 100000,
+      "rationale": "Composite signal does not yet clear the bar relative to current thesis priorities.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds marketplace / agtech exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 55
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-11",
+    "generatedDate": "2026-07-09",
+    "companySnapshot": {
+      "name": "Portway",
+      "sector": "Logistics",
+      "stage": "Seed",
+      "geography": "Rotterdam, Netherlands",
+      "foundedYear": 2024,
+      "askAmount": 3000000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Portway is positioned to become the default tool for its niche in logistics if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in logistics",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within logistics",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Portway sequences truck arrivals against yard and crane availability to cut container dwell time at mid-size ports.",
+      "product": "Portway approaches this by focusing narrowly on drayage scheduling optimization for container ports, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-07-09"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "up",
+        "asOf": "2026-07-09"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Sana Malik. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 9,
+        "contradictedCount": 0,
+        "lastUpdated": "2026-07-09"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "watch",
+      "checkSize": 100000,
+      "rationale": "Promising signal but one or more axes need further evidence before committing capital.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds logistics exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 71
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-12",
+    "generatedDate": "2026-07-13",
+    "companySnapshot": {
+      "name": "Kernelforge",
+      "sector": "AI Infrastructure",
+      "stage": "Seed",
+      "geography": "Berlin, Germany",
+      "foundedYear": 2023,
+      "askAmount": 5000000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Kernelforge is positioned to become the default tool for its niche in ai infrastructure if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founding team has directly relevant domain background in ai infrastructure",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within ai infrastructure",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Kernelforge arbitrages spot GPU capacity across clouds and checkpoints jobs automatically to cut training cost without added ops burden.",
+      "product": "Kernelforge approaches this by focusing narrowly on spot-market gpu scheduling for ai training jobs, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-07-13"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "up",
+        "asOf": "2026-07-13"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Yusuf Demir, Chen Wei. Two-person founding team with complementary domain and technical backgrounds; no major gaps identified yet."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 3,
+        "contradictedCount": 6,
+        "lastUpdated": "2026-07-13"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "invest",
+      "checkSize": 100000,
+      "rationale": "Strong composite signal across founder, market, and idea axes supports moving forward.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds ai infrastructure exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 85
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-13",
+    "generatedDate": "2026-07-02",
+    "companySnapshot": {
+      "name": "Aphelion Systems",
+      "sector": "Space",
+      "stage": "Series A",
+      "geography": "Colorado Springs, US",
+      "foundedYear": 2023,
+      "askAmount": 12000000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Aphelion Systems is positioned to become the default tool for its niche in space if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in space",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within space",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Aphelion builds robotic servicing arms that extend satellite lifespan through in-orbit refueling and component swaps.",
+      "product": "Aphelion Systems approaches this by focusing narrowly on robotic arms for in-orbit satellite servicing, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Series A",
+        "asOf": "2026-07-02"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "flat",
+        "asOf": "2026-07-02"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Dana Ashworth. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 6,
+        "contradictedCount": 3,
+        "lastUpdated": "2026-07-02"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "watch",
+      "checkSize": 100000,
+      "rationale": "Promising signal but one or more axes need further evidence before committing capital.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds space exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 58
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-14",
+    "generatedDate": "2026-06-25",
+    "companySnapshot": {
+      "name": "Rootsignal",
+      "sector": "Agtech",
+      "stage": "Pre-seed",
+      "geography": "Ribeirão Preto, Brazil",
+      "foundedYear": 2023,
+      "askAmount": 1100000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Rootsignal is positioned to become the default tool for its niche in agtech if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in agtech",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within agtech",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Rootsignal's low-cost sensor mesh feeds an irrigation model that cuts water use on row crops without sacrificing yield.",
+      "product": "Rootsignal approaches this by focusing narrowly on soil sensor network with irrigation ai, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Pre-seed",
+        "asOf": "2026-06-25"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "up",
+        "asOf": "2026-06-25"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Beto Nascimento. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 6,
+        "contradictedCount": 3,
+        "lastUpdated": "2026-06-25"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "pass",
+      "checkSize": 100000,
+      "rationale": "Composite signal does not yet clear the bar relative to current thesis priorities.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds agtech exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 63
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-15",
+    "generatedDate": "2026-07-07",
+    "companySnapshot": {
+      "name": "Lintel",
+      "sector": "Proptech / Fintech",
+      "stage": "Seed",
+      "geography": "Charlotte, US",
+      "foundedYear": 2023,
+      "askAmount": 2600000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Lintel is positioned to become the default tool for its niche in proptech / fintech if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founding team has directly relevant domain background in proptech / fintech",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within proptech / fintech",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Lintel licenses an underwriting model to community lenders so they can price small multifamily loans in days instead of weeks.",
+      "product": "Lintel approaches this by focusing narrowly on ai underwriting for small multifamily loans, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-07-07"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "flat",
+        "asOf": "2026-07-07"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Owen Faircloth, Priyanka Seth. Two-person founding team with complementary domain and technical backgrounds; no major gaps identified yet."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 3,
+        "contradictedCount": 6,
+        "lastUpdated": "2026-07-07"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "watch",
+      "checkSize": 100000,
+      "rationale": "Promising signal but one or more axes need further evidence before committing capital.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds proptech / fintech exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 76
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-16",
+    "generatedDate": "2026-07-01",
+    "companySnapshot": {
+      "name": "Nightlatch",
+      "sector": "Gaming / Developer Tools",
+      "stage": "Pre-seed",
+      "geography": "Montreal, Canada",
+      "foundedYear": 2024,
+      "askAmount": 800000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Nightlatch is positioned to become the default tool for its niche in gaming / developer tools if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in gaming / developer tools",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within gaming / developer tools",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Nightlatch packages rollback netcode and lag-compensation tooling that let two-person indie studios ship multiplayer games without a network engineer.",
+      "product": "Nightlatch approaches this by focusing narrowly on netcode tooling for indie multiplayer games, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Pre-seed",
+        "asOf": "2026-07-01"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "up",
+        "asOf": "2026-07-01"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Theo Marchetti. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 9,
+        "contradictedCount": 0,
+        "lastUpdated": "2026-07-01"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "watch",
+      "checkSize": 100000,
+      "rationale": "Promising signal but one or more axes need further evidence before committing capital.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds gaming / developer tools exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 66
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-17",
+    "generatedDate": "2026-06-18",
+    "companySnapshot": {
+      "name": "Voltaic Labs",
+      "sector": "Hardware / Mobility",
+      "stage": "Seed",
+      "geography": "Pune, India",
+      "foundedYear": 2023,
+      "askAmount": 3200000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Voltaic Labs is positioned to become the default tool for its niche in hardware / mobility if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founder has directly relevant domain background in hardware / mobility",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within hardware / mobility",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Voltaic Labs makes standardized swappable battery packs for e-bike OEMs, cutting recall risk and enabling third-party repair.",
+      "product": "Voltaic Labs approaches this by focusing narrowly on open, modular, repairable battery packs for e-bikes, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-06-18"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "down",
+        "asOf": "2026-06-18"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Ravi Kohli. Solo founder; team-building plan not yet finalized."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 3,
+        "contradictedCount": 6,
+        "lastUpdated": "2026-06-18"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "pass",
+      "checkSize": 100000,
+      "rationale": "Composite signal does not yet clear the bar relative to current thesis priorities.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds hardware / mobility exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 54
+      },
+      "decidedDate": null
+    }
+  },
+  {
+    "startupId": "su-18",
+    "generatedDate": "2026-07-15",
+    "companySnapshot": {
+      "name": "Statute",
+      "sector": "Legal Tech",
+      "stage": "Seed",
+      "geography": "London, UK",
+      "foundedYear": 2024,
+      "askAmount": 2400000,
+      "proposedCheckSize": 100000
+    },
+    "investmentHypotheses": [
+      "Statute is positioned to become the default tool for its niche in legal tech if the current adoption curve holds.",
+      "Early usage signal suggests the core wedge resonates before any paid acquisition spend."
+    ],
+    "swot": {
+      "strengths": [
+        "Founding team has directly relevant domain background in legal tech",
+        "Early signal of customer or user pull ahead of formal GTM"
+      ],
+      "weaknesses": [
+        "Category awareness among buyers is still early",
+        "Team has not yet proven ability to scale go-to-market"
+      ],
+      "opportunities": [
+        "Expansion into adjacent use cases within legal tech",
+        "Potential for usage-based pricing as volume grows"
+      ],
+      "threats": [
+        "Larger incumbents could add a competing feature",
+        "Category timing risk if adoption curve is slower than modeled"
+      ]
+    },
+    "problemProduct": {
+      "problem": "Statute reviews inbound contracts against a company's own playbook and drafts redlines in-house counsel can approve in minutes.",
+      "product": "Statute approaches this by focusing narrowly on ai contract redline assistant for in-house counsel, prioritizing depth in one workflow over breadth."
+    },
+    "tractionKpis": [
+      {
+        "label": "Stage",
+        "value": "Seed",
+        "asOf": "2026-07-15"
+      },
+      {
+        "label": "Momentum trend",
+        "value": "up",
+        "asOf": "2026-07-15"
+      }
+    ],
+    "teamHistory": {
+      "status": "available",
+      "value": "Founding team: Helena Brandt, Marcus Lee. Two-person founding team with complementary domain and technical backgrounds; no major gaps identified yet."
+    },
+    "technologyDefensibility": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "marketSizing": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "competition": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "dueDiligenceLog": {
+      "status": "available",
+      "value": {
+        "verifiedCount": 9,
+        "openCount": 6,
+        "contradictedCount": 3,
+        "lastUpdated": "2026-07-15"
+      }
+    },
+    "financials": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "capTable": {
+      "status": "not_disclosed",
+      "value": null
+    },
+    "exitPerspective": {
+      "status": "unavailable_at_this_stage",
+      "value": null
+    },
+    "decision": {
+      "recommendation": "invest",
+      "checkSize": 100000,
+      "rationale": "Strong composite signal across founder, market, and idea axes supports moving forward.",
+      "adversarialView": {
+        "counterThesis": "Momentum data is early and could reflect a founder-led spike rather than a durable trend.",
+        "keyRisks": [
+          "Limited operating history",
+          "Market timing unconfirmed",
+          "Thesis fit may shift as more comparable deals are screened"
+        ],
+        "whatWouldChangeOurMind": "A second consecutive quarter of the same momentum trend would materially increase conviction."
+      },
+      "portfolioFit": {
+        "overlapWith": [],
+        "diversificationNote": "Adds legal tech exposure to the portfolio.",
+        "concentrationRisk": "low",
+        "fitScore": 82
+      },
+      "decidedDate": null
+    }
+  }
+]

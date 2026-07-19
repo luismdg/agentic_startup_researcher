@@ -1,0 +1,902 @@
+[
+  {
+    "startupId": "su-01",
+    "founder": {
+      "score": 76,
+      "trend": "down",
+      "rationale": "Team shows real execution ability but has open questions on scaling past founder-led sales/eng."
+    },
+    "market": {
+      "score": 73,
+      "trend": "down",
+      "rationale": "Market timing looks right but category is still being defined; adoption curve uncertain."
+    },
+    "ideaMarketFit": {
+      "score": 77,
+      "trend": "up",
+      "rationale": "Idea-market fit is directionally right but the wedge may be too narrow to anchor a platform."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 68,
+        "market": 61,
+        "idea": 69
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 71,
+        "market": 65,
+        "idea": 72
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 72,
+        "market": 69,
+        "idea": 73
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 75,
+        "market": 70,
+        "idea": 76
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 76,
+        "market": 74,
+        "idea": 77
+      }
+    ]
+  },
+  {
+    "startupId": "su-02",
+    "founder": {
+      "score": 75,
+      "trend": "flat",
+      "rationale": "Team shows real execution ability but has open questions on scaling past founder-led sales/eng."
+    },
+    "market": {
+      "score": 69,
+      "trend": "down",
+      "rationale": "Market timing looks right but category is still being defined; adoption curve uncertain."
+    },
+    "ideaMarketFit": {
+      "score": 73,
+      "trend": "up",
+      "rationale": "Idea-market fit is directionally right but the wedge may be too narrow to anchor a platform."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 67,
+        "market": 57,
+        "idea": 65
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 70,
+        "market": 61,
+        "idea": 68
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 71,
+        "market": 65,
+        "idea": 69
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 74,
+        "market": 66,
+        "idea": 72
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 75,
+        "market": 70,
+        "idea": 73
+      }
+    ]
+  },
+  {
+    "startupId": "su-03",
+    "founder": {
+      "score": 86,
+      "trend": "up",
+      "rationale": "Domain depth and prior execution track record substantially de-risk the team axis."
+    },
+    "market": {
+      "score": 86,
+      "trend": "up",
+      "rationale": "Large, growing TAM with clear willingness to pay already demonstrated by design partners."
+    },
+    "ideaMarketFit": {
+      "score": 86,
+      "trend": "flat",
+      "rationale": "Product wedge maps tightly to a painful, underserved workflow with few credible substitutes."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 78,
+        "market": 74,
+        "idea": 78
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 81,
+        "market": 78,
+        "idea": 81
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 82,
+        "market": 82,
+        "idea": 82
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 85,
+        "market": 83,
+        "idea": 85
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 86,
+        "market": 87,
+        "idea": 86
+      }
+    ]
+  },
+  {
+    "startupId": "su-04",
+    "founder": {
+      "score": 79,
+      "trend": "flat",
+      "rationale": "Domain depth and prior execution track record substantially de-risk the team axis."
+    },
+    "market": {
+      "score": 72,
+      "trend": "flat",
+      "rationale": "Market timing looks right but category is still being defined; adoption curve uncertain."
+    },
+    "ideaMarketFit": {
+      "score": 83,
+      "trend": "down",
+      "rationale": "Product wedge maps tightly to a painful, underserved workflow with few credible substitutes."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 71,
+        "market": 60,
+        "idea": 75
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 74,
+        "market": 64,
+        "idea": 78
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 75,
+        "market": 68,
+        "idea": 79
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 78,
+        "market": 69,
+        "idea": 82
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 79,
+        "market": 73,
+        "idea": 83
+      }
+    ]
+  },
+  {
+    "startupId": "su-05",
+    "founder": {
+      "score": 76,
+      "trend": "down",
+      "rationale": "Team shows real execution ability but has open questions on scaling past founder-led sales/eng."
+    },
+    "market": {
+      "score": 59,
+      "trend": "up",
+      "rationale": "Niche or slow-moving market; expansion path beyond the initial wedge is unproven."
+    },
+    "ideaMarketFit": {
+      "score": 83,
+      "trend": "down",
+      "rationale": "Product wedge maps tightly to a painful, underserved workflow with few credible substitutes."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 68,
+        "market": 47,
+        "idea": 75
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 71,
+        "market": 51,
+        "idea": 78
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 72,
+        "market": 55,
+        "idea": 79
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 75,
+        "market": 56,
+        "idea": 82
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 76,
+        "market": 60,
+        "idea": 83
+      }
+    ]
+  },
+  {
+    "startupId": "su-06",
+    "founder": {
+      "score": 64,
+      "trend": "down",
+      "rationale": "Team shows real execution ability but has open questions on scaling past founder-led sales/eng."
+    },
+    "market": {
+      "score": 51,
+      "trend": "up",
+      "rationale": "Niche or slow-moving market; expansion path beyond the initial wedge is unproven."
+    },
+    "ideaMarketFit": {
+      "score": 52,
+      "trend": "up",
+      "rationale": "Idea overlaps meaningfully with adjacent tooling; differentiation rests on execution, not concept."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 56,
+        "market": 39,
+        "idea": 44
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 59,
+        "market": 43,
+        "idea": 47
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 60,
+        "market": 47,
+        "idea": 48
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 63,
+        "market": 48,
+        "idea": 51
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 64,
+        "market": 52,
+        "idea": 52
+      }
+    ]
+  },
+  {
+    "startupId": "su-07",
+    "founder": {
+      "score": 46,
+      "trend": "up",
+      "rationale": "First venture with no prior outcome data; execution ability inferred from proxy signals only."
+    },
+    "market": {
+      "score": 43,
+      "trend": "up",
+      "rationale": "Niche or slow-moving market; expansion path beyond the initial wedge is unproven."
+    },
+    "ideaMarketFit": {
+      "score": 46,
+      "trend": "flat",
+      "rationale": "Idea overlaps meaningfully with adjacent tooling; differentiation rests on execution, not concept."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 38,
+        "market": 31,
+        "idea": 38
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 41,
+        "market": 35,
+        "idea": 41
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 42,
+        "market": 39,
+        "idea": 42
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 45,
+        "market": 40,
+        "idea": 45
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 46,
+        "market": 44,
+        "idea": 46
+      }
+    ]
+  },
+  {
+    "startupId": "su-08",
+    "founder": {
+      "score": 66,
+      "trend": "up",
+      "rationale": "Team shows real execution ability but has open questions on scaling past founder-led sales/eng."
+    },
+    "market": {
+      "score": 69,
+      "trend": "down",
+      "rationale": "Market timing looks right but category is still being defined; adoption curve uncertain."
+    },
+    "ideaMarketFit": {
+      "score": 68,
+      "trend": "up",
+      "rationale": "Idea-market fit is directionally right but the wedge may be too narrow to anchor a platform."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 58,
+        "market": 57,
+        "idea": 60
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 61,
+        "market": 61,
+        "idea": 63
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 62,
+        "market": 65,
+        "idea": 64
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 65,
+        "market": 66,
+        "idea": 67
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 66,
+        "market": 70,
+        "idea": 68
+      }
+    ]
+  },
+  {
+    "startupId": "su-09",
+    "founder": {
+      "score": 95,
+      "trend": "flat",
+      "rationale": "Domain depth and prior execution track record substantially de-risk the team axis."
+    },
+    "market": {
+      "score": 78,
+      "trend": "up",
+      "rationale": "Large, growing TAM with clear willingness to pay already demonstrated by design partners."
+    },
+    "ideaMarketFit": {
+      "score": 95,
+      "trend": "down",
+      "rationale": "Product wedge maps tightly to a painful, underserved workflow with few credible substitutes."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 87,
+        "market": 66,
+        "idea": 87
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 90,
+        "market": 70,
+        "idea": 90
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 91,
+        "market": 74,
+        "idea": 91
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 94,
+        "market": 75,
+        "idea": 94
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 95,
+        "market": 79,
+        "idea": 95
+      }
+    ]
+  },
+  {
+    "startupId": "su-10",
+    "founder": {
+      "score": 43,
+      "trend": "flat",
+      "rationale": "First venture with no prior outcome data; execution ability inferred from proxy signals only."
+    },
+    "market": {
+      "score": 45,
+      "trend": "down",
+      "rationale": "Niche or slow-moving market; expansion path beyond the initial wedge is unproven."
+    },
+    "ideaMarketFit": {
+      "score": 60,
+      "trend": "up",
+      "rationale": "Idea-market fit is directionally right but the wedge may be too narrow to anchor a platform."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 35,
+        "market": 33,
+        "idea": 52
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 38,
+        "market": 37,
+        "idea": 55
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 39,
+        "market": 41,
+        "idea": 56
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 42,
+        "market": 42,
+        "idea": 59
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 43,
+        "market": 46,
+        "idea": 60
+      }
+    ]
+  },
+  {
+    "startupId": "su-11",
+    "founder": {
+      "score": 68,
+      "trend": "down",
+      "rationale": "Team shows real execution ability but has open questions on scaling past founder-led sales/eng."
+    },
+    "market": {
+      "score": 66,
+      "trend": "up",
+      "rationale": "Market timing looks right but category is still being defined; adoption curve uncertain."
+    },
+    "ideaMarketFit": {
+      "score": 62,
+      "trend": "flat",
+      "rationale": "Idea-market fit is directionally right but the wedge may be too narrow to anchor a platform."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 60,
+        "market": 54,
+        "idea": 54
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 63,
+        "market": 58,
+        "idea": 57
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 64,
+        "market": 62,
+        "idea": 58
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 67,
+        "market": 63,
+        "idea": 61
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 68,
+        "market": 67,
+        "idea": 62
+      }
+    ]
+  },
+  {
+    "startupId": "su-12",
+    "founder": {
+      "score": 87,
+      "trend": "flat",
+      "rationale": "Domain depth and prior execution track record substantially de-risk the team axis."
+    },
+    "market": {
+      "score": 85,
+      "trend": "down",
+      "rationale": "Large, growing TAM with clear willingness to pay already demonstrated by design partners."
+    },
+    "ideaMarketFit": {
+      "score": 79,
+      "trend": "down",
+      "rationale": "Product wedge maps tightly to a painful, underserved workflow with few credible substitutes."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 79,
+        "market": 73,
+        "idea": 71
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 82,
+        "market": 77,
+        "idea": 74
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 83,
+        "market": 81,
+        "idea": 75
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 86,
+        "market": 82,
+        "idea": 78
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 87,
+        "market": 86,
+        "idea": 79
+      }
+    ]
+  },
+  {
+    "startupId": "su-13",
+    "founder": {
+      "score": 64,
+      "trend": "down",
+      "rationale": "Team shows real execution ability but has open questions on scaling past founder-led sales/eng."
+    },
+    "market": {
+      "score": 43,
+      "trend": "up",
+      "rationale": "Niche or slow-moving market; expansion path beyond the initial wedge is unproven."
+    },
+    "ideaMarketFit": {
+      "score": 64,
+      "trend": "up",
+      "rationale": "Idea-market fit is directionally right but the wedge may be too narrow to anchor a platform."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 56,
+        "market": 31,
+        "idea": 56
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 59,
+        "market": 35,
+        "idea": 59
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 60,
+        "market": 39,
+        "idea": 60
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 63,
+        "market": 40,
+        "idea": 63
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 64,
+        "market": 44,
+        "idea": 64
+      }
+    ]
+  },
+  {
+    "startupId": "su-14",
+    "founder": {
+      "score": 57,
+      "trend": "up",
+      "rationale": "First venture with no prior outcome data; execution ability inferred from proxy signals only."
+    },
+    "market": {
+      "score": 53,
+      "trend": "down",
+      "rationale": "Niche or slow-moving market; expansion path beyond the initial wedge is unproven."
+    },
+    "ideaMarketFit": {
+      "score": 64,
+      "trend": "up",
+      "rationale": "Idea-market fit is directionally right but the wedge may be too narrow to anchor a platform."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 49,
+        "market": 41,
+        "idea": 56
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 52,
+        "market": 45,
+        "idea": 59
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 53,
+        "market": 49,
+        "idea": 60
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 56,
+        "market": 50,
+        "idea": 63
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 57,
+        "market": 54,
+        "idea": 64
+      }
+    ]
+  },
+  {
+    "startupId": "su-15",
+    "founder": {
+      "score": 77,
+      "trend": "up",
+      "rationale": "Team shows real execution ability but has open questions on scaling past founder-led sales/eng."
+    },
+    "market": {
+      "score": 71,
+      "trend": "up",
+      "rationale": "Market timing looks right but category is still being defined; adoption curve uncertain."
+    },
+    "ideaMarketFit": {
+      "score": 82,
+      "trend": "flat",
+      "rationale": "Product wedge maps tightly to a painful, underserved workflow with few credible substitutes."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 69,
+        "market": 59,
+        "idea": 74
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 72,
+        "market": 63,
+        "idea": 77
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 73,
+        "market": 67,
+        "idea": 78
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 76,
+        "market": 68,
+        "idea": 81
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 77,
+        "market": 72,
+        "idea": 82
+      }
+    ]
+  },
+  {
+    "startupId": "su-16",
+    "founder": {
+      "score": 54,
+      "trend": "up",
+      "rationale": "First venture with no prior outcome data; execution ability inferred from proxy signals only."
+    },
+    "market": {
+      "score": 66,
+      "trend": "up",
+      "rationale": "Market timing looks right but category is still being defined; adoption curve uncertain."
+    },
+    "ideaMarketFit": {
+      "score": 55,
+      "trend": "down",
+      "rationale": "Idea overlaps meaningfully with adjacent tooling; differentiation rests on execution, not concept."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 46,
+        "market": 54,
+        "idea": 47
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 49,
+        "market": 58,
+        "idea": 50
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 50,
+        "market": 62,
+        "idea": 51
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 53,
+        "market": 63,
+        "idea": 54
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 54,
+        "market": 67,
+        "idea": 55
+      }
+    ]
+  },
+  {
+    "startupId": "su-17",
+    "founder": {
+      "score": 55,
+      "trend": "flat",
+      "rationale": "First venture with no prior outcome data; execution ability inferred from proxy signals only."
+    },
+    "market": {
+      "score": 39,
+      "trend": "up",
+      "rationale": "Niche or slow-moving market; expansion path beyond the initial wedge is unproven."
+    },
+    "ideaMarketFit": {
+      "score": 51,
+      "trend": "down",
+      "rationale": "Idea overlaps meaningfully with adjacent tooling; differentiation rests on execution, not concept."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 47,
+        "market": 30,
+        "idea": 43
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 50,
+        "market": 31,
+        "idea": 46
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 51,
+        "market": 35,
+        "idea": 47
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 54,
+        "market": 36,
+        "idea": 50
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 55,
+        "market": 40,
+        "idea": 51
+      }
+    ]
+  },
+  {
+    "startupId": "su-18",
+    "founder": {
+      "score": 84,
+      "trend": "down",
+      "rationale": "Domain depth and prior execution track record substantially de-risk the team axis."
+    },
+    "market": {
+      "score": 72,
+      "trend": "flat",
+      "rationale": "Market timing looks right but category is still being defined; adoption curve uncertain."
+    },
+    "ideaMarketFit": {
+      "score": 80,
+      "trend": "up",
+      "rationale": "Product wedge maps tightly to a painful, underserved workflow with few credible substitutes."
+    },
+    "history": [
+      {
+        "date": "2026-03-15",
+        "founder": 76,
+        "market": 60,
+        "idea": 72
+      },
+      {
+        "date": "2026-04-15",
+        "founder": 79,
+        "market": 64,
+        "idea": 75
+      },
+      {
+        "date": "2026-05-15",
+        "founder": 80,
+        "market": 68,
+        "idea": 76
+      },
+      {
+        "date": "2026-06-15",
+        "founder": 83,
+        "market": 69,
+        "idea": 79
+      },
+      {
+        "date": "2026-07-15",
+        "founder": 84,
+        "market": 73,
+        "idea": 80
+      }
+    ]
+  }
+]

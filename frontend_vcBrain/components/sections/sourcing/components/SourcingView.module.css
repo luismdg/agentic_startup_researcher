@@ -1,0 +1,5 @@
+.meta {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}

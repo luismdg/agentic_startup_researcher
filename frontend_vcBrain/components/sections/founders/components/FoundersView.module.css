@@ -1,0 +1,3 @@
+.scoreInput {
+  max-width: calc(var(--space-8) * 2);
+}

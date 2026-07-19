@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Reasoning & Experience{% endblock %}
+{% block content %}
+
+<h2>Ranked opportunities</h2>
+<p class="fit-line">
+  {{ thesis.sectors | join(', ') }} &middot; {{ thesis.stages | join(', ') }} &middot;
+  {{ thesis.geographies | join(', ') }} &middot;
+  ${{ '{:,.0f}'.format(thesis.check_size_min_usd) }}-${{ '{:,.0f}'.format(thesis.check_size_max_usd) }} &middot;
+  target {{ '{:.0%}'.format(thesis.target_ownership_pct) }} ownership &middot; {{ thesis.risk_appetite }} risk
+</p>
+
+{% if rows %}
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Sector / Stage</th>
+      <th>Thesis fit</th>
+      <th>Axis scores</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      <td class="company-cell">
+        <div class="name">{{ row.company.name }}</div>
+        <div class="oneliner">{{ row.company.one_liner }}</div>
+      </td>
+      <td>{{ row.company.sector }} / {{ row.company.stage or 'stage unknown' }}<br><span class="oneliner">{{ row.company.geography or 'geography unknown' }}</span></td>
+      <td>
+        {% if row.fit.passes_hard_filters %}
+          <span class="badge badge-pass">fits thesis</span>
+        {% else %}
+          <span class="badge badge-fail">{{ row.fit.hard_filter_failures | length }} filter miss</span>
+        {% endif %}
+        <br>
+        {% set fclass = {"likely": "badge-pass", "stretch": "badge-stretch", "unlikely": "badge-fail", "unknown": "badge-unknown"}[row.fit.ownership_feasibility] %}
+        <span class="badge {{ fclass }}" style="margin-top:4px;">ownership: {{ row.fit.ownership_feasibility }}</span>
+      </td>
+      <td>
+        {% if row.scores %}
+        <div class="axis-mini">
+          {% for name, axis in [("Founder", row.scores.founder), ("Market", row.scores.market), ("Idea x Mkt", row.scores.idea_market_fit)] %}
+          <span class="axis">
+            <span class="axis-name">{{ name }}</span>
+            <strong>{{ axis.score }}</strong>
+            {% if axis.trend == "improving" %}<span class="trend-up">&uarr;</span>
+            {% elif axis.trend == "declining" %}<span class="trend-down">&darr;</span>
+            {% else %}<span class="trend-stable">&rarr;</span>{% endif %}
+          </span>
+          {% endfor %}
+        </div>
+        {% else %}
+          <span class="oneliner">not scored yet</span>
+        {% endif %}
+      </td>
+      <td>
+        {% if row.scores %}
+          <a class="btn" href="/memo/{{ row.company.id }}">View memo</a>
+        {% else %}
+          <form method="post" action="/score/{{ row.company.id }}">
+            <button class="btn btn-ghost" type="submit">Score</button>
+          </form>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="empty-state">No companies in the pipeline yet.</p>
+{% endif %}
+
+{% endblock %}

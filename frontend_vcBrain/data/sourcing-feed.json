@@ -1,0 +1,376 @@
+[
+  {
+    "id": "sf-1",
+    "track": "inbound",
+    "date": "2026-02-15",
+    "startupName": "Ledgerline",
+    "founderNames": [
+      "Priya Chandrasekaran"
+    ],
+    "channel": "Warm intro: portfolio founder",
+    "channelType": "network",
+    "summary": "Ledgerline applied directly with a deck outlining real-time settlement rails for cross-border payments.",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-01"
+  },
+  {
+    "id": "sf-2",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Terraware",
+    "founderNames": [
+      "Marcus Oyelaran",
+      "Ingrid Vasko"
+    ],
+    "channel": "Hackathon: HackNation",
+    "channelType": "hackathon",
+    "summary": "Surfaced via Hackathon: HackNation based on activity signals matching current thesis (climate).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-02"
+  },
+  {
+    "id": "sf-3",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Fluxbase",
+    "founderNames": [
+      "Dev Patel"
+    ],
+    "channel": "arXiv preprint alert",
+    "channelType": "research",
+    "summary": "Surfaced via arXiv preprint alert based on activity signals matching current thesis (developer tools).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-03"
+  },
+  {
+    "id": "sf-4",
+    "track": "inbound",
+    "date": "2026-02-15",
+    "startupName": "Proteova",
+    "founderNames": [
+      "Dr. Lina Feuerstein",
+      "Tobias Reyn"
+    ],
+    "channel": "Conference application: Cascade Summit",
+    "channelType": "community",
+    "summary": "Proteova applied directly with a deck outlining generative binder design for undruggable targets.",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-04"
+  },
+  {
+    "id": "sf-5",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Radiant Health",
+    "founderNames": [
+      "Amara Nwosu"
+    ],
+    "channel": "Accelerator demo day: Southern Cross",
+    "channelType": "accelerator",
+    "summary": "Surfaced via Accelerator demo day: Southern Cross based on activity signals matching current thesis (healthcare ai).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-05"
+  },
+  {
+    "id": "sf-6",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Ferrovia Robotics",
+    "founderNames": [
+      "Erik Solberg"
+    ],
+    "channel": "Google Search: spinout & launch signals",
+    "channelType": "web",
+    "summary": "Surfaced via a Google Search sweep for robotics spinouts based on activity signals matching current thesis (robotics).",
+    "status": "passed",
+    "activated": false,
+    "activatedDate": null,
+    "linkedStartupId": "su-06"
+  },
+  {
+    "id": "sf-7",
+    "track": "inbound",
+    "date": "2026-02-15",
+    "startupName": "Campfire",
+    "founderNames": [
+      "Jasmine Ruiz"
+    ],
+    "channel": "Cold application: deck + name",
+    "channelType": "direct",
+    "summary": "Campfire applied directly with a deck outlining async, audio-only spaces for close friend groups.",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-07"
+  },
+  {
+    "id": "sf-8",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Solvent",
+    "founderNames": [
+      "Michael Tran",
+      "Aaliyah Brooks"
+    ],
+    "channel": "GitHub trending",
+    "channelType": "github",
+    "summary": "Surfaced via GitHub trending based on activity signals matching current thesis (edtech).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-08"
+  },
+  {
+    "id": "sf-9",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Wardline",
+    "founderNames": [
+      "Nate Kowalski"
+    ],
+    "channel": "Hackathon: HackNation",
+    "channelType": "hackathon",
+    "summary": "Surfaced via Hackathon: HackNation based on activity signals matching current thesis (cybersecurity).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-09"
+  },
+  {
+    "id": "sf-10",
+    "track": "inbound",
+    "date": "2026-02-15",
+    "startupName": "Fieldhand",
+    "founderNames": [
+      "Grant Whitfield"
+    ],
+    "channel": "Referral: existing LP",
+    "channelType": "network",
+    "summary": "Fieldhand applied directly with a deck outlining peer-to-peer marketplace for farm equipment.",
+    "status": "reviewing",
+    "activated": false,
+    "activatedDate": null,
+    "linkedStartupId": "su-10"
+  },
+  {
+    "id": "sf-11",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Portway",
+    "founderNames": [
+      "Sana Malik"
+    ],
+    "channel": "Accelerator demo day: Forge Labs",
+    "channelType": "accelerator",
+    "summary": "Surfaced via Accelerator demo day: Forge Labs based on activity signals matching current thesis (logistics).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-11"
+  },
+  {
+    "id": "sf-12",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Kernelforge",
+    "founderNames": [
+      "Yusuf Demir",
+      "Chen Wei"
+    ],
+    "channel": "Google Search: GPU scheduling launch signals",
+    "channelType": "web",
+    "summary": "Surfaced via a Google Search sweep for GPU infra launches based on activity signals matching current thesis (ai infrastructure).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-12"
+  },
+  {
+    "id": "sf-13",
+    "track": "inbound",
+    "date": "2026-02-15",
+    "startupName": "Aphelion Systems",
+    "founderNames": [
+      "Dana Ashworth"
+    ],
+    "channel": "Warm intro: co-investor",
+    "channelType": "network",
+    "summary": "Aphelion Systems applied directly with a deck outlining robotic arms for in-orbit satellite servicing.",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-13"
+  },
+  {
+    "id": "sf-14",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Rootsignal",
+    "founderNames": [
+      "Beto Nascimento"
+    ],
+    "channel": "Open-source maintainer outreach",
+    "channelType": "github",
+    "summary": "Surfaced via Open-source maintainer outreach based on activity signals matching current thesis (agtech).",
+    "status": "reviewing",
+    "activated": false,
+    "activatedDate": null,
+    "linkedStartupId": "su-14"
+  },
+  {
+    "id": "sf-15",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Lintel",
+    "founderNames": [
+      "Owen Faircloth",
+      "Priyanka Seth"
+    ],
+    "channel": "GitHub trending",
+    "channelType": "github",
+    "summary": "Surfaced via GitHub trending based on activity signals matching current thesis (proptech / fintech).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-15"
+  },
+  {
+    "id": "sf-16",
+    "track": "inbound",
+    "date": "2026-02-15",
+    "startupName": "Nightlatch",
+    "founderNames": [
+      "Theo Marchetti"
+    ],
+    "channel": "Warm intro: portfolio founder",
+    "channelType": "network",
+    "summary": "Nightlatch applied directly with a deck outlining netcode tooling for indie multiplayer games.",
+    "status": "passed",
+    "activated": false,
+    "activatedDate": null,
+    "linkedStartupId": "su-16"
+  },
+  {
+    "id": "sf-17",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Voltaic Labs",
+    "founderNames": [
+      "Ravi Kohli"
+    ],
+    "channel": "arXiv preprint alert",
+    "channelType": "research",
+    "summary": "Surfaced via arXiv preprint alert based on activity signals matching current thesis (hardware / mobility).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-17"
+  },
+  {
+    "id": "sf-18",
+    "track": "outbound",
+    "date": "2026-02-15",
+    "startupName": "Statute",
+    "founderNames": [
+      "Helena Brandt",
+      "Marcus Lee"
+    ],
+    "channel": "Accelerator demo day: Forge Labs",
+    "channelType": "accelerator",
+    "summary": "Surfaced via Accelerator demo day: Forge Labs based on activity signals matching current thesis (legal tech).",
+    "status": "activated",
+    "activated": true,
+    "activatedDate": "2026-03-15",
+    "linkedStartupId": "su-18"
+  },
+  {
+    "id": "sf-19",
+    "track": "outbound",
+    "date": "2026-04-15",
+    "startupName": "Hollowpoint Analytics",
+    "founderNames": [
+      "Unknown — repo maintainer anonymous"
+    ],
+    "channel": "GitHub trending",
+    "channelType": "github",
+    "summary": "Small team shipping an open-source anomaly detection library gaining traction among SRE teams; no application yet.",
+    "status": "new",
+    "activated": false,
+    "activatedDate": null,
+    "linkedStartupId": null
+  },
+  {
+    "id": "sf-20",
+    "track": "outbound",
+    "date": "2026-05-15",
+    "startupName": "Cascade Bio",
+    "founderNames": [
+      "Dr. research lead, unconfirmed"
+    ],
+    "channel": "arXiv preprint alert",
+    "channelType": "research",
+    "summary": "Academic lab preprint on mRNA delivery efficiency; PI has not indicated commercial intent yet.",
+    "status": "new",
+    "activated": false,
+    "activatedDate": null,
+    "linkedStartupId": null
+  },
+  {
+    "id": "sf-21",
+    "track": "outbound",
+    "date": "2026-06-15",
+    "startupName": "Fernline",
+    "founderNames": [
+      "Founder name pending intro"
+    ],
+    "channel": "Accelerator demo day: Forge Labs",
+    "channelType": "accelerator",
+    "summary": "Two-person team building supply-chain visibility tooling for produce distributors; demo day pitch flagged internally.",
+    "status": "new",
+    "activated": false,
+    "activatedDate": null,
+    "linkedStartupId": null
+  },
+  {
+    "id": "sf-22",
+    "track": "outbound",
+    "date": "2026-07-15",
+    "startupName": "Basecamp Legal Ops",
+    "founderNames": [
+      "Team of 3, names pending"
+    ],
+    "channel": "Hackathon: HackNation",
+    "channelType": "hackathon",
+    "summary": "Hackathon winner building legal ops workflow automation; reached out post-event but no deck yet.",
+    "status": "new",
+    "activated": false,
+    "activatedDate": null,
+    "linkedStartupId": null
+  },
+  {
+    "id": "sf-23",
+    "track": "outbound",
+    "date": "2026-07-01",
+    "startupName": "Northwind Analytics",
+    "founderNames": [
+      "Founder name pending intro"
+    ],
+    "channel": "Google Search: press mention sweep",
+    "channelType": "web",
+    "summary": "Surfaced via a Google Search sweep for recent seed-stage press mentions; no deck or direct contact yet.",
+    "status": "new",
+    "activated": false,
+    "activatedDate": null,
+    "linkedStartupId": null
+  }
+]

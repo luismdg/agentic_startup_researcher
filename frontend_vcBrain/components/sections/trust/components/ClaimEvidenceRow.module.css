@@ -1,0 +1,62 @@
+.wrapper {
+  border-bottom: 1px solid var(--color-border);
+  border-left: 3px solid transparent;
+}
+
+.wrapper:last-child {
+  border-bottom: none;
+}
+
+.contradicted {
+  border-left-color: var(--color-danger);
+  background: var(--color-danger-soft);
+}
+
+.summaryContent {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.claimText {
+  min-width: 0;
+}
+
+.detailList {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: var(--space-3);
+  row-gap: var(--space-2);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.detailLabel {
+  white-space: nowrap;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.detailValue {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.contradictionBlock {
+  padding: var(--space-3);
+  background: var(--color-danger-soft);
+  border-radius: var(--radius-sm);
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+}
+
+.contradictionLabel {
+  font-weight: var(--font-weight-medium);
+}
+
+.contradictionText {
+  color: var(--color-danger);
+}

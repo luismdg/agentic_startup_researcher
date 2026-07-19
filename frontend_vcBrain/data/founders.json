@@ -1,0 +1,697 @@
+[
+  {
+    "id": "fo-01",
+    "name": "Priya Chandrasekaran",
+    "initials": "PC",
+    "location": "New York, NY",
+    "currentStartupId": "su-01",
+    "founderScore": 84,
+    "founderScoreTrend": "up",
+    "archetype": "Technical operator",
+    "firstTimeFounder": false,
+    "bio": "Spent seven years building settlement infrastructure at a tier-1 card network before going independent. Shipped the FX netting engine still running in production at two banks.",
+    "priorVentures": [
+      {
+        "name": "Meridian Clearing (acquired)",
+        "role": "Co-founder & CTO",
+        "outcome": "Acquired by a regional bank holding co. for an undisclosed sum after 3 years",
+        "yearStart": 2018,
+        "yearEnd": 2021
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2021-03-01",
+        "label": "Meridian Clearing acquired",
+        "detail": "Sold engineering team and IP to a regional bank holding company."
+      },
+      {
+        "date": "2021-09-15",
+        "label": "Joined a payments infra team as principal engineer",
+        "detail": "Rebuilt cross-border netting for a top-5 card network."
+      },
+      {
+        "date": "2024-01-10",
+        "label": "Founded Ledgerline",
+        "detail": "Left to build real-time cross-border settlement rails."
+      }
+    ]
+  },
+  {
+    "id": "fo-02",
+    "name": "Marcus Oyelaran",
+    "initials": "MO",
+    "location": "Nairobi, Kenya",
+    "currentStartupId": "su-02",
+    "founderScore": 77,
+    "founderScoreTrend": "up",
+    "archetype": "Domain-expert founder",
+    "firstTimeFounder": false,
+    "bio": "Former remote-sensing scientist at a regional agricultural ministry, spun out soil-carbon modeling work into a startup after a pilot with three cooperatives outperformed manual audits.",
+    "priorVentures": [
+      {
+        "name": "Kilimo Analytics",
+        "role": "Founder",
+        "outcome": "Wound down after 18 months when the core grant funder redirected budget",
+        "yearStart": 2019,
+        "yearEnd": 2021
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2019-04-01",
+        "label": "Founded Kilimo Analytics",
+        "detail": "Built yield-prediction models for smallholder cooperatives."
+      },
+      {
+        "date": "2021-02-01",
+        "label": "Wound down Kilimo Analytics",
+        "detail": "Grant funding redirected; returned to research role."
+      },
+      {
+        "date": "2023-06-01",
+        "label": "Founded Terraware with Ingrid Vasko",
+        "detail": "Applied prior modeling work to satellite-based carbon MRV."
+      }
+    ]
+  },
+  {
+    "id": "fo-03",
+    "name": "Ingrid Vasko",
+    "initials": "IV",
+    "location": "Nairobi, Kenya",
+    "currentStartupId": "su-02",
+    "founderScore": 81,
+    "founderScoreTrend": "flat",
+    "archetype": "Domain-expert founder",
+    "firstTimeFounder": true,
+    "bio": "PhD in remote sensing focused on canopy-density inversion models. Published the underlying MRV methodology Terraware licenses before co-founding the company.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2022-05-01",
+        "label": "Published soil-carbon MRV methodology",
+        "detail": "Peer-reviewed method now licensed to Terraware."
+      },
+      {
+        "date": "2023-06-01",
+        "label": "Co-founded Terraware",
+        "detail": "Joined Marcus Oyelaran to commercialize the methodology."
+      }
+    ]
+  },
+  {
+    "id": "fo-04",
+    "name": "Dev Patel",
+    "initials": "DP",
+    "location": "Austin, TX",
+    "currentStartupId": "su-03",
+    "founderScore": 72,
+    "founderScoreTrend": "up",
+    "archetype": "First-time technical founder",
+    "firstTimeFounder": true,
+    "bio": "Core contributor to a widely used Postgres extension for logical replication. No prior company; built Fluxbase's branching engine as an open-source side project that crossed 4,000 GitHub stars before incorporating.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2022-11-01",
+        "label": "Opened Fluxbase branching engine as OSS",
+        "detail": "Side project targeting CI-time database branching."
+      },
+      {
+        "date": "2023-08-20",
+        "label": "Crossed 4,000 GitHub stars",
+        "detail": "Organic adoption among CI/CD tooling teams triggered incorporation."
+      },
+      {
+        "date": "2023-10-01",
+        "label": "Incorporated Fluxbase",
+        "detail": "Left day job to build full-time."
+      }
+    ]
+  },
+  {
+    "id": "fo-05",
+    "name": "Dr. Lina Feuerstein",
+    "initials": "LF",
+    "location": "Basel, Switzerland",
+    "currentStartupId": "su-04",
+    "founderScore": 89,
+    "founderScoreTrend": "up",
+    "archetype": "Domain-expert founder",
+    "firstTimeFounder": false,
+    "bio": "Structural biologist, 12 years in computational protein design at a major pharma research org. Led the team that shipped two binder-design pipelines now used internally.",
+    "priorVentures": [
+      {
+        "name": "Structa Bio (acquired)",
+        "role": "Founder",
+        "outcome": "Acquired by a specialty biotech for its binder-screening pipeline",
+        "yearStart": 2016,
+        "yearEnd": 2020
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2016-01-15",
+        "label": "Founded Structa Bio",
+        "detail": "Built early ML-assisted binder screening tools."
+      },
+      {
+        "date": "2020-07-01",
+        "label": "Structa Bio acquired",
+        "detail": "Acquired by a specialty biotech for the screening pipeline."
+      },
+      {
+        "date": "2023-02-01",
+        "label": "Founded Proteova with Tobias Reyn",
+        "detail": "Generative protein binder design for undruggable targets."
+      }
+    ]
+  },
+  {
+    "id": "fo-06",
+    "name": "Tobias Reyn",
+    "initials": "TR",
+    "location": "Basel, Switzerland",
+    "currentStartupId": "su-04",
+    "founderScore": 75,
+    "founderScoreTrend": "flat",
+    "archetype": "Technical operator",
+    "firstTimeFounder": true,
+    "bio": "ML infrastructure engineer, previously scaled training pipelines at a genomics cloud platform. First company.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2023-02-01",
+        "label": "Co-founded Proteova",
+        "detail": "Joined Lina Feuerstein to build the training infrastructure."
+      }
+    ]
+  },
+  {
+    "id": "fo-07",
+    "name": "Amara Nwosu",
+    "initials": "AN",
+    "location": "Lagos, Nigeria",
+    "currentStartupId": "su-05",
+    "founderScore": 79,
+    "founderScoreTrend": "up",
+    "archetype": "Domain-expert founder",
+    "firstTimeFounder": true,
+    "bio": "Practicing radiologist for nine years across two rural referral hospitals before founding Radiant Health to close the diagnostic gap she saw firsthand. No prior startup experience.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2015-01-01",
+        "label": "Began radiology practice",
+        "detail": "Rural referral hospital, primary read volume of ~40 studies/day."
+      },
+      {
+        "date": "2023-09-01",
+        "label": "Founded Radiant Health",
+        "detail": "AI-assisted triage tool for radiology in underserved regions."
+      }
+    ]
+  },
+  {
+    "id": "fo-08",
+    "name": "Erik Solberg",
+    "initials": "ES",
+    "location": "Oslo, Norway",
+    "currentStartupId": "su-06",
+    "founderScore": 68,
+    "founderScoreTrend": "down",
+    "archetype": "Technical operator",
+    "firstTimeFounder": false,
+    "bio": "Ex-robotics lead at an industrial inspection contractor. Second company after a drone-mapping startup stalled on regulatory approval.",
+    "priorVentures": [
+      {
+        "name": "Skyline Survey",
+        "role": "Co-founder & CEO",
+        "outcome": "Shut down after failing to secure BVLOS flight approval in target markets",
+        "yearStart": 2019,
+        "yearEnd": 2022
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2019-03-01",
+        "label": "Founded Skyline Survey",
+        "detail": "Drone-based infrastructure mapping."
+      },
+      {
+        "date": "2022-04-01",
+        "label": "Shut down Skyline Survey",
+        "detail": "Regulatory approval for BVLOS flights never came through."
+      },
+      {
+        "date": "2023-11-01",
+        "label": "Founded Ferrovia Robotics",
+        "detail": "Rail-bound autonomous inspection, sidestepping airspace regulation."
+      }
+    ]
+  },
+  {
+    "id": "fo-09",
+    "name": "Jasmine Ruiz",
+    "initials": "JR",
+    "location": "Los Angeles, CA",
+    "currentStartupId": "su-07",
+    "founderScore": 61,
+    "founderScoreTrend": "flat",
+    "archetype": "First-time consumer founder",
+    "firstTimeFounder": true,
+    "bio": "Former product manager on a large chat platform's community features team. Left to build Campfire after noticing async voice notes outperforming text in internal experiments.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2024-02-01",
+        "label": "Founded Campfire",
+        "detail": "Async audio-only friend-group app."
+      }
+    ]
+  },
+  {
+    "id": "fo-10",
+    "name": "Michael Tran",
+    "initials": "MT",
+    "location": "Chicago, IL",
+    "currentStartupId": "su-08",
+    "founderScore": 70,
+    "founderScoreTrend": "up",
+    "archetype": "Domain-expert founder",
+    "firstTimeFounder": true,
+    "bio": "Community college math instructor for six years before building Solvent's first tutoring prototype for his own students.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2022-08-01",
+        "label": "Began piloting AI tutor prototype",
+        "detail": "Tested with own developmental-math sections."
+      },
+      {
+        "date": "2023-12-01",
+        "label": "Founded Solvent with Aaliyah Brooks",
+        "detail": "Scaled the prototype into a standalone product."
+      }
+    ]
+  },
+  {
+    "id": "fo-11",
+    "name": "Aaliyah Brooks",
+    "initials": "AB",
+    "location": "Chicago, IL",
+    "currentStartupId": "su-08",
+    "founderScore": 65,
+    "founderScoreTrend": "up",
+    "archetype": "Technical operator",
+    "firstTimeFounder": true,
+    "bio": "Full-stack engineer previously at an edtech content platform, joined Solvent to build the tutoring engine.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2023-12-01",
+        "label": "Co-founded Solvent",
+        "detail": "Joined as technical co-founder."
+      }
+    ]
+  },
+  {
+    "id": "fo-12",
+    "name": "Nate Kowalski",
+    "initials": "NK",
+    "location": "Seattle, WA",
+    "currentStartupId": "su-09",
+    "founderScore": 86,
+    "founderScoreTrend": "up",
+    "archetype": "Technical operator",
+    "firstTimeFounder": false,
+    "bio": "Built and sold a runtime application security tool; spent two years afterward researching agentic AI attack surfaces before founding Wardline.",
+    "priorVentures": [
+      {
+        "name": "Cordon Security (acquired)",
+        "role": "Founder & CEO",
+        "outcome": "Acquired by a public cybersecurity vendor",
+        "yearStart": 2017,
+        "yearEnd": 2022
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2017-06-01",
+        "label": "Founded Cordon Security",
+        "detail": "Runtime application self-protection tooling."
+      },
+      {
+        "date": "2022-05-01",
+        "label": "Cordon Security acquired",
+        "detail": "Acquired by a public cybersecurity vendor."
+      },
+      {
+        "date": "2024-03-01",
+        "label": "Founded Wardline",
+        "detail": "Runtime security for AI agent tool-calling."
+      }
+    ]
+  },
+  {
+    "id": "fo-13",
+    "name": "Grant Whitfield",
+    "initials": "GW",
+    "location": "Des Moines, IA",
+    "currentStartupId": "su-10",
+    "founderScore": 58,
+    "founderScoreTrend": "flat",
+    "archetype": "First-time domain founder",
+    "firstTimeFounder": true,
+    "bio": "Grew up on a fourth-generation family farm; built Fieldhand after repeatedly renting idle equipment from neighbors through a group text.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2024-04-01",
+        "label": "Founded Fieldhand",
+        "detail": "Marketplace for peer-to-peer farm equipment sharing."
+      }
+    ]
+  },
+  {
+    "id": "fo-14",
+    "name": "Sana Malik",
+    "initials": "SM",
+    "location": "Rotterdam, Netherlands",
+    "currentStartupId": "su-11",
+    "founderScore": 74,
+    "founderScoreTrend": "up",
+    "archetype": "Domain-expert founder",
+    "firstTimeFounder": false,
+    "bio": "Former port operations analyst; ran scheduling optimization pilots at one of Europe's largest container terminals before spinning the tooling out independently.",
+    "priorVentures": [
+      {
+        "name": "Quaydeck",
+        "role": "Co-founder",
+        "outcome": "Merged into a logistics software vendor in an acqui-hire",
+        "yearStart": 2020,
+        "yearEnd": 2022
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2020-02-01",
+        "label": "Founded Quaydeck",
+        "detail": "Terminal yard-scheduling software."
+      },
+      {
+        "date": "2022-06-01",
+        "label": "Quaydeck acqui-hired",
+        "detail": "Team joined a logistics software vendor."
+      },
+      {
+        "date": "2024-01-01",
+        "label": "Founded Portway",
+        "detail": "Drayage scheduling optimization for ports."
+      }
+    ]
+  },
+  {
+    "id": "fo-15",
+    "name": "Yusuf Demir",
+    "initials": "YD",
+    "location": "Berlin, Germany",
+    "currentStartupId": "su-12",
+    "founderScore": 80,
+    "founderScoreTrend": "up",
+    "archetype": "Technical operator",
+    "firstTimeFounder": false,
+    "bio": "Previously led the internal GPU scheduling platform at a European cloud provider. Second-time founder.",
+    "priorVentures": [
+      {
+        "name": "Batchline",
+        "role": "Founder",
+        "outcome": "Shut down after failing to reach product-market fit in HPC batch scheduling",
+        "yearStart": 2018,
+        "yearEnd": 2020
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2018-01-01",
+        "label": "Founded Batchline",
+        "detail": "HPC batch job scheduling for research clusters."
+      },
+      {
+        "date": "2020-03-01",
+        "label": "Shut down Batchline",
+        "detail": "Market too niche to sustain the company."
+      },
+      {
+        "date": "2023-10-01",
+        "label": "Founded Kernelforge with Chen Wei",
+        "detail": "GPU spot-market scheduler for AI training jobs."
+      }
+    ]
+  },
+  {
+    "id": "fo-16",
+    "name": "Chen Wei",
+    "initials": "CW",
+    "location": "Berlin, Germany",
+    "currentStartupId": "su-12",
+    "founderScore": 73,
+    "founderScoreTrend": "flat",
+    "archetype": "Technical operator",
+    "firstTimeFounder": true,
+    "bio": "Distributed systems engineer, previously built training-job orchestration at a foundation model lab.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2023-10-01",
+        "label": "Co-founded Kernelforge",
+        "detail": "Joined as technical co-founder."
+      }
+    ]
+  },
+  {
+    "id": "fo-17",
+    "name": "Dana Ashworth",
+    "initials": "DA",
+    "location": "Colorado Springs, CO",
+    "currentStartupId": "su-13",
+    "founderScore": 83,
+    "founderScoreTrend": "up",
+    "archetype": "Domain-expert founder",
+    "firstTimeFounder": false,
+    "bio": "Retired Space Force colonel who ran satellite servicing procurement programs before founding a first venture in orbital debris tracking.",
+    "priorVentures": [
+      {
+        "name": "Orbital Watch",
+        "role": "Founder",
+        "outcome": "Acquired by a space situational awareness company for its tracking dataset",
+        "yearStart": 2017,
+        "yearEnd": 2021
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2017-05-01",
+        "label": "Founded Orbital Watch",
+        "detail": "Debris tracking dataset and analytics."
+      },
+      {
+        "date": "2021-08-01",
+        "label": "Orbital Watch acquired",
+        "detail": "Acquired for its tracking dataset."
+      },
+      {
+        "date": "2023-05-01",
+        "label": "Founded Aphelion Systems",
+        "detail": "In-orbit servicing robotic arms."
+      }
+    ]
+  },
+  {
+    "id": "fo-18",
+    "name": "Beto Nascimento",
+    "initials": "BN",
+    "location": "Ribeirão Preto, Brazil",
+    "currentStartupId": "su-14",
+    "founderScore": 63,
+    "founderScoreTrend": "up",
+    "archetype": "First-time domain founder",
+    "firstTimeFounder": true,
+    "bio": "Agronomy engineer who built Rootsignal's first sensor prototype for his family's sugarcane operation before commercializing it.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2023-07-01",
+        "label": "Founded Rootsignal",
+        "detail": "Soil sensor network with irrigation AI."
+      }
+    ]
+  },
+  {
+    "id": "fo-19",
+    "name": "Owen Faircloth",
+    "initials": "OF",
+    "location": "Charlotte, NC",
+    "currentStartupId": "su-15",
+    "founderScore": 76,
+    "founderScoreTrend": "flat",
+    "archetype": "Domain-expert founder",
+    "firstTimeFounder": false,
+    "bio": "Former credit risk lead at a regional bank's small-multifamily lending desk. Second-time founder.",
+    "priorVentures": [
+      {
+        "name": "Brickline Capital",
+        "role": "Co-founder",
+        "outcome": "Wound down after failing to raise a lending facility",
+        "yearStart": 2019,
+        "yearEnd": 2021
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2019-01-01",
+        "label": "Founded Brickline Capital",
+        "detail": "Direct small-multifamily lending."
+      },
+      {
+        "date": "2021-09-01",
+        "label": "Wound down Brickline Capital",
+        "detail": "Could not secure a warehouse lending facility."
+      },
+      {
+        "date": "2023-11-01",
+        "label": "Founded Lintel with Priyanka Seth",
+        "detail": "AI underwriting software licensed to lenders instead of lending directly."
+      }
+    ]
+  },
+  {
+    "id": "fo-20",
+    "name": "Priyanka Seth",
+    "initials": "PS",
+    "location": "Charlotte, NC",
+    "currentStartupId": "su-15",
+    "founderScore": 71,
+    "founderScoreTrend": "up",
+    "archetype": "Technical operator",
+    "firstTimeFounder": true,
+    "bio": "Data scientist previously building risk models at a mortgage servicer, joined Lintel to build the underwriting engine.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2023-11-01",
+        "label": "Co-founded Lintel",
+        "detail": "Joined as technical co-founder."
+      }
+    ]
+  },
+  {
+    "id": "fo-21",
+    "name": "Theo Marchetti",
+    "initials": "TM",
+    "location": "Montreal, Canada",
+    "currentStartupId": "su-16",
+    "founderScore": 66,
+    "founderScoreTrend": "up",
+    "archetype": "First-time technical founder",
+    "firstTimeFounder": true,
+    "bio": "Netcode engineer at a mid-size game studio for five years, left to build Nightlatch after open-sourcing an internal rollback-netcode library.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2024-01-01",
+        "label": "Open-sourced rollback netcode library",
+        "detail": "Internal tool released publicly, gained traction among indie studios."
+      },
+      {
+        "date": "2024-06-01",
+        "label": "Founded Nightlatch",
+        "detail": "Commercialized tooling for indie multiplayer netcode."
+      }
+    ]
+  },
+  {
+    "id": "fo-22",
+    "name": "Ravi Kohli",
+    "initials": "RK",
+    "location": "Pune, India",
+    "currentStartupId": "su-17",
+    "founderScore": 69,
+    "founderScoreTrend": "flat",
+    "archetype": "Technical operator",
+    "firstTimeFounder": false,
+    "bio": "Battery pack design engineer for an e-scooter OEM; left after a recall to build safer, modular, repairable packs for micromobility.",
+    "priorVentures": [
+      {
+        "name": "Amp & Axle",
+        "role": "Founder",
+        "outcome": "Wound down after a supplier dispute over cell sourcing",
+        "yearStart": 2020,
+        "yearEnd": 2022
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2020-06-01",
+        "label": "Founded Amp & Axle",
+        "detail": "Battery swap network for e-scooters."
+      },
+      {
+        "date": "2022-02-01",
+        "label": "Wound down Amp & Axle",
+        "detail": "Cell supplier dispute made unit economics unworkable."
+      },
+      {
+        "date": "2023-09-01",
+        "label": "Founded Voltaic Labs",
+        "detail": "Open modular battery packs for e-bikes."
+      }
+    ]
+  },
+  {
+    "id": "fo-23",
+    "name": "Helena Brandt",
+    "initials": "HB",
+    "location": "London, UK",
+    "currentStartupId": "su-18",
+    "founderScore": 78,
+    "founderScoreTrend": "up",
+    "archetype": "Domain-expert founder",
+    "firstTimeFounder": true,
+    "bio": "In-house counsel for eight years at a mid-market industrials company, spent the last two managing external counsel spend on contract redlines she believed AI could handle.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2016-01-01",
+        "label": "Began in-house counsel career",
+        "detail": "Managed commercial contracts at an industrials company."
+      },
+      {
+        "date": "2024-02-01",
+        "label": "Founded Statute with Marcus Lee",
+        "detail": "AI contract redline assistant for in-house teams."
+      }
+    ]
+  },
+  {
+    "id": "fo-24",
+    "name": "Marcus Lee",
+    "initials": "ML",
+    "location": "London, UK",
+    "currentStartupId": "su-18",
+    "founderScore": 70,
+    "founderScoreTrend": "up",
+    "archetype": "Technical operator",
+    "firstTimeFounder": true,
+    "bio": "NLP engineer previously at a legal-research startup, joined Statute to build the clause-comparison engine.",
+    "priorVentures": [],
+    "timeline": [
+      {
+        "date": "2024-02-01",
+        "label": "Co-founded Statute",
+        "detail": "Joined as technical co-founder."
+      }
+    ]
+  }
+]

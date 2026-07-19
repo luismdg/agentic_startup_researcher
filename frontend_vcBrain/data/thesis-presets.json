@@ -1,0 +1,168 @@
+{
+  "activePresetId": "th-01",
+  "presets": [
+    {
+      "id": "th-01",
+      "name": "AI-Native Infrastructure",
+      "sectors": [
+        "AI Infrastructure",
+        "Developer Tools",
+        "Cybersecurity"
+      ],
+      "stages": [
+        "Pre-seed",
+        "Seed"
+      ],
+      "geographies": [
+        "North America",
+        "Europe"
+      ],
+      "checkSizeMin": 50000,
+      "checkSizeMax": 150000,
+      "ownershipTarget": 3,
+      "riskAppetite": "balanced",
+      "description": "Backing technical founders building the infrastructure layer underneath AI-native products, before category incumbents notice."
+    },
+    {
+      "id": "th-02",
+      "name": "Climate & Resource Systems",
+      "sectors": [
+        "Climate",
+        "Agtech",
+        "Energy"
+      ],
+      "stages": [
+        "Pre-seed",
+        "Seed"
+      ],
+      "geographies": [
+        "Global"
+      ],
+      "checkSizeMin": 50000,
+      "checkSizeMax": 100000,
+      "ownershipTarget": 2,
+      "riskAppetite": "conservative",
+      "description": "Measurement, monitoring, and optimization tooling for climate and resource-constrained systems, favoring hard-tech-adjacent teams with domain depth."
+    },
+    {
+      "id": "th-03",
+      "name": "Frontier Health & Bio",
+      "sectors": [
+        "Healthcare AI",
+        "Biotech / AI Drug Discovery"
+      ],
+      "stages": [
+        "Seed",
+        "Series A"
+      ],
+      "geographies": [
+        "Global"
+      ],
+      "checkSizeMin": 75000,
+      "checkSizeMax": 150000,
+      "ownershipTarget": 2,
+      "riskAppetite": "aggressive",
+      "description": "High-conviction bets on teams applying ML to biological and clinical problems with long payoff horizons but structurally large outcomes."
+    },
+    {
+      "id": "th-04",
+      "name": "Overlooked Geographies",
+      "sectors": [
+        "Fintech Infrastructure",
+        "Healthcare AI",
+        "Agtech",
+        "Marketplace / Agtech"
+      ],
+      "stages": [
+        "Pre-seed",
+        "Seed"
+      ],
+      "geographies": [
+        "Africa",
+        "Latin America",
+        "South Asia"
+      ],
+      "checkSizeMin": 50000,
+      "checkSizeMax": 100000,
+      "ownershipTarget": 3,
+      "riskAppetite": "balanced",
+      "description": "First-time founders solving structural problems in markets underserved by existing venture capital, where local domain expertise is the moat."
+    }
+  ],
+  "autoMapExamples": [
+    {
+      "rawInput": "seed-stage AI security startups in the US and Europe, first check",
+      "mappedSectors": [
+        "Cybersecurity",
+        "AI Infrastructure"
+      ],
+      "mappedStages": [
+        "Seed"
+      ],
+      "mappedGeographies": [
+        "North America",
+        "Europe"
+      ],
+      "confidence": "high"
+    },
+    {
+      "rawInput": "climate hardware, ok with pre-revenue, anywhere globally",
+      "mappedSectors": [
+        "Climate",
+        "Hardware / Mobility"
+      ],
+      "mappedStages": [
+        "Pre-seed",
+        "Seed"
+      ],
+      "mappedGeographies": [
+        "Global"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "rawInput": "fintech but not consumer lending, series A only",
+      "mappedSectors": [
+        "Fintech Infrastructure",
+        "Proptech / Fintech"
+      ],
+      "mappedStages": [
+        "Series A"
+      ],
+      "mappedGeographies": [
+        "Global"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "rawInput": "underserved founders, healthcare or agriculture, emerging markets",
+      "mappedSectors": [
+        "Healthcare AI",
+        "Agtech"
+      ],
+      "mappedStages": [
+        "Pre-seed",
+        "Seed"
+      ],
+      "mappedGeographies": [
+        "Africa",
+        "Latin America",
+        "South Asia"
+      ],
+      "confidence": "low"
+    },
+    {
+      "rawInput": "technical founder, Berlin, AI infra, seed stage, top-tier accelerator",
+      "mappedSectors": [
+        "AI Infrastructure"
+      ],
+      "mappedStages": [
+        "Seed"
+      ],
+      "mappedGeographies": [
+        "Berlin"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
