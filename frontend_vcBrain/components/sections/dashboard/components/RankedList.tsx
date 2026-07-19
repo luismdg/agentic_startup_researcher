@@ -47,7 +47,7 @@ export default function RankedList({ startups, liveScreenings = {} }: RankedList
           const founders = getFoundersForStartup(s);
           const screening = getScreening(s.id) ?? liveScreenings[s.id];
           return (
-            <TRow key={s.id} onClick={() => router.push(`/screening?startup=${s.id}`)}>
+            <TRow key={s.id} onClick={() => router.push(`/evaluate?startup=${s.id}`)}>
               <TD>
                 <span className={styles.rank}>{i + 1}</span>
               </TD>

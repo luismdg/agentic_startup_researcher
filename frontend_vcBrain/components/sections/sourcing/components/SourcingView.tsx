@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { ResearchChannelType, SourcingChannel, SourcingFeedItem, SourcingTrack } from "@/lib/types";
+import type { Founder, ResearchChannelType, SourcingChannel, SourcingFeedItem, SourcingTrack } from "@/lib/types";
 import type { ParsedQuery } from "@/lib/queryParser";
 import { RESEARCH_CHANNEL_OPTIONS } from "@/lib/data";
 import { Section } from "@/components/layout/SectionLayout/SectionLayout";
@@ -9,10 +9,18 @@ import GuidedFilterGate from "@/components/layout/GuidedFilterGate/GuidedFilterG
 import { FilterGroup } from "@/components/layout/FilterPanel/FilterPanel";
 import QueryDetectPanel from "@/components/layout/QueryDetectPanel/QueryDetectPanel";
 import ToggleChipGroup from "@/components/ui/ToggleChipGroup/ToggleChipGroup";
+import Tabs from "@/components/ui/Tabs/Tabs";
 import EmptyState from "@/components/layout/EmptyState/EmptyState";
 import SourcingFeedList from "./SourcingFeedList";
 import ChannelTable from "./ChannelTable";
+import LiveFoundersList from "./LiveFoundersList";
+import FoundersView from "@/components/sections/founders/components/FoundersView";
 import styles from "./SourcingView.module.css";
+
+const VIEW_TABS = [
+  { value: "startups", label: "Startups" },
+  { value: "founders", label: "Founders" },
+];
 
 type FeedStatus = SourcingFeedItem["status"];
 
@@ -31,9 +39,13 @@ const STATUS_OPTIONS: { value: FeedStatus; label: string }[] = [
 interface SourcingViewProps {
   feed: SourcingFeedItem[];
   channels: SourcingChannel[];
+  founders: Founder[];
+  liveFeed: SourcingFeedItem[];
+  selectedFounderId?: string;
 }
 
-export default function SourcingView({ feed, channels }: SourcingViewProps) {
+export default function SourcingView({ feed, channels, founders, liveFeed, selectedFounderId }: SourcingViewProps) {
+  const [view, setView] = useState<"startups" | "founders">(selectedFounderId ? "founders" : "startups");
   const [applied, setApplied] = useState(false);
   const [keyword, setKeyword] = useState("");
   const [tracks, setTracks] = useState<SourcingTrack[]>([]);
@@ -88,65 +100,79 @@ export default function SourcingView({ feed, channels }: SourcingViewProps) {
 
   return (
     <>
-      <GuidedFilterGate
-        icon="discover"
-        eyebrow="Let's go find some startups"
-        title="What kind of new startups do you want to find?"
-        description="Type a keyword, or pick where to look — then run it to see what turns up. Nothing shows until you do."
-        applied={applied}
-        onApply={() => setApplied(true)}
-        actionLabel="Find startups"
-        summary={summary}
-        keyword={keyword}
-        onKeywordChange={setKeyword}
-        keywordPlaceholder="Try a company name, technology, or founder…"
-      >
-        {keyword.trim() && (
-          <FilterGroup label="One sentence, several filters at once">
-            <QueryDetectPanel keyword={keyword} onDetected={handleDetected} />
-          </FilterGroup>
-        )}
-        <FilterGroup label="How did we hear about them?">
-          <ToggleChipGroup
-            options={TRACK_OPTIONS}
-            selected={tracks}
-            onChange={(values) => setTracks(values as SourcingTrack[])}
-            aria-label="Filter by how we found them"
-          />
-        </FilterGroup>
-        <FilterGroup label="Where things stand">
-          <ToggleChipGroup
-            options={STATUS_OPTIONS}
-            selected={statuses}
-            onChange={(values) => setStatuses(values as FeedStatus[])}
-            aria-label="Filter by status"
-          />
-        </FilterGroup>
-        <FilterGroup label="Where should we look?">
-          <ToggleChipGroup
-            options={RESEARCH_CHANNEL_OPTIONS}
-            selected={channelTypes}
-            onChange={(values) => setChannelTypes(values as ResearchChannelType[])}
-            aria-label="Filter by research channel"
-          />
-        </FilterGroup>
-      </GuidedFilterGate>
-      {!applied ? (
-        <EmptyState
-          icon="discover"
-          title="Tell us what to look for above"
-          description="Nothing shows until you search — pick where to look, or just type a keyword."
-        />
+      <Tabs tabs={VIEW_TABS} value={view} onChange={(v) => setView(v as "startups" | "founders")} />
+      {view === "startups" ? (
+        <>
+          <GuidedFilterGate
+            icon="discover"
+            eyebrow="Let's go find some startups"
+            title="What kind of new startups do you want to find?"
+            description="Type a keyword, or pick where to look — then run it to see what turns up. Nothing shows until you do."
+            applied={applied}
+            onApply={() => setApplied(true)}
+            actionLabel="Find startups"
+            summary={summary}
+            keyword={keyword}
+            onKeywordChange={setKeyword}
+            keywordPlaceholder="Try a company name, technology, or founder…"
+          >
+            {keyword.trim() && (
+              <FilterGroup label="One sentence, several filters at once">
+                <QueryDetectPanel keyword={keyword} onDetected={handleDetected} />
+              </FilterGroup>
+            )}
+            <FilterGroup label="How did we hear about them?">
+              <ToggleChipGroup
+                options={TRACK_OPTIONS}
+                selected={tracks}
+                onChange={(values) => setTracks(values as SourcingTrack[])}
+                aria-label="Filter by how we found them"
+              />
+            </FilterGroup>
+            <FilterGroup label="Where things stand">
+              <ToggleChipGroup
+                options={STATUS_OPTIONS}
+                selected={statuses}
+                onChange={(values) => setStatuses(values as FeedStatus[])}
+                aria-label="Filter by status"
+              />
+            </FilterGroup>
+            <FilterGroup label="Where should we look?">
+              <ToggleChipGroup
+                options={RESEARCH_CHANNEL_OPTIONS}
+                selected={channelTypes}
+                onChange={(values) => setChannelTypes(values as ResearchChannelType[])}
+                aria-label="Filter by research channel"
+              />
+            </FilterGroup>
+          </GuidedFilterGate>
+          {!applied ? (
+            <EmptyState
+              icon="discover"
+              title="Tell us what to look for above"
+              description="Nothing shows until you search — pick where to look, or just type a keyword."
+            />
+          ) : (
+            <>
+              <p className={styles.meta}>
+                {filtered.length} of {feed.length} found &middot; {inboundCount} applied directly &middot; {outboundCount} we found ourselves
+              </p>
+              <Section title="What we've found">
+                <SourcingFeedList items={filtered} />
+              </Section>
+              <Section title="Where we look">
+                <ChannelTable channels={filteredChannels} />
+              </Section>
+            </>
+          )}
+        </>
       ) : (
         <>
-          <p className={styles.meta}>
-            {filtered.length} of {feed.length} found &middot; {inboundCount} applied directly &middot; {outboundCount} we found ourselves
-          </p>
-          <Section title="What we've found">
-            <SourcingFeedList items={filtered} />
+          <Section title="From your research">
+            <LiveFoundersList feed={liveFeed} />
           </Section>
-          <Section title="Where we look">
-            <ChannelTable channels={filteredChannels} />
+          <Section title="Reference / demo founders">
+            <FoundersView founders={founders} selectedId={selectedFounderId} />
           </Section>
         </>
       )}

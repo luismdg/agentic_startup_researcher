@@ -1,0 +1,19 @@
+.empty {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  padding: var(--space-4) 0;
+}
+
+.name {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.startupLink {
+  color: var(--color-accent-text);
+  text-decoration: none;
+}
+
+.startupLink:hover {
+  text-decoration: underline;
+}

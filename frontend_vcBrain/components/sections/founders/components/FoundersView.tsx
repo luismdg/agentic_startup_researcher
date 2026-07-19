@@ -215,7 +215,7 @@ export default function FoundersView({ founders, selectedId }: FoundersViewProps
             <FounderList
               founders={filtered}
               selectedId={selected.id}
-              onSelect={(id) => router.push(`/founders?founder=${id}`)}
+              onSelect={(id) => router.push(`/sourcing?founder=${id}`)}
             />
           }
           detail={<FounderScoreCard founder={selected} />}

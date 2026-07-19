@@ -58,6 +58,50 @@ from app.services.orchestrator import PipelineResult
 _TREND_MAP = {"improving": "up", "declining": "down", "stable": "flat"}
 _CONFIDENCE_MAP = {"verified": "high", "likely": "medium", "uncertain": "low", "unverifiable": "low"}
 
+# SourcingResult.source_channel is already a human-readable label set by the
+# sourcing service itself (src/orchestration/web_research_agent.py's
+# _CHANNEL_LABELS + each tool's own real-path label) -- these are the actual
+# strings it produces today. Bucketed into frontend_vcBrain's stricter
+# ResearchChannelType enum for filtering only; the original label is kept
+# verbatim as SourcingFeedItem.channel, this map never overwrites it.
+_CHANNEL_TYPE_MAP = {
+    "GitHub": "github",
+    "Academic papers": "research",
+    "Community": "community",
+    "Reddit": "community",
+    "Google search": "web",
+    "Product Hunt": "web",
+    "YouTube": "web",
+    "Twitter/X": "web",
+    "Accelerators": "accelerator",
+    "Manual (fallback)": "direct",  # the hardcoded plan-C candidate -- not found via any channel
+}
+# status is the sourcing pipeline's own lead-processing state (has this
+# lead been looked at yet), a different axis from reasoning-engine's
+# invest/pass/watch recommendation computed in _derive_decision below --
+# deliberately not conflated here.
+_STATUS_MAP = {"new_lead": "new", "needs_verification": "reviewing", "activated": "activated"}
+
+
+def to_sourcing_feed_item_json(sourcing_record: SourcingResult, company_id: str) -> Dict[str, Any]:
+    return {
+        "id": f"feed_{company_id}",
+        "track": "outbound",  # every sourcing-pipeline result is something the agent went and found
+        "date": sourcing_record.date_found.isoformat(),
+        "startupName": sourcing_record.startup_name,
+        "founderNames": [sourcing_record.founder_name, *sourcing_record.co_founders],
+        "channel": sourcing_record.source_channel,
+        "channelType": _CHANNEL_TYPE_MAP.get(sourcing_record.source_channel, "web"),
+        "summary": sourcing_record.one_line_description,
+        "status": _STATUS_MAP[sourcing_record.status],
+        "activated": sourcing_record.status == "activated",
+        # No distinct "date it was activated" fact exists upstream (only
+        # date_found) -- left None rather than reusing date_found and
+        # implying activation happened at discovery time.
+        "activatedDate": None,
+        "linkedStartupId": company_id,
+    }
+
 
 def _axis_score_json(axis: AxisScore) -> Dict[str, Any]:
     return {

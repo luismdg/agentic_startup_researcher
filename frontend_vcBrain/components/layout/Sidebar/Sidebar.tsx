@@ -9,12 +9,8 @@ const NAV_ITEMS: { href: string; label: string; icon: IconName }[] = [
   { href: "/", label: "Overview", icon: "grid" },
   { href: "/thesis", label: "My Focus", icon: "focus" },
   { href: "/sourcing", label: "Discover", icon: "discover" },
-  { href: "/founders", label: "Founders", icon: "founders" },
-  { href: "/screening", label: "Scorecard", icon: "scorecard" },
+  { href: "/evaluate", label: "Evaluate", icon: "scorecard" },
   { href: "/trust", label: "Fact Check", icon: "factcheck" },
-  { href: "/diligence", label: "Checklist", icon: "checklist" },
-  { href: "/memo", label: "Report", icon: "report" },
-  { href: "/decision", label: "Decision", icon: "decision" },
 ];
 
 export default function Sidebar() {

@@ -11,7 +11,8 @@ import styles from "./MemoDocument.module.css";
 
 /**
  * Document-style, single-column rendering of a full investment memo.
- * `decision` is intentionally never read here — that belongs to /decision.
+ * `decision` is intentionally never read here — that belongs to the
+ * Decision tab in /evaluate.
  */
 export default function MemoDocument({ memo }: { memo: Memo }) {
   const { companySnapshot } = memo;

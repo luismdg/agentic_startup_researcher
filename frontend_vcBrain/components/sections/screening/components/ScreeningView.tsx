@@ -1,6 +1,5 @@
 import type { Screening, Startup } from "@/lib/types";
 import EmptyState from "@/components/layout/EmptyState/EmptyState";
-import Badge from "@/components/ui/Badge/Badge";
 import AxisScoreColumn from "./AxisScoreColumn";
 import AxisTrendChart from "./AxisTrendChart";
 import styles from "./ScreeningView.module.css";
@@ -14,16 +13,12 @@ interface ScreeningViewProps {
  * Orchestrates the multi-axis screening view for a single selected startup.
  * The three axes (founder / market / idea-market-fit) are rendered as
  * separate, non-averaged columns — no combined score is ever computed here.
+ * Startup identity (name/sector/stage) is shown once by the Evaluate
+ * section's shared EvaluateHeader, not repeated here.
  */
-export default function ScreeningView({ startup, screening }: ScreeningViewProps) {
+export default function ScreeningView({ screening }: ScreeningViewProps) {
   return (
     <div>
-      <div className={styles.context}>
-        <span className={styles.name}>{startup.name}</span>
-        <Badge variant="neutral">{startup.sector}</Badge>
-        <Badge variant="neutral">{startup.stage}</Badge>
-      </div>
-
       {!screening ? (
         <EmptyState
           icon="scorecard"

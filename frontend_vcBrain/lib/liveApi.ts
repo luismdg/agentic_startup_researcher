@@ -1,4 +1,4 @@
-import type { Memo, Screening, Startup, TrustScoreRecord } from "./types";
+import type { Memo, Screening, SourcingFeedItem, Startup, TrustScoreRecord } from "./types";
 
 // reasoning-engine's FastAPI server (see reasoning-engine/app/api_routes.py).
 // Overridable via env so a deployed build can point elsewhere; defaults to
@@ -37,4 +37,8 @@ export async function fetchLiveTrustScore(startupId: string): Promise<TrustScore
 
 export async function fetchLiveMemo(startupId: string): Promise<Memo | undefined> {
   return liveFetch<Memo>(`/api/startups/${startupId}/memo`);
+}
+
+export async function fetchLiveSourcingFeed(): Promise<SourcingFeedItem[]> {
+  return (await liveFetch<SourcingFeedItem[]>("/api/sourcing/feed")) ?? [];
 }

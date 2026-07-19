@@ -1,21 +1,6 @@
-import PageHeader from "@/components/layout/PageHeader/PageHeader";
-import FoundersView from "@/components/sections/founders/components/FoundersView";
-import { founders } from "@/lib/data";
+import { redirect } from "next/navigation";
 
-export default async function FoundersPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ founder?: string }>;
-}) {
-  const params = await searchParams;
-
-  return (
-    <>
-      <PageHeader
-        title="Founders"
-        description="A score for the person, not just the company — so a great founder still stands out even if their current startup doesn't work out."
-      />
-      <FoundersView founders={founders} selectedId={params.founder} />
-    </>
-  );
+// Founders merged into Discover's "Founders" tab -- see app/sourcing/page.tsx.
+export default function FoundersRedirect() {
+  redirect("/sourcing");
 }

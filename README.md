@@ -7,6 +7,18 @@ founders/startups across multiple channels, favoring low-visibility, hard-to-fin
 over well-documented ones. With `OPENAI_API_KEY` set, most of those channels are researched by
 an actual agentic web-browsing loop (src/orchestration/), not simple REST calls.
 
+This repo actually holds three sibling projects that together form the full product:
+
+| Project | What it is | Port |
+|---|---|---|
+| `src/` (this one) | The sourcing pipeline documented below — finds candidates | `8000` |
+| `reasoning-engine/` | Scores/memos each candidate against an investor thesis (3-axis LLM scoring, investment memos) | `8001` |
+| `frontend_vcBrain/` | The Next.js UI — works standalone on static mock data, or live against the two backends above | `3000` |
+
+Sections 1-5 below cover this backend in isolation (its own setup, API, mock/real mode, tests).
+**Jump to [Section 6](#6-running-the-full-stack-sourcing--reasoning-engine--frontend_vcbrain) if
+you want all three running together, feeding the frontend.**
+
 ## 1. Setup
 
 No virtual environment needed — install straight into your existing Python (conda base, or
@@ -306,3 +318,89 @@ startup found separately must merge into one row, never get concatenated into a 
   candidate's value is actually known — sparse cold-start data is never penalized just for being
   incomplete.
 - Never commit or share your `.env` file — it holds your real API keys.
+
+## 6. Running the full stack (sourcing + reasoning-engine + frontend_vcBrain)
+
+Three separate processes, each in its own terminal. None of them need a `.venv` — install
+straight into your conda **base** environment (or plain system Python) for both Python services,
+same as Section 1.
+
+### Terminal 1 — sourcing backend (this repo, port 8000)
+
+```powershell
+pip install -r requirements.txt
+copy .env.example .env   # then add OPENAI_API_KEY — see Section 1
+uvicorn src.main:app --reload
+```
+
+### Terminal 2 — reasoning-engine (port 8001)
+
+```powershell
+cd reasoning-engine
+pip install -r requirements.txt
+copy .env.example .env   # then add OPENAI_API_KEY (LLM_PROVIDER=openai is the default)
+uvicorn app.main:app --reload --port 8001
+```
+
+Its `requirements.txt` overlaps almost entirely with this backend's (fastapi, uvicorn, pydantic,
+httpx, python-dotenv, openai) — if you've already `pip install`-ed Section 1's requirements into
+the same Python, this step usually has nothing left to do. `anthropic` is only imported if you
+set `LLM_PROVIDER=anthropic`; leave it as `openai` (the default) and you don't need that package
+at all.
+
+### Terminal 3 — frontend_vcBrain (port 3000)
+
+```powershell
+cd frontend_vcBrain
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+### How the frontend uses both backends
+
+The frontend never needs either backend running — it ships with static mock data
+(`frontend_vcBrain/data/*.json`, read via `lib/data.ts`) so the whole UI works with zero setup.
+On top of that, every page also fetches live data from reasoning-engine on each request
+(`lib/liveApi.ts`, defaulting to `http://127.0.0.1:8001`, overridable via the `REASONING_API_URL`
+env var) and merges it in: live-sourced startups are shown first, mock entries fill in the rest,
+and a live entry never duplicates a mock one that shares an id. If reasoning-engine isn't running,
+every live fetch fails safe to "no live data" and you just see the mock set — never a broken page.
+
+**Getting a real candidate from the sourcing backend to actually show up on the frontend** is a
+manual hop today (nothing auto-connects port 8000 to port 8001): run a search against this
+backend, then POST that response to reasoning-engine's ingest endpoint. The two schemas were
+reconciled field-for-field, with exactly one difference — this backend's response wraps its run
+metadata as `"run"`, reasoning-engine's ingest endpoint expects the same object under `"query"`.
+
+```powershell
+$search = Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/search `
+  -ContentType "application/json" `
+  -Body '{"niche":"Mexican LegalTech","founder_view":false,"geography":"Mexico","max_results":10}'
+
+$payload = @{ query = $search.run; results = $search.results } | ConvertTo-Json -Depth 20
+
+Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8001/api/sourcing/ingest `
+  -ContentType "application/json" -Body $payload
+```
+
+Refresh the frontend — the ingested startup(s) now appear on Overview/Screening/Trust/Memo,
+scored and memo'd against reasoning-engine's demo thesis. Ingested results live in
+reasoning-engine's process memory only (see `app/api_routes.py`'s `_pipeline_cache`) — restarting
+that service clears them and you'll need to re-ingest.
+
+- Never commit or share `reasoning-engine/.env` either — same rule as this backend's `.env`.
+- `reasoning-engine`'s own README-equivalent detail (its internal pipeline, schema-reconciliation
+  notes, provider switch) lives in its module docstrings — see `app/main.py`, `app/models.py`,
+  `app/services/sourcing_adapter.py`, `app/services/llm_client.py`.
+
+**Troubleshooting: `/api/sourcing/ingest` returns 500.** Unlike this backend's `/search` (which
+always falls back to mock data on any real-path failure — Section 3), reasoning-engine's scoring
+and memo calls are *not* fail-safe: a bad key or a network/TLS failure raises and the ingest
+request fails outright rather than degrading. Check `reasoning-engine`'s own terminal output for
+the traceback. If it ends in an SSL/certificate error (common behind a corporate proxy or AV
+HTTPS-scanning tool), see `RELAX_TLS_STRICT_X509` in `reasoning-engine/app/services/llm_client.py`.
+To develop against the full stack with zero API calls/cost while you sort that out, set
+`LLM_PROVIDER=fake` in `reasoning-engine/.env` — it returns canned-but-schema-valid scores/memos
+so ingest, and everything downstream on the frontend, works fully offline.

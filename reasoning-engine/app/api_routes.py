@@ -17,7 +17,13 @@ from fastapi import APIRouter, HTTPException
 
 from app.mock_data import DEMO_THESIS
 from app.models import SourcingSearchResponse
-from app.services.frontend_shaping import to_memo_json, to_screening_json, to_startup_json, to_trust_score_json
+from app.services.frontend_shaping import (
+    to_memo_json,
+    to_screening_json,
+    to_sourcing_feed_item_json,
+    to_startup_json,
+    to_trust_score_json,
+)
 from app.services.orchestrator import PipelineResult, run_pipeline
 
 router = APIRouter(prefix="/api")
@@ -46,6 +52,19 @@ def ingest_sourcing_results(payload: SourcingSearchResponse):
 @router.get("/startups")
 def list_startups():
     return [to_startup_json(result, record) for result, record in _pipeline_cache.values()]
+
+
+@router.get("/sourcing/feed")
+def list_sourcing_feed():
+    """One row per ingested lead, shaped for frontend_vcBrain's Discover page
+    (SourcingFeedItem) -- pulled from the original SourcingResult, not
+    CompanyRecord, since this is exactly the "how the lead was found"
+    process metadata sourcing_adapter.py deliberately keeps out of
+    CompanyRecord (see its module docstring)."""
+    return [
+        to_sourcing_feed_item_json(record, result.company.id)
+        for result, record in _pipeline_cache.values()
+    ]
 
 
 @router.get("/startups/{startup_id}/screening")
