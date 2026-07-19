@@ -1,0 +1,925 @@
+[
+  {
+    "id": "su-01",
+    "name": "Ledgerline",
+    "tagline": "Real-time settlement rails for cross-border payments",
+    "oneLiner": "Ledgerline replaces multi-day correspondent banking settlement with a real-time netting layer banks plug into directly.",
+    "founderIds": [
+      "fo-01"
+    ],
+    "sector": "Fintech Infrastructure",
+    "stage": "Seed",
+    "geography": "New York, US",
+    "foundedYear": 2024,
+    "website": "ledgerline.io",
+    "status": "diligence",
+    "askAmount": 3500000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 88,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-10",
+    "tags": [
+      "fintech",
+      "infra",
+      "b2b"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 48
+      },
+      {
+        "date": "2026-03-15",
+        "score": 54
+      },
+      {
+        "date": "2026-04-15",
+        "score": 56
+      },
+      {
+        "date": "2026-05-15",
+        "score": 59
+      },
+      {
+        "date": "2026-06-15",
+        "score": 63
+      },
+      {
+        "date": "2026-07-15",
+        "score": 68
+      }
+    ]
+  },
+  {
+    "id": "su-02",
+    "name": "Terraware",
+    "tagline": "Satellite-verified soil carbon for compliance markets",
+    "oneLiner": "Terraware turns satellite imagery into audit-grade soil carbon measurements so carbon credit issuers can skip manual sampling.",
+    "founderIds": [
+      "fo-02",
+      "fo-03"
+    ],
+    "sector": "Climate",
+    "stage": "Seed",
+    "geography": "Nairobi, Kenya",
+    "foundedYear": 2023,
+    "website": "terraware.earth",
+    "status": "memo",
+    "askAmount": 2200000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 79,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-14",
+    "tags": [
+      "climate",
+      "carbon",
+      "satellite"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 52
+      },
+      {
+        "date": "2026-03-15",
+        "score": 55
+      },
+      {
+        "date": "2026-04-15",
+        "score": 59
+      },
+      {
+        "date": "2026-05-15",
+        "score": 64
+      },
+      {
+        "date": "2026-06-15",
+        "score": 70
+      },
+      {
+        "date": "2026-07-15",
+        "score": 72
+      }
+    ]
+  },
+  {
+    "id": "su-03",
+    "name": "Fluxbase",
+    "tagline": "Database branching for CI, built on Postgres",
+    "oneLiner": "Fluxbase gives every pull request an isolated, copy-on-write Postgres branch so CI runs against real data without cloning it.",
+    "founderIds": [
+      "fo-04"
+    ],
+    "sector": "Developer Tools",
+    "stage": "Pre-seed",
+    "geography": "Austin, US",
+    "foundedYear": 2023,
+    "website": "fluxbase.dev",
+    "status": "screening",
+    "askAmount": 1500000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 91,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-16",
+    "tags": [
+      "devtools",
+      "database",
+      "oss"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 61
+      },
+      {
+        "date": "2026-03-15",
+        "score": 66
+      },
+      {
+        "date": "2026-04-15",
+        "score": 72
+      },
+      {
+        "date": "2026-05-15",
+        "score": 74
+      },
+      {
+        "date": "2026-06-15",
+        "score": 77
+      },
+      {
+        "date": "2026-07-15",
+        "score": 81
+      }
+    ]
+  },
+  {
+    "id": "su-04",
+    "name": "Proteova",
+    "tagline": "Generative binder design for undruggable targets",
+    "oneLiner": "Proteova's generative models design protein binders against targets that have historically resisted small-molecule and antibody approaches.",
+    "founderIds": [
+      "fo-05",
+      "fo-06"
+    ],
+    "sector": "Biotech / AI Drug Discovery",
+    "stage": "Seed",
+    "geography": "Basel, Switzerland",
+    "foundedYear": 2023,
+    "website": "proteova.ai",
+    "status": "decision",
+    "askAmount": 6000000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 72,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-08",
+    "tags": [
+      "biotech",
+      "ai",
+      "drug-discovery"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 50
+      },
+      {
+        "date": "2026-03-15",
+        "score": 52
+      },
+      {
+        "date": "2026-04-15",
+        "score": 55
+      },
+      {
+        "date": "2026-05-15",
+        "score": 59
+      },
+      {
+        "date": "2026-06-15",
+        "score": 64
+      },
+      {
+        "date": "2026-07-15",
+        "score": 70
+      }
+    ]
+  },
+  {
+    "id": "su-05",
+    "name": "Radiant Health",
+    "tagline": "AI triage for radiology in underserved regions",
+    "oneLiner": "Radiant Health flags likely-critical imaging studies for priority review, cutting time-to-read in clinics with one radiologist covering multiple sites.",
+    "founderIds": [
+      "fo-07"
+    ],
+    "sector": "Healthcare AI",
+    "stage": "Seed",
+    "geography": "Lagos, Nigeria",
+    "foundedYear": 2023,
+    "website": "radianthealth.africa",
+    "status": "diligence",
+    "askAmount": 2800000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 74,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-12",
+    "tags": [
+      "healthcare",
+      "ai",
+      "emerging-markets"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 54
+      },
+      {
+        "date": "2026-03-15",
+        "score": 58
+      },
+      {
+        "date": "2026-04-15",
+        "score": 63
+      },
+      {
+        "date": "2026-05-15",
+        "score": 69
+      },
+      {
+        "date": "2026-06-15",
+        "score": 71
+      },
+      {
+        "date": "2026-07-15",
+        "score": 74
+      }
+    ]
+  },
+  {
+    "id": "su-06",
+    "name": "Ferrovia Robotics",
+    "tagline": "Autonomous rail-bound inspection drones",
+    "oneLiner": "Ferrovia's rail-bound robots inspect track infrastructure continuously, replacing quarterly manual walks with daily automated passes.",
+    "founderIds": [
+      "fo-08"
+    ],
+    "sector": "Robotics",
+    "stage": "Seed",
+    "geography": "Oslo, Norway",
+    "foundedYear": 2023,
+    "website": "ferroviarobotics.no",
+    "status": "sourcing",
+    "askAmount": 4000000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 61,
+    "momentumTrend": "down",
+    "lastActivityDate": "2026-06-29",
+    "tags": [
+      "robotics",
+      "infrastructure",
+      "hardware"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 56
+      },
+      {
+        "date": "2026-03-15",
+        "score": 55
+      },
+      {
+        "date": "2026-04-15",
+        "score": 50
+      },
+      {
+        "date": "2026-05-15",
+        "score": 46
+      },
+      {
+        "date": "2026-06-15",
+        "score": 43
+      },
+      {
+        "date": "2026-07-15",
+        "score": 41
+      }
+    ]
+  },
+  {
+    "id": "su-07",
+    "name": "Campfire",
+    "tagline": "Async, audio-only spaces for close friend groups",
+    "oneLiner": "Campfire is a small-group app built entirely around short voice notes instead of text or video, aimed at replacing group chat fatigue.",
+    "founderIds": [
+      "fo-09"
+    ],
+    "sector": "Consumer Social",
+    "stage": "Pre-seed",
+    "geography": "Los Angeles, US",
+    "foundedYear": 2024,
+    "website": "campfire.app",
+    "status": "screening",
+    "askAmount": 1200000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 48,
+    "momentumTrend": "flat",
+    "lastActivityDate": "2026-07-05",
+    "tags": [
+      "consumer",
+      "social",
+      "audio"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 44
+      },
+      {
+        "date": "2026-03-15",
+        "score": 43
+      },
+      {
+        "date": "2026-04-15",
+        "score": 44
+      },
+      {
+        "date": "2026-05-15",
+        "score": 45
+      },
+      {
+        "date": "2026-06-15",
+        "score": 48
+      },
+      {
+        "date": "2026-07-15",
+        "score": 46
+      }
+    ]
+  },
+  {
+    "id": "su-08",
+    "name": "Solvent",
+    "tagline": "AI tutor purpose-built for community college STEM",
+    "oneLiner": "Solvent gives community college students a patient, always-available AI tutor tuned specifically to developmental math and intro STEM curricula.",
+    "founderIds": [
+      "fo-10",
+      "fo-11"
+    ],
+    "sector": "Edtech",
+    "stage": "Seed",
+    "geography": "Chicago, US",
+    "foundedYear": 2023,
+    "website": "solvent.education",
+    "status": "screening",
+    "askAmount": 2000000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 69,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-11",
+    "tags": [
+      "edtech",
+      "ai",
+      "community-college"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 56
+      },
+      {
+        "date": "2026-03-15",
+        "score": 61
+      },
+      {
+        "date": "2026-04-15",
+        "score": 67
+      },
+      {
+        "date": "2026-05-15",
+        "score": 69
+      },
+      {
+        "date": "2026-06-15",
+        "score": 72
+      },
+      {
+        "date": "2026-07-15",
+        "score": 76
+      }
+    ]
+  },
+  {
+    "id": "su-09",
+    "name": "Wardline",
+    "tagline": "Runtime security for AI agent tool-calling",
+    "oneLiner": "Wardline sits between AI agents and the tools they call, enforcing policy in real time to stop prompt-injection-driven actions before they execute.",
+    "founderIds": [
+      "fo-12"
+    ],
+    "sector": "Cybersecurity",
+    "stage": "Seed",
+    "geography": "Seattle, US",
+    "foundedYear": 2024,
+    "website": "wardline.dev",
+    "status": "decision",
+    "askAmount": 4500000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 93,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-15",
+    "tags": [
+      "security",
+      "ai",
+      "infra"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 65
+      },
+      {
+        "date": "2026-03-15",
+        "score": 67
+      },
+      {
+        "date": "2026-04-15",
+        "score": 70
+      },
+      {
+        "date": "2026-05-15",
+        "score": 74
+      },
+      {
+        "date": "2026-06-15",
+        "score": 79
+      },
+      {
+        "date": "2026-07-15",
+        "score": 85
+      }
+    ]
+  },
+  {
+    "id": "su-10",
+    "name": "Fieldhand",
+    "tagline": "Peer-to-peer marketplace for farm equipment",
+    "oneLiner": "Fieldhand lets neighboring farms list and rent idle equipment to each other, with insurance and scheduling built in.",
+    "founderIds": [
+      "fo-13"
+    ],
+    "sector": "Marketplace / Agtech",
+    "stage": "Pre-seed",
+    "geography": "Des Moines, US",
+    "foundedYear": 2024,
+    "website": "fieldhand.co",
+    "status": "sourcing",
+    "askAmount": 900000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 55,
+    "momentumTrend": "flat",
+    "lastActivityDate": "2026-06-20",
+    "tags": [
+      "marketplace",
+      "agtech"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 46
+      },
+      {
+        "date": "2026-03-15",
+        "score": 46
+      },
+      {
+        "date": "2026-04-15",
+        "score": 48
+      },
+      {
+        "date": "2026-05-15",
+        "score": 50
+      },
+      {
+        "date": "2026-06-15",
+        "score": 49
+      },
+      {
+        "date": "2026-07-15",
+        "score": 48
+      }
+    ]
+  },
+  {
+    "id": "su-11",
+    "name": "Portway",
+    "tagline": "Drayage scheduling optimization for container ports",
+    "oneLiner": "Portway sequences truck arrivals against yard and crane availability to cut container dwell time at mid-size ports.",
+    "founderIds": [
+      "fo-14"
+    ],
+    "sector": "Logistics",
+    "stage": "Seed",
+    "geography": "Rotterdam, Netherlands",
+    "foundedYear": 2024,
+    "website": "portway.io",
+    "status": "screening",
+    "askAmount": 3000000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 71,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-09",
+    "tags": [
+      "logistics",
+      "ports",
+      "optimization"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 58
+      },
+      {
+        "date": "2026-03-15",
+        "score": 64
+      },
+      {
+        "date": "2026-04-15",
+        "score": 66
+      },
+      {
+        "date": "2026-05-15",
+        "score": 69
+      },
+      {
+        "date": "2026-06-15",
+        "score": 73
+      },
+      {
+        "date": "2026-07-15",
+        "score": 78
+      }
+    ]
+  },
+  {
+    "id": "su-12",
+    "name": "Kernelforge",
+    "tagline": "Spot-market GPU scheduling for AI training jobs",
+    "oneLiner": "Kernelforge arbitrages spot GPU capacity across clouds and checkpoints jobs automatically to cut training cost without added ops burden.",
+    "founderIds": [
+      "fo-15",
+      "fo-16"
+    ],
+    "sector": "AI Infrastructure",
+    "stage": "Seed",
+    "geography": "Berlin, Germany",
+    "foundedYear": 2023,
+    "website": "kernelforge.ai",
+    "status": "memo",
+    "askAmount": 5000000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 85,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-13",
+    "tags": [
+      "ai",
+      "infra",
+      "gpu"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 42
+      },
+      {
+        "date": "2026-03-15",
+        "score": 45
+      },
+      {
+        "date": "2026-04-15",
+        "score": 49
+      },
+      {
+        "date": "2026-05-15",
+        "score": 54
+      },
+      {
+        "date": "2026-06-15",
+        "score": 60
+      },
+      {
+        "date": "2026-07-15",
+        "score": 62
+      }
+    ]
+  },
+  {
+    "id": "su-13",
+    "name": "Aphelion Systems",
+    "tagline": "Robotic arms for in-orbit satellite servicing",
+    "oneLiner": "Aphelion builds robotic servicing arms that extend satellite lifespan through in-orbit refueling and component swaps.",
+    "founderIds": [
+      "fo-17"
+    ],
+    "sector": "Space",
+    "stage": "Series A",
+    "geography": "Colorado Springs, US",
+    "foundedYear": 2023,
+    "website": "aphelionsystems.space",
+    "status": "diligence",
+    "askAmount": 12000000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 58,
+    "momentumTrend": "flat",
+    "lastActivityDate": "2026-07-02",
+    "tags": [
+      "space",
+      "hardware",
+      "defense-adjacent"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 48
+      },
+      {
+        "date": "2026-03-15",
+        "score": 49
+      },
+      {
+        "date": "2026-04-15",
+        "score": 52
+      },
+      {
+        "date": "2026-05-15",
+        "score": 50
+      },
+      {
+        "date": "2026-06-15",
+        "score": 50
+      },
+      {
+        "date": "2026-07-15",
+        "score": 50
+      }
+    ]
+  },
+  {
+    "id": "su-14",
+    "name": "Rootsignal",
+    "tagline": "Soil sensor network with irrigation AI",
+    "oneLiner": "Rootsignal's low-cost sensor mesh feeds an irrigation model that cuts water use on row crops without sacrificing yield.",
+    "founderIds": [
+      "fo-18"
+    ],
+    "sector": "Agtech",
+    "stage": "Pre-seed",
+    "geography": "Ribeirão Preto, Brazil",
+    "foundedYear": 2023,
+    "website": "rootsignal.com.br",
+    "status": "sourcing",
+    "askAmount": 1100000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 63,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-06-25",
+    "tags": [
+      "agtech",
+      "hardware",
+      "sensors"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 60
+      },
+      {
+        "date": "2026-03-15",
+        "score": 62
+      },
+      {
+        "date": "2026-04-15",
+        "score": 65
+      },
+      {
+        "date": "2026-05-15",
+        "score": 69
+      },
+      {
+        "date": "2026-06-15",
+        "score": 74
+      },
+      {
+        "date": "2026-07-15",
+        "score": 80
+      }
+    ]
+  },
+  {
+    "id": "su-15",
+    "name": "Lintel",
+    "tagline": "AI underwriting for small multifamily loans",
+    "oneLiner": "Lintel licenses an underwriting model to community lenders so they can price small multifamily loans in days instead of weeks.",
+    "founderIds": [
+      "fo-19",
+      "fo-20"
+    ],
+    "sector": "Proptech / Fintech",
+    "stage": "Seed",
+    "geography": "Charlotte, US",
+    "foundedYear": 2023,
+    "website": "lintel.credit",
+    "status": "screening",
+    "askAmount": 2600000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 76,
+    "momentumTrend": "flat",
+    "lastActivityDate": "2026-07-07",
+    "tags": [
+      "proptech",
+      "fintech",
+      "lending"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 41
+      },
+      {
+        "date": "2026-03-15",
+        "score": 41
+      },
+      {
+        "date": "2026-04-15",
+        "score": 43
+      },
+      {
+        "date": "2026-05-15",
+        "score": 45
+      },
+      {
+        "date": "2026-06-15",
+        "score": 44
+      },
+      {
+        "date": "2026-07-15",
+        "score": 43
+      }
+    ]
+  },
+  {
+    "id": "su-16",
+    "name": "Nightlatch",
+    "tagline": "Netcode tooling for indie multiplayer games",
+    "oneLiner": "Nightlatch packages rollback netcode and lag-compensation tooling that let two-person indie studios ship multiplayer games without a network engineer.",
+    "founderIds": [
+      "fo-21"
+    ],
+    "sector": "Gaming / Developer Tools",
+    "stage": "Pre-seed",
+    "geography": "Montreal, Canada",
+    "foundedYear": 2024,
+    "website": "nightlatch.gg",
+    "status": "sourcing",
+    "askAmount": 800000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 66,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-01",
+    "tags": [
+      "gaming",
+      "devtools",
+      "oss"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 53
+      },
+      {
+        "date": "2026-03-15",
+        "score": 59
+      },
+      {
+        "date": "2026-04-15",
+        "score": 61
+      },
+      {
+        "date": "2026-05-15",
+        "score": 64
+      },
+      {
+        "date": "2026-06-15",
+        "score": 68
+      },
+      {
+        "date": "2026-07-15",
+        "score": 73
+      }
+    ]
+  },
+  {
+    "id": "su-17",
+    "name": "Voltaic Labs",
+    "tagline": "Open, modular, repairable battery packs for e-bikes",
+    "oneLiner": "Voltaic Labs makes standardized swappable battery packs for e-bike OEMs, cutting recall risk and enabling third-party repair.",
+    "founderIds": [
+      "fo-22"
+    ],
+    "sector": "Hardware / Mobility",
+    "stage": "Seed",
+    "geography": "Pune, India",
+    "foundedYear": 2023,
+    "website": "voltaiclabs.in",
+    "status": "screening",
+    "askAmount": 3200000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 54,
+    "momentumTrend": "down",
+    "lastActivityDate": "2026-06-18",
+    "tags": [
+      "hardware",
+      "mobility",
+      "battery"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 50
+      },
+      {
+        "date": "2026-03-15",
+        "score": 46
+      },
+      {
+        "date": "2026-04-15",
+        "score": 43
+      },
+      {
+        "date": "2026-05-15",
+        "score": 41
+      },
+      {
+        "date": "2026-06-15",
+        "score": 40
+      },
+      {
+        "date": "2026-07-15",
+        "score": 35
+      }
+    ]
+  },
+  {
+    "id": "su-18",
+    "name": "Statute",
+    "tagline": "AI contract redline assistant for in-house counsel",
+    "oneLiner": "Statute reviews inbound contracts against a company's own playbook and drafts redlines in-house counsel can approve in minutes.",
+    "founderIds": [
+      "fo-23",
+      "fo-24"
+    ],
+    "sector": "Legal Tech",
+    "stage": "Seed",
+    "geography": "London, UK",
+    "foundedYear": 2024,
+    "website": "statute.legal",
+    "status": "memo",
+    "askAmount": 2400000,
+    "proposedCheckSize": 100000,
+    "thesisFitScore": 82,
+    "momentumTrend": "up",
+    "lastActivityDate": "2026-07-15",
+    "tags": [
+      "legal",
+      "ai",
+      "saas"
+    ],
+    "momentumHistory": [
+      {
+        "date": "2026-02-15",
+        "score": 46
+      },
+      {
+        "date": "2026-03-15",
+        "score": 51
+      },
+      {
+        "date": "2026-04-15",
+        "score": 57
+      },
+      {
+        "date": "2026-05-15",
+        "score": 59
+      },
+      {
+        "date": "2026-06-15",
+        "score": 62
+      },
+      {
+        "date": "2026-07-15",
+        "score": 66
+      }
+    ]
+  }
+]

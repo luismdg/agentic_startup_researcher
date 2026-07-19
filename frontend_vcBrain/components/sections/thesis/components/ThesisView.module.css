@@ -1,0 +1,10 @@
+.intro {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  max-width: 720px;
+  margin-bottom: var(--space-5);
+}
+
+.autoMapWrap {
+  margin-top: var(--space-6);
+}

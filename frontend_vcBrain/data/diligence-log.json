@@ -1,0 +1,3008 @@
+[
+  {
+    "startupId": "su-01",
+    "entries": [
+      {
+        "id": "dl-su-01-1",
+        "date": "2026-02-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-2",
+        "date": "2026-03-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-3",
+        "date": "2026-04-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-4",
+        "date": "2026-07-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-5",
+        "date": "2026-02-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-6",
+        "date": "2026-03-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-7",
+        "date": "2026-06-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-8",
+        "date": "2026-07-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-9",
+        "date": "2026-02-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-10",
+        "date": "2026-05-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-11",
+        "date": "2026-06-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-12",
+        "date": "2026-07-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-13",
+        "date": "2026-04-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-14",
+        "date": "2026-05-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-15",
+        "date": "2026-06-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-16",
+        "date": "2026-03-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-17",
+        "date": "2026-04-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-01-18",
+        "date": "2026-05-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      }
+    ]
+  },
+  {
+    "startupId": "su-02",
+    "entries": [
+      {
+        "id": "dl-su-02-1",
+        "date": "2026-03-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-2",
+        "date": "2026-04-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-3",
+        "date": "2026-05-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-4",
+        "date": "2026-02-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-5",
+        "date": "2026-03-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-6",
+        "date": "2026-04-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-7",
+        "date": "2026-07-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-8",
+        "date": "2026-02-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-9",
+        "date": "2026-03-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-10",
+        "date": "2026-06-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-11",
+        "date": "2026-07-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-12",
+        "date": "2026-02-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-13",
+        "date": "2026-05-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-14",
+        "date": "2026-06-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-15",
+        "date": "2026-07-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-16",
+        "date": "2026-04-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-17",
+        "date": "2026-05-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-02-18",
+        "date": "2026-06-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      }
+    ]
+  },
+  {
+    "startupId": "su-03",
+    "entries": [
+      {
+        "id": "dl-su-03-1",
+        "date": "2026-04-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-2",
+        "date": "2026-05-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-3",
+        "date": "2026-06-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-4",
+        "date": "2026-03-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-5",
+        "date": "2026-04-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-6",
+        "date": "2026-05-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-7",
+        "date": "2026-02-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-8",
+        "date": "2026-03-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-9",
+        "date": "2026-04-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-10",
+        "date": "2026-07-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-11",
+        "date": "2026-02-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-12",
+        "date": "2026-03-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-13",
+        "date": "2026-06-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-14",
+        "date": "2026-07-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-15",
+        "date": "2026-02-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-16",
+        "date": "2026-05-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-17",
+        "date": "2026-06-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-03-18",
+        "date": "2026-07-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      }
+    ]
+  },
+  {
+    "startupId": "su-04",
+    "entries": [
+      {
+        "id": "dl-su-04-1",
+        "date": "2026-05-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-2",
+        "date": "2026-06-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-3",
+        "date": "2026-07-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-4",
+        "date": "2026-04-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-5",
+        "date": "2026-05-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-6",
+        "date": "2026-06-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-7",
+        "date": "2026-03-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-8",
+        "date": "2026-04-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-9",
+        "date": "2026-05-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-10",
+        "date": "2026-02-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-11",
+        "date": "2026-03-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-12",
+        "date": "2026-04-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-13",
+        "date": "2026-07-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-14",
+        "date": "2026-02-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-15",
+        "date": "2026-03-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-16",
+        "date": "2026-06-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-17",
+        "date": "2026-07-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-04-18",
+        "date": "2026-02-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      }
+    ]
+  },
+  {
+    "startupId": "su-05",
+    "entries": [
+      {
+        "id": "dl-su-05-1",
+        "date": "2026-06-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-2",
+        "date": "2026-07-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-3",
+        "date": "2026-02-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-4",
+        "date": "2026-05-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-5",
+        "date": "2026-06-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-6",
+        "date": "2026-07-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-7",
+        "date": "2026-04-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-8",
+        "date": "2026-05-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-9",
+        "date": "2026-06-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-10",
+        "date": "2026-03-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-11",
+        "date": "2026-04-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-12",
+        "date": "2026-05-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-13",
+        "date": "2026-02-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-14",
+        "date": "2026-03-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-15",
+        "date": "2026-04-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-16",
+        "date": "2026-07-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-17",
+        "date": "2026-02-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-05-18",
+        "date": "2026-03-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      }
+    ]
+  },
+  {
+    "startupId": "su-06",
+    "entries": [
+      {
+        "id": "dl-su-06-1",
+        "date": "2026-07-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-2",
+        "date": "2026-02-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-3",
+        "date": "2026-03-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-4",
+        "date": "2026-06-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-5",
+        "date": "2026-07-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-6",
+        "date": "2026-02-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-7",
+        "date": "2026-05-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-8",
+        "date": "2026-06-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-9",
+        "date": "2026-07-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-10",
+        "date": "2026-04-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-11",
+        "date": "2026-05-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-12",
+        "date": "2026-06-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-13",
+        "date": "2026-03-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-14",
+        "date": "2026-04-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-15",
+        "date": "2026-05-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-16",
+        "date": "2026-02-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-17",
+        "date": "2026-03-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-06-18",
+        "date": "2026-04-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      }
+    ]
+  },
+  {
+    "startupId": "su-07",
+    "entries": [
+      {
+        "id": "dl-su-07-1",
+        "date": "2026-02-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-2",
+        "date": "2026-03-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-3",
+        "date": "2026-04-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-4",
+        "date": "2026-07-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-5",
+        "date": "2026-02-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-6",
+        "date": "2026-03-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-7",
+        "date": "2026-06-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-8",
+        "date": "2026-07-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-9",
+        "date": "2026-02-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-10",
+        "date": "2026-05-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-11",
+        "date": "2026-06-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-12",
+        "date": "2026-07-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-13",
+        "date": "2026-04-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-14",
+        "date": "2026-05-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-15",
+        "date": "2026-06-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-16",
+        "date": "2026-03-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-17",
+        "date": "2026-04-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-07-18",
+        "date": "2026-05-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      }
+    ]
+  },
+  {
+    "startupId": "su-08",
+    "entries": [
+      {
+        "id": "dl-su-08-1",
+        "date": "2026-03-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-2",
+        "date": "2026-04-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-3",
+        "date": "2026-05-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-4",
+        "date": "2026-02-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-5",
+        "date": "2026-03-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-6",
+        "date": "2026-04-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-7",
+        "date": "2026-07-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-8",
+        "date": "2026-02-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-9",
+        "date": "2026-03-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-10",
+        "date": "2026-06-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-11",
+        "date": "2026-07-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-12",
+        "date": "2026-02-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-13",
+        "date": "2026-05-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-14",
+        "date": "2026-06-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-15",
+        "date": "2026-07-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-16",
+        "date": "2026-04-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-17",
+        "date": "2026-05-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-08-18",
+        "date": "2026-06-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      }
+    ]
+  },
+  {
+    "startupId": "su-09",
+    "entries": [
+      {
+        "id": "dl-su-09-1",
+        "date": "2026-04-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-2",
+        "date": "2026-05-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-3",
+        "date": "2026-06-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-4",
+        "date": "2026-03-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-5",
+        "date": "2026-04-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-6",
+        "date": "2026-05-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-7",
+        "date": "2026-02-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-8",
+        "date": "2026-03-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-9",
+        "date": "2026-04-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-10",
+        "date": "2026-07-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-11",
+        "date": "2026-02-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-12",
+        "date": "2026-03-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-13",
+        "date": "2026-06-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-14",
+        "date": "2026-07-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-15",
+        "date": "2026-02-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-16",
+        "date": "2026-05-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-17",
+        "date": "2026-06-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-09-18",
+        "date": "2026-07-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      }
+    ]
+  },
+  {
+    "startupId": "su-10",
+    "entries": [
+      {
+        "id": "dl-su-10-1",
+        "date": "2026-05-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-2",
+        "date": "2026-06-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-3",
+        "date": "2026-07-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-4",
+        "date": "2026-04-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-5",
+        "date": "2026-05-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-6",
+        "date": "2026-06-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-7",
+        "date": "2026-03-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-8",
+        "date": "2026-04-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-9",
+        "date": "2026-05-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-10",
+        "date": "2026-02-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-11",
+        "date": "2026-03-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-12",
+        "date": "2026-04-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-13",
+        "date": "2026-07-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-14",
+        "date": "2026-02-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-15",
+        "date": "2026-03-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-16",
+        "date": "2026-06-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-17",
+        "date": "2026-07-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-10-18",
+        "date": "2026-02-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      }
+    ]
+  },
+  {
+    "startupId": "su-11",
+    "entries": [
+      {
+        "id": "dl-su-11-1",
+        "date": "2026-06-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-2",
+        "date": "2026-07-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-3",
+        "date": "2026-02-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-4",
+        "date": "2026-05-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-5",
+        "date": "2026-06-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-6",
+        "date": "2026-07-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-7",
+        "date": "2026-04-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-8",
+        "date": "2026-05-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-9",
+        "date": "2026-06-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-10",
+        "date": "2026-03-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-11",
+        "date": "2026-04-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-12",
+        "date": "2026-05-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-13",
+        "date": "2026-02-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-14",
+        "date": "2026-03-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-15",
+        "date": "2026-04-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-16",
+        "date": "2026-07-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-17",
+        "date": "2026-02-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-11-18",
+        "date": "2026-03-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      }
+    ]
+  },
+  {
+    "startupId": "su-12",
+    "entries": [
+      {
+        "id": "dl-su-12-1",
+        "date": "2026-07-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-2",
+        "date": "2026-02-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-3",
+        "date": "2026-03-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-4",
+        "date": "2026-06-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-5",
+        "date": "2026-07-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-6",
+        "date": "2026-02-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-7",
+        "date": "2026-05-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-8",
+        "date": "2026-06-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-9",
+        "date": "2026-07-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-10",
+        "date": "2026-04-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-11",
+        "date": "2026-05-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-12",
+        "date": "2026-06-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-13",
+        "date": "2026-03-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-14",
+        "date": "2026-04-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-15",
+        "date": "2026-05-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-16",
+        "date": "2026-02-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-17",
+        "date": "2026-03-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-12-18",
+        "date": "2026-04-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      }
+    ]
+  },
+  {
+    "startupId": "su-13",
+    "entries": [
+      {
+        "id": "dl-su-13-1",
+        "date": "2026-02-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-2",
+        "date": "2026-03-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-3",
+        "date": "2026-04-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-4",
+        "date": "2026-07-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-5",
+        "date": "2026-02-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-6",
+        "date": "2026-03-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-7",
+        "date": "2026-06-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-8",
+        "date": "2026-07-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-9",
+        "date": "2026-02-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-10",
+        "date": "2026-05-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-11",
+        "date": "2026-06-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-12",
+        "date": "2026-07-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-13",
+        "date": "2026-04-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-14",
+        "date": "2026-05-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-15",
+        "date": "2026-06-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-16",
+        "date": "2026-03-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-17",
+        "date": "2026-04-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-13-18",
+        "date": "2026-05-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      }
+    ]
+  },
+  {
+    "startupId": "su-14",
+    "entries": [
+      {
+        "id": "dl-su-14-1",
+        "date": "2026-03-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-2",
+        "date": "2026-04-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-3",
+        "date": "2026-05-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-4",
+        "date": "2026-02-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-5",
+        "date": "2026-03-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-6",
+        "date": "2026-04-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-7",
+        "date": "2026-07-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-8",
+        "date": "2026-02-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-9",
+        "date": "2026-03-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-10",
+        "date": "2026-06-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-11",
+        "date": "2026-07-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-12",
+        "date": "2026-02-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-13",
+        "date": "2026-05-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-14",
+        "date": "2026-06-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-15",
+        "date": "2026-07-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-16",
+        "date": "2026-04-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-17",
+        "date": "2026-05-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-14-18",
+        "date": "2026-06-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      }
+    ]
+  },
+  {
+    "startupId": "su-15",
+    "entries": [
+      {
+        "id": "dl-su-15-1",
+        "date": "2026-04-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-2",
+        "date": "2026-05-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-3",
+        "date": "2026-06-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-4",
+        "date": "2026-03-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-5",
+        "date": "2026-04-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-6",
+        "date": "2026-05-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-7",
+        "date": "2026-02-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-8",
+        "date": "2026-03-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-9",
+        "date": "2026-04-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-10",
+        "date": "2026-07-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-11",
+        "date": "2026-02-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-12",
+        "date": "2026-03-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-13",
+        "date": "2026-06-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-14",
+        "date": "2026-07-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-15",
+        "date": "2026-02-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-16",
+        "date": "2026-05-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-17",
+        "date": "2026-06-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-15-18",
+        "date": "2026-07-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      }
+    ]
+  },
+  {
+    "startupId": "su-16",
+    "entries": [
+      {
+        "id": "dl-su-16-1",
+        "date": "2026-05-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-2",
+        "date": "2026-06-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-3",
+        "date": "2026-07-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-4",
+        "date": "2026-04-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-5",
+        "date": "2026-05-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-6",
+        "date": "2026-06-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-7",
+        "date": "2026-03-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-8",
+        "date": "2026-04-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-9",
+        "date": "2026-05-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-10",
+        "date": "2026-02-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-11",
+        "date": "2026-03-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-12",
+        "date": "2026-04-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-13",
+        "date": "2026-07-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-14",
+        "date": "2026-02-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-15",
+        "date": "2026-03-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-16",
+        "date": "2026-06-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-17",
+        "date": "2026-07-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-16-18",
+        "date": "2026-02-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      }
+    ]
+  },
+  {
+    "startupId": "su-17",
+    "entries": [
+      {
+        "id": "dl-su-17-1",
+        "date": "2026-06-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-2",
+        "date": "2026-07-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-3",
+        "date": "2026-02-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-4",
+        "date": "2026-05-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-5",
+        "date": "2026-06-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-6",
+        "date": "2026-07-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-7",
+        "date": "2026-04-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-8",
+        "date": "2026-05-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-9",
+        "date": "2026-06-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-10",
+        "date": "2026-03-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-11",
+        "date": "2026-04-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-12",
+        "date": "2026-05-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-13",
+        "date": "2026-02-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-14",
+        "date": "2026-03-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-15",
+        "date": "2026-04-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-16",
+        "date": "2026-07-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-17",
+        "date": "2026-02-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Lead investor"
+      },
+      {
+        "id": "dl-su-17-18",
+        "date": "2026-03-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Lead investor"
+      }
+    ]
+  },
+  {
+    "startupId": "su-18",
+    "entries": [
+      {
+        "id": "dl-su-18-1",
+        "date": "2026-07-15",
+        "category": "Team",
+        "item": "Reference check on prior co-founder relationship",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-2",
+        "date": "2026-02-15",
+        "category": "Team",
+        "item": "Verify equity vesting schedule for founding team",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-3",
+        "date": "2026-03-15",
+        "category": "Team",
+        "item": "Confirm full-time commitment dates for all co-founders",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-4",
+        "date": "2026-06-15",
+        "category": "Market",
+        "item": "Independent TAM sizing cross-check",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-5",
+        "date": "2026-07-15",
+        "category": "Market",
+        "item": "Competitive win/loss interview with a lost prospect",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-6",
+        "date": "2026-02-15",
+        "category": "Market",
+        "item": "Validate stated customer segment ICP against actual pipeline",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-7",
+        "date": "2026-05-15",
+        "category": "Product",
+        "item": "Live product walkthrough with unscripted use case",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-8",
+        "date": "2026-06-15",
+        "category": "Product",
+        "item": "Uptime / reliability track record for last 90 days",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-9",
+        "date": "2026-07-15",
+        "category": "Product",
+        "item": "Roadmap dependency check against team's stated capacity",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-10",
+        "date": "2026-04-15",
+        "category": "Financial",
+        "item": "Bank statement reconciliation against reported cash balance",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-11",
+        "date": "2026-05-15",
+        "category": "Financial",
+        "item": "Burn rate recomputation from raw transaction data",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-12",
+        "date": "2026-06-15",
+        "category": "Financial",
+        "item": "Revenue recognition policy review for reported ARR",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-13",
+        "date": "2026-03-15",
+        "category": "Legal",
+        "item": "IP assignment agreements on file for all contributors",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-14",
+        "date": "2026-04-15",
+        "category": "Legal",
+        "item": "Outstanding litigation or regulatory inquiry search",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-15",
+        "date": "2026-05-15",
+        "category": "Legal",
+        "item": "Review of any side letters from prior financing rounds",
+        "status": "verified",
+        "notes": "Confirmed via direct source review; no follow-up required.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-16",
+        "date": "2026-02-15",
+        "category": "Technical",
+        "item": "Code quality / architecture review with outside engineer",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-17",
+        "date": "2026-03-15",
+        "category": "Technical",
+        "item": "Data security and access control audit",
+        "status": "open",
+        "notes": "Not yet independently verified; scheduled for next diligence session.",
+        "owner": "Associate"
+      },
+      {
+        "id": "dl-su-18-18",
+        "date": "2026-04-15",
+        "category": "Technical",
+        "item": "Dependency on any single-vendor or single-person technical risk",
+        "status": "contradicted",
+        "notes": "Independent source conflicts with founder-provided account; requires resolution before decision.",
+        "owner": "Associate"
+      }
+    ]
+  }
+]

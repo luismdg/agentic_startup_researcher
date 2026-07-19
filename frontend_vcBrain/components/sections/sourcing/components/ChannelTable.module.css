@@ -1,0 +1,11 @@
+.name {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.notes {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+  max-width: 360px;
+}

@@ -1,0 +1,6 @@
+.empty {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  color: var(--color-text-muted);
+}

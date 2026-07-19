@@ -1,0 +1,34 @@
+.rollup {
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-mono);
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-5) 0;
+}
+
+.dot {
+  color: var(--color-text-muted);
+  margin: 0 var(--space-2);
+  font-family: var(--font-family-base);
+}
+
+.verified {
+  color: var(--color-success);
+  font-weight: var(--font-weight-medium);
+}
+
+.open {
+  color: var(--color-warning);
+  font-weight: var(--font-weight-medium);
+}
+
+.contradicted {
+  color: var(--color-danger);
+  font-weight: var(--font-weight-medium);
+}
+
+.list {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  overflow: hidden;
+}

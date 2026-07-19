@@ -1,0 +1,21 @@
+.snapshot {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+}
+
+.chip {
+  font-weight: var(--font-weight-medium);
+}
+
+.sep {
+  color: var(--color-text-muted);
+}
+
+.empty {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  font-style: italic;
+}

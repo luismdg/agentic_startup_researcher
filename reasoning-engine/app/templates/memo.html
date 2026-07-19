@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+{% block title %}{{ company.name }} - Memo{% endblock %}
+{% block content %}
+
+{% macro claim_chip(claim) %}
+  {% set src_titles = [] %}
+  {% for eid in claim.evidence_ids %}
+    {% set ev = evidence_by_id.get(eid) %}
+    {% if ev %}{% set _ = src_titles.append(ev.source ~ ': "' ~ ev.snippet_text ~ '"') %}{% endif %}
+  {% endfor %}
+  <span class="claim claim-{{ claim.confidence_level }}"
+        title="{{ claim.confidence_level }} &#10;{{ claim.reasoning }}&#10;{{ src_titles | join(' | ') }}">
+    {{ claim.claim_text }} &middot; {{ claim.confidence_level }}
+  </span>
+{% endmacro %}
+
+{% macro memo_section(section) %}
+  <div class="content">{{ section.content }}</div>
+  {% if section.claims %}
+  <div class="claims">
+    {% for claim in section.claims %}{{ claim_chip(claim) }}{% endfor %}
+  </div>
+  {% endif %}
+  {% if section.data_gaps %}
+  <ul class="data-gaps">
+    {% for gap in section.data_gaps %}<li>{{ gap }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+{% endmacro %}
+
+{% macro swot_quad(label, claims) %}
+  <div class="swot-quad">
+    <h4>{{ label }}</h4>
+    <div class="claims">
+      {% for claim in claims %}{{ claim_chip(claim) }}{% endfor %}
+      {% if not claims %}<span class="oneliner">none noted</span>{% endif %}
+    </div>
+  </div>
+{% endmacro %}
+
+<p><a href="/">&larr; Back to dashboard</a></p>
+
+<div class="memo-header">
+  <h1>{{ company.name }}</h1>
+  <div class="oneliner">{{ company.one_liner }} &middot; {{ company.sector }} / {{ company.stage or 'stage unknown' }} / {{ company.geography or 'geography unknown' }}</div>
+</div>
+
+<p class="fit-line">
+  {% if memo.thesis_fit.passes_hard_filters %}
+    <span class="badge badge-pass">fits thesis</span>
+  {% else %}
+    <span class="badge badge-fail">fails: {{ memo.thesis_fit.hard_filter_failures | join('; ') }}</span>
+  {% endif %}
+  &nbsp;&middot;&nbsp; ownership {{ memo.thesis_fit.ownership_feasibility }} &mdash; {{ memo.thesis_fit.ownership_note }}
+  <br>{{ memo.thesis_fit.risk_alignment_note }}
+</p>
+
+<h2>3-axis scores</h2>
+<div class="axis-cards">
+  {% for name, axis in [("Founder", memo.axis_scores.founder), ("Market", memo.axis_scores.market), ("Idea x Market", memo.axis_scores.idea_market_fit)] %}
+  <div class="axis-card">
+    <div class="axis-title">{{ name }}</div>
+    <div class="axis-score">{{ axis.score }}<small>/10</small>
+      {% if axis.trend == "improving" %}<span class="trend-up">&uarr; improving</span>
+      {% elif axis.trend == "declining" %}<span class="trend-down">&darr; declining</span>
+      {% else %}<span class="trend-stable">&rarr; stable</span>{% endif %}
+    </div>
+    <div class="axis-meta">confidence: {{ axis.confidence }}</div>
+    <div class="axis-justification">{{ axis.justification }}</div>
+    {% for flag in axis.flags %}<div class="flag">&#9888; {{ flag }}</div>{% endfor %}
+  </div>
+  {% endfor %}
+</div>
+
+<h2>Trust summary</h2>
+<div class="section">
+  {% set ts = memo.trust_summary %}
+  <div class="trust-bar">
+    {% if ts.total_claims > 0 %}
+    <span style="width: {{ (ts.verified / ts.total_claims * 100) | round(1) }}%; background: var(--verified);"></span>
+    <span style="width: {{ (ts.likely / ts.total_claims * 100) | round(1) }}%; background: var(--likely);"></span>
+    <span style="width: {{ (ts.uncertain / ts.total_claims * 100) | round(1) }}%; background: var(--uncertain);"></span>
+    <span style="width: {{ (ts.unverifiable / ts.total_claims * 100) | round(1) }}%; background: var(--unverifiable);"></span>
+    {% endif %}
+  </div>
+  <div class="trust-legend">
+    <span><span class="dot" style="background: var(--verified);"></span>Verified {{ ts.verified }}</span>
+    <span><span class="dot" style="background: var(--likely);"></span>Likely {{ ts.likely }}</span>
+    <span><span class="dot" style="background: var(--uncertain);"></span>Uncertain {{ ts.uncertain }}</span>
+    <span><span class="dot" style="background: var(--unverifiable);"></span>Unverifiable {{ ts.unverifiable }}</span>
+    <span>{{ ts.total_claims }} claims total &mdash; each traceable to its source snippet (hover a claim)</span>
+  </div>
+</div>
+
+<h2>Company snapshot</h2>
+<div class="section">{{ memo_section(memo.company_snapshot) }}</div>
+
+<h2>Investment hypotheses</h2>
+<div class="section">{{ memo_section(memo.investment_hypotheses) }}</div>
+
+<h2>SWOT</h2>
+<div class="section">
+  <div class="swot-grid">
+    {{ swot_quad("Strengths", memo.swot.strengths) }}
+    {{ swot_quad("Weaknesses", memo.swot.weaknesses) }}
+    {{ swot_quad("Opportunities", memo.swot.opportunities) }}
+    {{ swot_quad("Threats", memo.swot.threats) }}
+  </div>
+</div>
+
+<h2>Problem &amp; product</h2>
+<div class="section">
+  <div class="content"><strong>Problem:</strong> {{ memo.problem_product.problem }}</div>
+  <div class="content"><strong>Product:</strong> {{ memo.problem_product.product }}</div>
+  {% if memo.problem_product.claims %}
+  <div class="claims">
+    {% for claim in memo.problem_product.claims %}{{ claim_chip(claim) }}{% endfor %}
+  </div>
+  {% endif %}
+  {% if memo.problem_product.data_gaps %}
+  <ul class="data-gaps">
+    {% for gap in memo.problem_product.data_gaps %}<li>{{ gap }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+</div>
+
+<h2>Traction &amp; KPIs</h2>
+<div class="section">{{ memo_section(memo.traction_kpis) }}</div>
+
+<h2>Extended analysis <span class="oneliner">(optional &mdash; End User Profile, Beachhead Market, Business Segments)</span></h2>
+{% if not memo.segment_evaluation %}
+<div class="section">
+  <p class="oneliner">Not generated yet &mdash; this costs one extra LLM call, made only when you ask for it.</p>
+  <a class="btn" href="/memo/{{ company.id }}?extended=1">Generate extended analysis</a>
+</div>
+{% else %}
+
+<div class="section">
+  <h3>End User Profile</h3>
+  {% set eup = memo.end_user_profile %}
+  <p><strong>Demographics:</strong> {{ eup.demographics or 'not evidenced' }}</p>
+  <p><strong>Psychographics:</strong> {{ eup.psychographics or 'not evidenced' }}</p>
+  <p><strong>Day in the life:</strong> {{ eup.day_in_the_life or 'not evidenced' }}</p>
+  <p><strong>Proxy products:</strong> {{ eup.proxy_products | join(', ') if eup.proxy_products else 'not evidenced' }}</p>
+  <p><strong>Watering holes:</strong> {{ eup.watering_holes | join(', ') if eup.watering_holes else 'not evidenced' }}</p>
+  <p><strong>Priorities:</strong> {{ eup.priorities | join(', ') if eup.priorities else 'not evidenced' }}</p>
+  {% if eup.claims %}
+  <div class="claims">{% for claim in eup.claims %}{{ claim_chip(claim) }}{% endfor %}</div>
+  {% endif %}
+  {% if eup.data_gaps %}
+  <ul class="data-gaps">{% for gap in eup.data_gaps %}<li>{{ gap }}</li>{% endfor %}</ul>
+  {% endif %}
+</div>
+
+<div class="section">
+  <h3>Beachhead Market</h3>
+  {% set ma = memo.market_analysis %}
+  <p><strong>Primary end user:</strong> {{ ma.primary_end_user or 'not evidenced' }}
+     &middot; <strong>Economic buyer:</strong> {{ ma.economic_buyer or 'not evidenced' }}</p>
+  <p><strong>CAGR:</strong> {{ '%.1f'|format(ma.niche_cagr_pct) ~ '%' if ma.niche_cagr_pct is not none else 'not evidenced' }}
+     &middot; <strong>TAM:</strong> {{ '${:,.0f}'.format(ma.tam_usd) if ma.tam_usd is not none else 'not evidenced' }}
+     &middot; <strong>SAM:</strong> {{ '${:,.0f}'.format(ma.sam_usd) if ma.sam_usd is not none else 'not evidenced' }}
+     &middot; <strong>SOM:</strong> {{ '${:,.0f}'.format(ma.som_usd) if ma.som_usd is not none else 'not evidenced' }}</p>
+  <div class="content">{{ ma.narrative }}</div>
+  {% if ma.claims %}
+  <div class="claims">{% for claim in ma.claims %}{{ claim_chip(claim) }}{% endfor %}</div>
+  {% endif %}
+  {% if ma.data_gaps %}
+  <ul class="data-gaps">{% for gap in ma.data_gaps %}<li>{{ gap }}</li>{% endfor %}</ul>
+  {% endif %}
+</div>
+
+<div class="section">
+  <h3>Business Segments &mdash; scored 1-5 per criterion (5 = most favorable)</h3>
+  {% set se = memo.segment_evaluation %}
+  <p class="oneliner">Recommended beachhead: <strong>{{ se.recommended_segment }}</strong> (highest total score, computed from the table below &mdash; not asked of the model).</p>
+  {% for seg in se.segments %}
+  <div class="segment-block {{ 'segment-recommended' if seg.segment_name == se.recommended_segment else '' }}">
+    <div class="segment-header">
+      <strong>{{ seg.segment_name }}</strong>
+      <span class="segment-total">{{ seg.total_score }}/50</span>
+    </div>
+    <p class="oneliner">{{ seg.description }}</p>
+    <table class="segment-table">
+      <tbody>
+        {% for c in seg.criteria %}
+        <tr>
+          <td>{{ c.criterion.replace('_', ' ') }}</td>
+          <td class="segment-score">{{ c.score }}/5</td>
+          <td class="segment-justification">{{ c.justification }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% for flag in seg.flags %}<div class="flag">&#9888; {{ flag }}</div>{% endfor %}
+  </div>
+  {% endfor %}
+</div>
+
+{% endif %}
+
+{% endblock %}

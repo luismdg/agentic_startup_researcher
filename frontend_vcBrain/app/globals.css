@@ -1,0 +1,266 @@
+/* ============================================================
+   VC Brain — Design Tokens
+   Every visual constant used anywhere in the app is defined here.
+   Component code must only ever reference these via var(--token).
+
+   Because every shared component (Table, Sidebar, TopBar, Button,
+   Badge, GuidedFilterGate, DetailDrawer, EmptyState, FilterPanel...)
+   already reads exclusively from these tokens, this file is the
+   single highest-leverage place to change the whole app's look —
+   which is exactly why the palette below is not scoped to one page.
+   ============================================================ */
+
+:root {
+  /* ---- Color palette: cosmic (the app's default look, both themes) ---- */
+  --color-bg: #05060c;
+  --color-surface: rgba(255, 255, 255, 0.055);
+  --color-surface-alt: rgba(255, 255, 255, 0.09);
+  --color-surface-raised: rgba(255, 255, 255, 0.08);
+
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-border-strong: rgba(255, 255, 255, 0.22);
+
+  --color-text-primary: #f3f2fb;
+  --color-text-secondary: rgba(243, 242, 251, 0.72);
+  --color-text-muted: rgba(243, 242, 251, 0.5);
+  --color-text-inverse: #05060c;
+  /* Text for saturated accent-colored surfaces (e.g. the primary button's
+     gradient) specifically -- NOT the same thing as --color-text-inverse
+     (which means "inverse of --color-text-primary", used correctly by
+     Tooltip's bubble). Accent gradients stay vivid in both themes, so
+     this stays white in both instead of flipping with the theme. */
+  --color-on-accent: #f8f9ff;
+
+  --color-accent: #5b8dff;
+  --color-accent-hover: #7aa4ff;
+  --color-accent-soft: rgba(91, 141, 255, 0.16);
+  --color-accent-text: #8fb4ff;
+
+  --color-success: #57d9a3;
+  --color-success-soft: rgba(87, 217, 163, 0.14);
+  --color-warning: #ffb84f;
+  --color-warning-soft: rgba(255, 184, 79, 0.14);
+  --color-danger: #ff6b81;
+  --color-danger-soft: rgba(255, 107, 129, 0.14);
+  --color-info: #7ec8ff;
+  --color-info-soft: rgba(126, 200, 255, 0.14);
+
+  /* ---- Axis / trend / confidence semantics ---- */
+  --color-trend-up: #57d9a3;
+  --color-trend-down: #ff6b81;
+  --color-trend-flat: rgba(243, 242, 251, 0.5);
+
+  --color-axis-founder: #5b8dff;
+  --color-axis-market: #ffb84f;
+  --color-axis-idea: #b98bff;
+
+  --color-confidence-high: #57d9a3;
+  --color-confidence-medium: #ffb84f;
+  --color-confidence-low: #ff6b81;
+
+  /* ---- Aurora backdrop (feeds body background + hero) ---- */
+  --aurora-1: rgba(51, 85, 255, 0.22);
+  --aurora-2: rgba(255, 47, 176, 0.16);
+  --aurora-3: rgba(23, 224, 194, 0.14);
+
+  /* ---- Spacing scale ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* ---- Typography ---- */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-md: 0.9375rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  /* ---- Radius ---- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* ---- Shadow ---- */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.55);
+  --shadow-glow-accent: 0 0 22px rgba(91, 141, 255, 0.4);
+
+  /* ---- Glass ---- */
+  --glass-blur: 20px;
+
+  /* ---- Motion ---- */
+  --transition-fast: 100ms;
+  --transition-base: 160ms;
+  --transition-slow: 260ms;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---- Layout ---- */
+  --sidebar-width: 224px;
+  --topbar-height: 56px;
+  --content-max-width: 1360px;
+  --z-modal: 100;
+  --z-dropdown: 60;
+  --z-tooltip: 80;
+
+  color-scheme: dark;
+}
+
+/* Theme is explicit and defaults to the cosmic look regardless of OS
+   preference. Toggling sets data-theme="light" on <html> (see
+   ThemeToggle + the anti-flash inline script in app/layout.tsx) for a
+   bright glass variant of the exact same design language -- not a
+   return to a plain, flat theme. */
+:root[data-theme="light"] {
+  --color-bg: #eef1fb;
+  --color-surface: rgba(255, 255, 255, 0.62);
+  --color-surface-alt: rgba(255, 255, 255, 0.4);
+  --color-surface-raised: rgba(255, 255, 255, 0.8);
+
+  --color-border: rgba(20, 20, 40, 0.1);
+  --color-border-strong: rgba(20, 20, 40, 0.2);
+
+  --color-text-primary: #14152b;
+  --color-text-secondary: rgba(20, 21, 43, 0.7);
+  --color-text-muted: rgba(20, 21, 43, 0.5);
+  --color-text-inverse: #f7f6ff;
+
+  --color-accent: #3f66ff;
+  --color-accent-hover: #2b52ea;
+  --color-accent-soft: rgba(63, 102, 255, 0.12);
+  --color-accent-text: #2b52ea;
+
+  --color-success: #1f9d6c;
+  --color-success-soft: rgba(31, 157, 108, 0.12);
+  --color-warning: #b9770e;
+  --color-warning-soft: rgba(185, 119, 14, 0.12);
+  --color-danger: #d43d55;
+  --color-danger-soft: rgba(212, 61, 85, 0.12);
+  --color-info: #2b7ab3;
+  --color-info-soft: rgba(43, 122, 179, 0.12);
+
+  --color-trend-up: #1f9d6c;
+  --color-trend-down: #d43d55;
+  --color-trend-flat: rgba(20, 21, 43, 0.5);
+
+  --color-axis-founder: #3f66ff;
+  --color-axis-market: #b9770e;
+  --color-axis-idea: #7a4fd1;
+
+  --color-confidence-high: #1f9d6c;
+  --color-confidence-medium: #b9770e;
+  --color-confidence-low: #d43d55;
+
+  --aurora-1: rgba(63, 102, 255, 0.14);
+  --aurora-2: rgba(255, 47, 176, 0.1);
+  --aurora-3: rgba(23, 194, 168, 0.12);
+
+  --shadow-sm: 0 1px 3px rgba(30, 30, 60, 0.08);
+  --shadow-md: 0 10px 30px rgba(30, 30, 60, 0.12), 0 0 0 1px rgba(20, 20, 40, 0.03);
+  --shadow-lg: 0 24px 60px rgba(30, 30, 60, 0.16);
+  --shadow-glow-accent: 0 0 22px rgba(63, 102, 255, 0.22);
+
+  --glass-blur: 16px;
+
+  color-scheme: light;
+}
+
+/* Cosmic hero: an intentionally more saturated accent set used by
+   components/three and HeroConstellation on the Overview page. Kept
+   as tokens, not inline hex, per this file's own rule. */
+:root {
+  --cosmic-bg: #05060c;
+  --cosmic-bg-2: #0b0d1a;
+  --cosmic-surface: rgba(255, 255, 255, 0.06);
+  --cosmic-surface-strong: rgba(255, 255, 255, 0.1);
+  --cosmic-border: rgba(255, 255, 255, 0.14);
+  --cosmic-text: #f4f3fb;
+  --cosmic-text-dim: rgba(244, 243, 251, 0.6);
+
+  --cosmic-founder: #4fa8ff;
+  --cosmic-market: #ffb84f;
+  --cosmic-idea: #b98bff;
+
+  --cosmic-aurora-1: #3355ff;
+  --cosmic-aurora-2: #ff2fb0;
+  --cosmic-aurora-3: #17e0c2;
+
+  --cosmic-radius: 28px;
+  --cosmic-blur: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(900px circle at 12% -10%, var(--aurora-1), transparent 55%),
+    radial-gradient(800px circle at 110% 5%, var(--aurora-2), transparent 55%),
+    radial-gradient(900px circle at 50% 115%, var(--aurora-3), transparent 55%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--color-text-primary);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color var(--transition-slow) var(--ease-standard), color var(--transition-slow) var(--ease-standard);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: var(--radius-full);
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ch-01",
+    "name": "GitHub trending (infra & devtools)",
+    "type": "github",
+    "region": "Global",
+    "activeDeals": 4,
+    "totalSourced": 27,
+    "conversionRate": 0.15,
+    "qualityScore": 82,
+    "lastSignalDate": "2026-07-16",
+    "notes": "Highest signal-to-noise channel for technical first-time founders; repos with sudden star velocity are the strongest predictor."
+  },
+  {
+    "id": "ch-02",
+    "name": "HackNation",
+    "type": "hackathon",
+    "region": "Global",
+    "activeDeals": 2,
+    "totalSourced": 19,
+    "conversionRate": 0.11,
+    "qualityScore": 74,
+    "lastSignalDate": "2026-07-12",
+    "notes": "Strong for early technical signal but teams often need 2-3 quarters before they're fundable."
+  },
+  {
+    "id": "ch-03",
+    "name": "arXiv preprint alerts (applied ML)",
+    "type": "research",
+    "region": "Global",
+    "activeDeals": 1,
+    "totalSourced": 13,
+    "conversionRate": 0.08,
+    "qualityScore": 79,
+    "lastSignalDate": "2026-07-05",
+    "notes": "Low volume but highest average founder domain-expertise score of any channel."
+  },
+  {
+    "id": "ch-04",
+    "name": "Forge Labs (accelerator)",
+    "type": "accelerator",
+    "region": "North America",
+    "activeDeals": 3,
+    "totalSourced": 22,
+    "conversionRate": 0.18,
+    "qualityScore": 77,
+    "lastSignalDate": "2026-07-14",
+    "notes": "Demo day cohorts consistently pre-screened for basic fundability; conversion is high but so is competition from other funds."
+  },
+  {
+    "id": "ch-05",
+    "name": "Southern Cross (accelerator)",
+    "type": "accelerator",
+    "region": "Africa",
+    "activeDeals": 2,
+    "totalSourced": 15,
+    "conversionRate": 0.2,
+    "qualityScore": 80,
+    "lastSignalDate": "2026-06-30",
+    "notes": "Underweighted by most funds; overlaps well with the Overlooked Geographies thesis preset."
+  },
+  {
+    "id": "ch-06",
+    "name": "Maintainer direct outreach",
+    "type": "github",
+    "region": "Global",
+    "activeDeals": 2,
+    "totalSourced": 9,
+    "conversionRate": 0.22,
+    "qualityScore": 85,
+    "lastSignalDate": "2026-07-11",
+    "notes": "Manual, low-volume, but the highest quality score of any channel — reserved for maintainers with sustained multi-year commit history."
+  },
+  {
+    "id": "ch-07",
+    "name": "Cascade Summit (conference applications)",
+    "type": "community",
+    "region": "North America",
+    "activeDeals": 1,
+    "totalSourced": 11,
+    "conversionRate": 0.09,
+    "qualityScore": 66,
+    "lastSignalDate": "2026-06-22",
+    "notes": "Mixed quality; useful mainly for fintech and proptech sourcing given attendee mix."
+  },
+  {
+    "id": "ch-08",
+    "name": "Google Search (launch & press signals)",
+    "type": "web",
+    "region": "Global",
+    "activeDeals": 2,
+    "totalSourced": 14,
+    "conversionRate": 0.1,
+    "qualityScore": 68,
+    "lastSignalDate": "2026-07-10",
+    "notes": "Broadest reach, lowest signal-to-noise; useful for catching launches outside the usual accelerator/GitHub circuit, but needs heavier manual triage."
+  }
+]

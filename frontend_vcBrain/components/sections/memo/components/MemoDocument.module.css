@@ -1,0 +1,43 @@
+.document {
+  max-width: calc(var(--space-8) * 20);
+}
+
+.generatedLine {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 var(--space-6) 0;
+}
+
+.orderedList {
+  margin: 0;
+  padding-left: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  color: var(--color-text-primary);
+}
+
+.proseBlock + .proseBlock {
+  margin-top: var(--space-4);
+}
+
+.proseLabel {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.prose {
+  margin: 0;
+  color: var(--color-text-primary);
+  line-height: var(--line-height-normal);
+}
+
+.subsection + .subsection {
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}

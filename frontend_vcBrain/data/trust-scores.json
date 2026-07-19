@@ -1,0 +1,1064 @@
+[
+  {
+    "startupId": "su-01",
+    "claims": [
+      {
+        "id": "tc-su-01-1",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-01-2",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-01-3",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "low",
+        "verifiedDate": "2026-04-15",
+        "contradiction": "One named reference did not recall the founder holding the specific title claimed."
+      },
+      {
+        "id": "tc-su-01-4",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-01-5",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-02",
+    "claims": [
+      {
+        "id": "tc-su-02-1",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-02-2",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "medium",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-02-3",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-02-4",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-02-5",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-02-6",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "low",
+        "verifiedDate": "2026-02-15",
+        "contradiction": "Pilot contact described engagement as 'exploratory conversations,' not a signed pilot as characterized in the deck."
+      }
+    ]
+  },
+  {
+    "startupId": "su-03",
+    "claims": [
+      {
+        "id": "tc-su-03-1",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-03-2",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-03-3",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "medium",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-03-4",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-03-5",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "medium",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-03-6",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-03-7",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-04",
+    "claims": [
+      {
+        "id": "tc-su-04-1",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-04-2",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-04-3",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-04-4",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "high",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-04-5",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-05",
+    "claims": [
+      {
+        "id": "tc-su-05-1",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-05-2",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-05-3",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "low",
+        "verifiedDate": "2026-02-15",
+        "contradiction": "Pilot contact described engagement as 'exploratory conversations,' not a signed pilot as characterized in the deck."
+      },
+      {
+        "id": "tc-su-05-4",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-05-5",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-05-6",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-06",
+    "claims": [
+      {
+        "id": "tc-su-06-1",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-06-2",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "medium",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-06-3",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-06-4",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-06-5",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-06-6",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "low",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-06-7",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-07",
+    "claims": [
+      {
+        "id": "tc-su-07-1",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "high",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-07-2",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-07-3",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "medium",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-07-4",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-07-5",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "medium",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-08",
+    "claims": [
+      {
+        "id": "tc-su-08-1",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-08-2",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-08-3",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-08-4",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-08-5",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-08-6",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "medium",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-09",
+    "claims": [
+      {
+        "id": "tc-su-09-1",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-09-2",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-09-3",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "low",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-09-4",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-09-5",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-09-6",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-09-7",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-10",
+    "claims": [
+      {
+        "id": "tc-su-10-1",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-10-2",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "medium",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-10-3",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-10-4",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-10-5",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-11",
+    "claims": [
+      {
+        "id": "tc-su-11-1",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-11-2",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-11-3",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "medium",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-11-4",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-11-5",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "medium",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-11-6",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-12",
+    "claims": [
+      {
+        "id": "tc-su-12-1",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-12-2",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-12-3",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-12-4",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-12-5",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-12-6",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "medium",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-12-7",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-13",
+    "claims": [
+      {
+        "id": "tc-su-13-1",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-13-2",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-13-3",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "low",
+        "verifiedDate": "2026-04-15",
+        "contradiction": "One named reference did not recall the founder holding the specific title claimed."
+      },
+      {
+        "id": "tc-su-13-4",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-13-5",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-14",
+    "claims": [
+      {
+        "id": "tc-su-14-1",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-14-2",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "medium",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-14-3",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-14-4",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-14-5",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-14-6",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "low",
+        "verifiedDate": "2026-02-15",
+        "contradiction": "Pilot contact described engagement as 'exploratory conversations,' not a signed pilot as characterized in the deck."
+      }
+    ]
+  },
+  {
+    "startupId": "su-15",
+    "claims": [
+      {
+        "id": "tc-su-15-1",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-15-2",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-15-3",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "medium",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-15-4",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-15-5",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "medium",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-15-6",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-15-7",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-16",
+    "claims": [
+      {
+        "id": "tc-su-16-1",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-16-2",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-16-3",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-16-4",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "high",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-16-5",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-17",
+    "claims": [
+      {
+        "id": "tc-su-17-1",
+        "claim": "Founder previously held the role described in their bio",
+        "source": "LinkedIn + reference call with former manager",
+        "evidenceType": "Reference check",
+        "confidence": "high",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-17-2",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-17-3",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "low",
+        "verifiedDate": "2026-02-15",
+        "contradiction": "Pilot contact described engagement as 'exploratory conversations,' not a signed pilot as characterized in the deck."
+      },
+      {
+        "id": "tc-su-17-4",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-17-5",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-17-6",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      }
+    ]
+  },
+  {
+    "startupId": "su-18",
+    "claims": [
+      {
+        "id": "tc-su-18-1",
+        "claim": "Company has the design-partner / pilot customers claimed in the deck",
+        "source": "Direct outreach to 2 of 3 named pilot contacts",
+        "evidenceType": "Customer reference",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-18-2",
+        "claim": "Reported MRR / revenue figure matches underlying data",
+        "source": "Stripe / billing export reviewed directly",
+        "evidenceType": "Financial document review",
+        "confidence": "medium",
+        "verifiedDate": "2026-02-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-18-3",
+        "claim": "Technical architecture claims hold up under scrutiny",
+        "source": "Technical diligence call with founding engineer",
+        "evidenceType": "Technical interview",
+        "confidence": "medium",
+        "verifiedDate": "2026-03-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-18-4",
+        "claim": "No undisclosed prior company failures or legal disputes",
+        "source": "Background + litigation search",
+        "evidenceType": "Background check",
+        "confidence": "high",
+        "verifiedDate": "2026-04-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-18-5",
+        "claim": "Cap table matches what was represented in the data room",
+        "source": "Cap table document cross-check",
+        "evidenceType": "Document review",
+        "confidence": "low",
+        "verifiedDate": "2026-05-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-18-6",
+        "claim": "Stated user/usage growth rate is accurate",
+        "source": "Product analytics dashboard shared read-only",
+        "evidenceType": "Analytics review",
+        "confidence": "low",
+        "verifiedDate": "2026-06-15",
+        "contradiction": null
+      },
+      {
+        "id": "tc-su-18-7",
+        "claim": "IP / patent claims are accurately represented",
+        "source": "Patent database search",
+        "evidenceType": "IP search",
+        "confidence": "medium",
+        "verifiedDate": "2026-07-15",
+        "contradiction": null
+      }
+    ]
+  }
+]
