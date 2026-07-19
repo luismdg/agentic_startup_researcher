@@ -1,0 +1,111 @@
+{
+  "Mexican LegalTech": {
+    "prioritized_sources": ["google", "linkedin", "accelerators", "github"],
+    "query_templates": [
+      "AI para despachos legales México",
+      "legaltech startups Mexico law firms",
+      "automatización legal México startup"
+    ],
+    "high_weight_signals": ["law firm partnership mention", "bar association mention", "notary/notaría keyword match"],
+    "evidence_floor": "at least one live site OR one verifiable founder profile",
+    "fallback_parent_niche": "LatAm B2B SaaS",
+    "secondary_niches": ["LatAm B2B SaaS"],
+    "questionnaire": {
+      "relevant_attributes": ["city", "business_model", "target_customer"],
+      "by_stage": {
+        "Idea": ["business_model", "target_customer"],
+        "MVP": ["has_clients", "team_size_min", "team_size_max"],
+        "Launched": ["has_clients", "funding_stage_filter", "founded_after"],
+        "Unknown": ["keywords"]
+      },
+      "suggested_keywords": ["notaría", "despacho legal", "contrato inteligente", "cumplimiento legal"]
+    }
+  },
+  "AI Infra": {
+    "prioritized_sources": ["github", "arxiv", "google"],
+    "query_templates": [
+      "AI infrastructure startup founder",
+      "open source AI infra project maintainer"
+    ],
+    "high_weight_signals": ["GitHub commit activity", "arXiv preprint authorship"],
+    "evidence_floor": "at least one public repo OR one preprint",
+    "fallback_parent_niche": null,
+    "secondary_niches": ["Climate Hardware"],
+    "questionnaire": {
+      "relevant_attributes": ["tech_stack", "target_customer"],
+      "by_stage": {
+        "Idea": ["tech_stack", "business_model"],
+        "MVP": ["tech_stack", "team_size_min", "team_size_max"],
+        "Launched": ["has_clients", "funding_stage_filter"],
+        "Unknown": ["keywords"]
+      },
+      "suggested_keywords": ["GPU scheduling", "inference", "vector database", "model serving"]
+    }
+  },
+  "LatAm B2B SaaS": {
+    "prioritized_sources": ["google", "linkedin", "producthunt", "accelerators"],
+    "query_templates": [
+      "B2B SaaS startup LatAm founder",
+      "software empresarial startup Latinoamérica",
+      "vertical SaaS Mexico Colombia Brazil launch"
+    ],
+    "high_weight_signals": ["accelerator cohort mention", "Product Hunt launch", "enterprise client named"],
+    "evidence_floor": "at least one live site OR one verifiable founder profile",
+    "fallback_parent_niche": null,
+    "secondary_niches": ["Mexican LegalTech", "Healthtech"],
+    "questionnaire": {
+      "relevant_attributes": ["city", "business_model", "target_customer"],
+      "by_stage": {
+        "Idea": ["business_model", "target_customer"],
+        "MVP": ["has_clients", "team_size_min", "tech_stack"],
+        "Launched": ["has_clients", "funding_stage_filter", "founded_after"],
+        "Unknown": ["keywords"]
+      },
+      "suggested_keywords": ["vertical SaaS", "PYME", "enterprise software", "API integration"]
+    }
+  },
+  "Climate Hardware": {
+    "prioritized_sources": ["github", "arxiv", "accelerators", "google"],
+    "query_templates": [
+      "climate tech hardware startup founder",
+      "climatetech hardware prototype GitHub",
+      "cleantech hardware accelerator cohort"
+    ],
+    "high_weight_signals": ["hardware prototype/repo evidence", "patent or preprint filing", "climate accelerator cohort mention"],
+    "evidence_floor": "at least one working prototype/repo OR one verifiable founder profile",
+    "fallback_parent_niche": null,
+    "secondary_niches": ["AI Infra"],
+    "questionnaire": {
+      "relevant_attributes": ["tech_stack", "founded_after"],
+      "by_stage": {
+        "Idea": ["tech_stack", "target_customer"],
+        "MVP": ["tech_stack", "team_size_min", "team_size_max"],
+        "Launched": ["has_clients", "funding_stage_filter"],
+        "Unknown": ["keywords"]
+      },
+      "suggested_keywords": ["prototype", "patent pending", "pilot deployment", "off-grid"]
+    }
+  },
+  "Healthtech": {
+    "prioritized_sources": ["google", "linkedin", "accelerators", "github"],
+    "query_templates": [
+      "healthtech startup founder early stage",
+      "digital health startup MVP launch",
+      "health AI startup clinician founder"
+    ],
+    "high_weight_signals": ["clinical pilot mention", "health accelerator cohort mention", "regulatory/compliance mention"],
+    "evidence_floor": "at least one live site OR one verifiable founder profile",
+    "fallback_parent_niche": null,
+    "secondary_niches": ["LatAm B2B SaaS"],
+    "questionnaire": {
+      "relevant_attributes": ["city", "target_customer", "business_model"],
+      "by_stage": {
+        "Idea": ["business_model", "target_customer"],
+        "MVP": ["has_clients", "team_size_min"],
+        "Launched": ["has_clients", "funding_stage_filter", "founded_after"],
+        "Unknown": ["keywords"]
+      },
+      "suggested_keywords": ["clinical pilot", "regulatory compliance", "telemedicine", "patient outcomes"]
+    }
+  }
+}

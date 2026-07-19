@@ -1,0 +1,6 @@
+{
+  "niches": ["Mexican LegalTech", "LatAm B2B SaaS", "Climate Hardware", "AI Infra", "Healthtech"],
+  "geographies": ["Mexico", "Colombia", "Brazil", "United States", "Germany"],
+  "channels": ["GitHub", "Google", "Academic papers", "Accelerators", "Hackathons", "Community", "Direct application", "YouTube", "Twitter/X", "Reddit"],
+  "stage_signals": ["Idea", "MVP", "Launched", "Unknown"]
+}

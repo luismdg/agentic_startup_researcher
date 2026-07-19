@@ -1,0 +1,457 @@
+{
+  "run": {
+    "niche": "Mexican LegalTech",
+    "run_date": "2026-07-18",
+    "passes_executed": 2
+  },
+  "results": [
+    {
+      "source": "github",
+      "founder_name": "Mariana Cetz",
+      "founder_city": "Mérida",
+      "founder_country": "Mexico",
+      "founder_linkedin": null,
+      "founder_education": null,
+      "founder_prior_ventures": [],
+      "startup_name": "Quetzalli",
+      "website": null,
+      "domain_registered_date": null,
+      "estimated_founded_year": 2026,
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Automated generation of standard legal documents for notarías and small practices.",
+      "product_stage": "mvp",
+      "team_size_estimate": 1,
+      "tech_stack_signals": [],
+      "has_clients": false,
+      "traction_signals": {
+        "github_repo_url": "github.com/marianacetz/quetzalli-docgen",
+        "github_commit_activity": "9 commits in last 30 days",
+        "linkedin_followers": null,
+        "twitter_followers": null,
+        "press_mentions": [],
+        "job_postings_found": []
+      },
+      "funding_status": "bootstrapped",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "Hackathon",
+      "search_queries_used": ["legaltech startups Mexico law firms"],
+      "discovery_signals": [
+        "Listed as a hackathon project 6 weeks ago",
+        "Active GitHub repo matching the project name"
+      ],
+      "evidence": [
+        {
+          "source_url": "github.com/marianacetz/quetzalli-docgen",
+          "snippet": "Doc generation engine for notarías — early WIP.",
+          "date_captured": "2026-07-14"
+        }
+      ],
+      "date_found": "2026-07-14"
+    },
+    {
+      "source": "google",
+      "founder_name": "Camila Espinoza",
+      "founder_city": "Guadalajara",
+      "founder_country": "Mexico",
+      "founder_linkedin": "linkedin.com/in/camilaespinoza",
+      "founder_education": null,
+      "founder_prior_ventures": ["Product Designer, freelance (2022-2025)"],
+      "startup_name": "Lemon Legal",
+      "website": "https://lemonlegal.mx",
+      "domain_registered_date": "2026-05-02",
+      "estimated_founded_year": 2026,
+      "niche": "Mexican LegalTech",
+      "one_line_description": "AI contract-review assistant aimed at boutique commercial-law practices.",
+      "product_stage": "launched",
+      "team_size_estimate": 2,
+      "tech_stack_signals": ["site built on Webflow"],
+      "has_clients": true,
+      "traction_signals": {
+        "github_repo_url": null,
+        "github_commit_activity": null,
+        "linkedin_followers": 58,
+        "twitter_followers": null,
+        "press_mentions": ["Product Hunt launch post"],
+        "job_postings_found": []
+      },
+      "funding_status": "unknown",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "Google search",
+      "search_queries_used": ["contract review AI Mexico law firms"],
+      "discovery_signals": ["Product Hunt launch post dated 2026-07-01"],
+      "evidence": [
+        {
+          "source_url": "producthunt.com/posts/lemon-legal",
+          "snippet": "Lemon Legal — AI-powered contract review for boutique law firms.",
+          "date_captured": "2026-07-12"
+        }
+      ],
+      "date_found": "2026-07-12"
+    },
+    {
+      "source": "producthunt",
+      "founder_name": "Andrés Molano",
+      "founder_city": "Medellín",
+      "founder_country": "Colombia",
+      "founder_linkedin": "linkedin.com/in/andresmolano",
+      "founder_education": null,
+      "founder_prior_ventures": [],
+      "startup_name": "Fardo",
+      "website": "https://fardo.app",
+      "domain_registered_date": "2026-06-20",
+      "estimated_founded_year": 2026,
+      "niche": "LatAm B2B SaaS",
+      "one_line_description": "Inventory reconciliation SaaS for small distributors in Colombia.",
+      "product_stage": "launched",
+      "team_size_estimate": 2,
+      "tech_stack_signals": [],
+      "traction_signals": {
+        "github_repo_url": null,
+        "github_commit_activity": null,
+        "linkedin_followers": 41,
+        "twitter_followers": null,
+        "press_mentions": [],
+        "job_postings_found": []
+      },
+      "funding_status": "bootstrapped",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "Product Hunt",
+      "search_queries_used": ["B2B SaaS startup LatAm founder"],
+      "discovery_signals": ["Product Hunt launch, under 20 upvotes"],
+      "evidence": [
+        {
+          "source_url": "producthunt.com/posts/fardo",
+          "snippet": "Fardo — reconciliation for small distributors, launched quietly this week.",
+          "date_captured": "2026-07-11"
+        }
+      ],
+      "date_found": "2026-07-11"
+    },
+    {
+      "source": "arxiv",
+      "founder_name": "Priya Nandakumar",
+      "founder_city": "Bangalore",
+      "founder_country": "India",
+      "founder_linkedin": null,
+      "founder_education": "PhD candidate, IISc Bangalore",
+      "founder_prior_ventures": [],
+      "startup_name": "Latentflow",
+      "website": null,
+      "domain_registered_date": null,
+      "estimated_founded_year": 2026,
+      "niche": "AI Infra",
+      "one_line_description": "Inference-scheduling layer for multi-tenant GPU clusters.",
+      "product_stage": "idea",
+      "team_size_estimate": 1,
+      "tech_stack_signals": ["CUDA", "Rust"],
+      "traction_signals": {
+        "github_repo_url": "github.com/pnandakumar/latentflow-sched",
+        "github_commit_activity": "3 commits in last 30 days",
+        "linkedin_followers": null,
+        "twitter_followers": null,
+        "press_mentions": [],
+        "job_postings_found": []
+      },
+      "funding_status": "unknown",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "Academic papers",
+      "search_queries_used": ["open source AI infra project maintainer"],
+      "discovery_signals": ["arXiv preprint posted 3 weeks ago", "companion GitHub repo linked in paper"],
+      "evidence": [
+        {
+          "source_url": "arxiv.org/abs/2607.01234",
+          "snippet": "We propose a scheduling layer for shared GPU inference workloads...",
+          "date_captured": "2026-07-13"
+        }
+      ],
+      "date_found": "2026-07-13"
+    },
+    {
+      "source": "github",
+      "founder_name": "Tomás Herrera",
+      "founder_city": "Santiago",
+      "founder_country": "Chile",
+      "founder_linkedin": null,
+      "founder_education": null,
+      "founder_prior_ventures": [],
+      "startup_name": "Vireo Charge",
+      "website": null,
+      "domain_registered_date": null,
+      "estimated_founded_year": 2026,
+      "niche": "Climate Hardware",
+      "one_line_description": "Open-source firmware for low-cost solar charge controllers.",
+      "product_stage": "mvp",
+      "team_size_estimate": 1,
+      "tech_stack_signals": ["C++", "embedded"],
+      "traction_signals": {
+        "github_repo_url": "github.com/tomasherrera/vireo-charge-fw",
+        "github_commit_activity": "14 commits in last 30 days",
+        "linkedin_followers": null,
+        "twitter_followers": null,
+        "press_mentions": [],
+        "job_postings_found": []
+      },
+      "funding_status": "bootstrapped",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "GitHub",
+      "search_queries_used": ["climatetech hardware prototype GitHub"],
+      "discovery_signals": ["Active firmware repo with hardware BOM in README"],
+      "evidence": [
+        {
+          "source_url": "github.com/tomasherrera/vireo-charge-fw",
+          "snippet": "Firmware + BOM for a $12 solar charge controller, built for rural microgrids.",
+          "date_captured": "2026-07-15"
+        }
+      ],
+      "date_found": "2026-07-15"
+    },
+    {
+      "source": "accelerators",
+      "founder_name": "Lindiwe Moyo",
+      "founder_city": "Cape Town",
+      "founder_country": "South Africa",
+      "founder_linkedin": "linkedin.com/in/lindiwemoyo",
+      "founder_education": null,
+      "founder_prior_ventures": [],
+      "startup_name": "Kraal Energy",
+      "website": "https://kraal.energy",
+      "domain_registered_date": "2026-04-18",
+      "estimated_founded_year": 2025,
+      "niche": "Climate Hardware",
+      "one_line_description": "Modular battery packs for off-grid small farms.",
+      "product_stage": "mvp",
+      "team_size_estimate": 3,
+      "tech_stack_signals": [],
+      "traction_signals": {
+        "github_repo_url": null,
+        "github_commit_activity": null,
+        "linkedin_followers": 112,
+        "twitter_followers": null,
+        "press_mentions": [],
+        "job_postings_found": ["Hardware engineer (contract)"]
+      },
+      "funding_status": "bootstrapped",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "Accelerators",
+      "search_queries_used": ["cleantech hardware accelerator cohort"],
+      "discovery_signals": ["Listed in a regional accelerator's current cohort page, no press coverage yet"],
+      "evidence": [
+        {
+          "source_url": "accelerator-directory.example/cohorts/2026-q3/kraal-energy",
+          "snippet": "Kraal Energy — modular off-grid battery packs, current cohort, pre-demo-day.",
+          "date_captured": "2026-07-10"
+        }
+      ],
+      "date_found": "2026-07-10"
+    },
+    {
+      "source": "linkedin",
+      "founder_name": "Ana Beatriz Cardoso",
+      "founder_city": "São Paulo",
+      "founder_country": "Brazil",
+      "founder_linkedin": "linkedin.com/in/anabeatrizcardoso",
+      "founder_education": null,
+      "founder_prior_ventures": ["Nurse practitioner (2019-2024)"],
+      "startup_name": "Vitalis",
+      "website": null,
+      "domain_registered_date": null,
+      "estimated_founded_year": 2026,
+      "niche": "Healthtech",
+      "one_line_description": "Post-discharge follow-up assistant for small clinics.",
+      "product_stage": "idea",
+      "team_size_estimate": 1,
+      "tech_stack_signals": [],
+      "traction_signals": {
+        "github_repo_url": null,
+        "github_commit_activity": null,
+        "linkedin_followers": 76,
+        "twitter_followers": null,
+        "press_mentions": [],
+        "job_postings_found": []
+      },
+      "funding_status": "unknown",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "Community",
+      "search_queries_used": ["health AI startup clinician founder"],
+      "discovery_signals": ["Single LinkedIn post describing the idea, no company page yet"],
+      "evidence": [
+        {
+          "source_url": "linkedin.com/in/anabeatrizcardoso/posts/vitalis-idea",
+          "snippet": "Former nurse practitioner posting about a follow-up-care assistant she's prototyping.",
+          "date_captured": "2026-07-16"
+        }
+      ],
+      "date_found": "2026-07-16"
+    },
+    {
+      "source": "google",
+      "founder_name": "Rodrigo Peña",
+      "founder_city": "Monterrey",
+      "founder_country": "Mexico",
+      "founder_linkedin": "linkedin.com/in/rodrigopena",
+      "founder_education": null,
+      "founder_prior_ventures": [],
+      "startup_name": "Clarea Health",
+      "website": "https://clareahealth.mx",
+      "domain_registered_date": "2023-02-11",
+      "estimated_founded_year": 2023,
+      "niche": "Healthtech",
+      "one_line_description": "Telemedicine scheduling platform for private clinics, already covered in two regional tech blogs.",
+      "product_stage": "launched",
+      "team_size_estimate": 14,
+      "tech_stack_signals": [],
+      "traction_signals": {
+        "github_repo_url": null,
+        "github_commit_activity": null,
+        "linkedin_followers": 3200,
+        "twitter_followers": 1800,
+        "press_mentions": ["Regional tech blog feature", "Local business journal mention"],
+        "job_postings_found": ["Senior backend engineer", "Growth marketer"]
+      },
+      "funding_status": "seed",
+      "funding_amount_estimate": "~$1.2M",
+      "investors_mentioned": ["Alta Ventures"],
+      "source_channel": "Google search",
+      "search_queries_used": ["healthtech startup founder early stage"],
+      "discovery_signals": ["Multiple press mentions", "Known seed round"],
+      "evidence": [
+        {
+          "source_url": "example-techblog.mx/clarea-health-seed",
+          "snippet": "Clarea Health closes seed round led by Alta Ventures.",
+          "date_captured": "2026-07-09"
+        }
+      ],
+      "date_found": "2026-07-09"
+    },
+    {
+      "source": "reddit",
+      "founder_name": "u/despacho_builder",
+      "founder_city": null,
+      "founder_country": "Mexico",
+      "founder_linkedin": null,
+      "founder_education": null,
+      "founder_prior_ventures": [],
+      "startup_name": "Show r/startups: AI para contratos en despachos chicos",
+      "website": null,
+      "domain_registered_date": null,
+      "estimated_founded_year": 2026,
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Solo builder asking for feedback on an early prototype that auto-fills contract templates for small Mexican law offices.",
+      "product_stage": "idea",
+      "team_size_estimate": 1,
+      "tech_stack_signals": [],
+      "has_clients": false,
+      "traction_signals": {
+        "github_repo_url": null,
+        "github_commit_activity": null,
+        "linkedin_followers": null,
+        "twitter_followers": null,
+        "press_mentions": [],
+        "job_postings_found": []
+      },
+      "funding_status": "bootstrapped",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "Community",
+      "search_queries_used": ["AI para despachos legales México feedback wanted"],
+      "discovery_signals": ["Reddit post in r/startups asking for early feedback, under 10 comments"],
+      "evidence": [
+        {
+          "source_url": "reddit.com/r/startups/comments/example_despacho_ai",
+          "snippet": "Building a tiny tool to auto-fill contracts for small despachos — would love feedback before I go further.",
+          "date_captured": "2026-07-17"
+        }
+      ],
+      "date_found": "2026-07-17"
+    },
+    {
+      "source": "twitter",
+      "founder_name": "@buildwithsofia",
+      "founder_city": "Mexico City",
+      "founder_country": "Mexico",
+      "founder_linkedin": null,
+      "founder_education": null,
+      "founder_prior_ventures": [],
+      "startup_name": "Notaria.dev",
+      "website": null,
+      "domain_registered_date": null,
+      "estimated_founded_year": 2026,
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Building-in-public thread about a side project turning notary paperwork into a guided digital form.",
+      "product_stage": "idea",
+      "team_size_estimate": 1,
+      "tech_stack_signals": [],
+      "has_clients": false,
+      "traction_signals": {
+        "github_repo_url": null,
+        "github_commit_activity": null,
+        "linkedin_followers": null,
+        "twitter_followers": 34,
+        "press_mentions": [],
+        "job_postings_found": []
+      },
+      "funding_status": "bootstrapped",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "Community",
+      "search_queries_used": ["Mexican LegalTech building in public"],
+      "discovery_signals": ["Twitter/X thread, day 1 of building in public, 34 followers"],
+      "evidence": [
+        {
+          "source_url": "x.com/buildwithsofia/status/example",
+          "snippet": "Day 1: turning notary paperwork into a guided form instead of a stack of PDFs. Building in public.",
+          "date_captured": "2026-07-16"
+        }
+      ],
+      "date_found": "2026-07-16"
+    },
+    {
+      "source": "youtube",
+      "founder_name": "Marco Villalobos",
+      "founder_city": "Santiago",
+      "founder_country": "Chile",
+      "founder_linkedin": null,
+      "founder_education": null,
+      "founder_prior_ventures": [],
+      "startup_name": "SolarLedger",
+      "website": null,
+      "domain_registered_date": null,
+      "estimated_founded_year": 2026,
+      "niche": "Climate Hardware",
+      "one_line_description": "Solo founder's 'day in the life' vlog documenting a DIY solar-monitoring hardware build for off-grid farms.",
+      "product_stage": "idea",
+      "team_size_estimate": 1,
+      "tech_stack_signals": ["Arduino"],
+      "has_clients": false,
+      "traction_signals": {
+        "github_repo_url": null,
+        "github_commit_activity": null,
+        "linkedin_followers": null,
+        "twitter_followers": null,
+        "press_mentions": [],
+        "job_postings_found": []
+      },
+      "funding_status": "bootstrapped",
+      "funding_amount_estimate": null,
+      "investors_mentioned": [],
+      "source_channel": "YouTube",
+      "search_queries_used": ["climate tech hardware startup founder building in public"],
+      "discovery_signals": ["YouTube demo video, under 50 views, posted 2 weeks ago"],
+      "evidence": [
+        {
+          "source_url": "youtube.com/watch?v=example_solarledger",
+          "snippet": "Day 4 of building a $30 solar monitor for off-grid farms — first working prototype.",
+          "date_captured": "2026-07-15"
+        }
+      ],
+      "date_found": "2026-07-15"
+    }
+  ]
+}

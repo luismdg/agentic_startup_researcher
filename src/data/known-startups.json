@@ -1,0 +1,93 @@
+{
+  "known_startups": [
+    {
+      "startup_name": "FyTic",
+      "website": "https://fytic.mx",
+      "founder_name": "Luis Ramírez",
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Billing and invoicing automation for Mexican law firms.",
+      "first_seen": "2026-07-10"
+    },
+    {
+      "startup_name": "Improvider Legal Tech",
+      "website": "https://improvider.io",
+      "founder_name": "Diego Salcido",
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Contract lifecycle management platform for corporate legal teams.",
+      "first_seen": "2026-07-09"
+    },
+    {
+      "startup_name": "Clarea Health",
+      "website": "https://clareahealth.mx",
+      "founder_name": "Rodrigo Peña",
+      "niche": "Healthtech",
+      "one_line_description": "Telemedicine scheduling platform for private clinics, already covered in two regional tech blogs.",
+      "first_seen": "2026-07-09"
+    },
+    {
+      "startup_name": "Vitalis",
+      "website": null,
+      "founder_name": "Ana Beatriz Cardoso",
+      "niche": "Healthtech",
+      "one_line_description": "Post-discharge follow-up assistant for small clinics.",
+      "first_seen": "2026-07-16"
+    },
+    {
+      "startup_name": "AIJusticia",
+      "website": "https://aij.mx/",
+      "founder_name": "Diego Romo de Vivar Chávez",
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Empresa mexicana de tecnología legal fundada por abogados litigantes con experiencia real en tribunales.",
+      "first_seen": "2026-07-18"
+    },
+    {
+      "startup_name": "Iurefficient",
+      "website": "https://www.iurefficient.com/?utm_source=openai",
+      "founder_name": "Eduardo Llaguno Velasco",
+      "co_founders": [
+        "Frida Velázquez Esquer"
+      ],
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Iurefficient es una plataforma que centraliza la gestión de casos, análisis de documentos y comunicación con clientes mediante inteligencia artificial.",
+      "first_seen": "2026-07-18"
+    },
+    {
+      "startup_name": "Lex Buddy",
+      "website": "https://mx.linkedin.com/company/lex-buddy?utm_source=openai",
+      "founder_name": "Salvador Montemayor",
+      "co_founders": [
+        "Javier Yahir Juárez Arroyo"
+      ],
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Plataforma de inteligencia artificial que integra el contexto completo de las operaciones y clientes de un despacho legal.",
+      "first_seen": "2026-07-18"
+    },
+    {
+      "startup_name": "Itosturre",
+      "website": "https://www.itosturre.com/?utm_source=openai",
+      "founder_name": "Lic. Jorge Fabián",
+      "co_founders": [],
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Itosturre es una empresa mexicana especializada en validación forense de inteligencia artificial jurídica.",
+      "first_seen": "2026-07-18"
+    },
+    {
+      "startup_name": "AXIS LegalTech",
+      "website": "https://axislegaltech.mx/",
+      "founder_name": "Not specified",
+      "co_founders": [],
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Primera plataforma Legaltech del Bajío. Automatizamos cumplimiento, contratos y riesgos para que las PyMEs operen con certeza jurídica — sin contratar un equipo legal interno.",
+      "first_seen": "2026-07-18"
+    },
+    {
+      "startup_name": "HAA Legal",
+      "website": "https://haa.mx/so/?utm_source=openai",
+      "founder_name": "Oscar Octavio Hinojosa Guerra",
+      "co_founders": [],
+      "niche": "Mexican LegalTech",
+      "one_line_description": "Veintiún años de criterio jurídico codificado en un sistema que no existe en ningún otro despacho del mundo hispanohablante.",
+      "first_seen": "2026-07-18"
+    }
+  ]
+}

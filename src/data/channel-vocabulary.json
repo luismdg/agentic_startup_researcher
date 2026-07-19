@@ -1,0 +1,50 @@
+{
+  "linkedin": {
+    "typical_labels": ["MVP", "co-founder", "CEO", "founder", "stealth mode", "building in public"],
+    "typical_events": ["Summit", "Hackathon", "Demo Day", "Pitch Night"],
+    "site_hint": "site:linkedin.com",
+    "framing": "On LinkedIn, founders identify themselves with titles like 'Founder', 'Co-founder', or 'CEO' in their headline, and often post about reaching an MVP, coming out of stealth mode, or attending a summit/hackathon/demo day."
+  },
+  "github": {
+    "typical_labels": ["hackathon", "agentic", "open-source", "side project", "WIP", "proof of concept", "boilerplate"],
+    "typical_events": ["hackathon", "hack night"],
+    "site_hint": null,
+    "framing": "On GitHub, early builders label repos with terms like 'hackathon', 'agentic', 'WIP', 'proof of concept', or 'side project' rather than corporate/company language — look at repo names, descriptions, and topics."
+  },
+  "google": {
+    "typical_labels": ["launch", "beta", "waitlist", "case study"],
+    "typical_events": [],
+    "site_hint": null,
+    "framing": "General web search — prefer niche blogs, personal sites, hackathon/demo pages, and small local press over mainstream/major tech press."
+  },
+  "producthunt": {
+    "typical_labels": ["launch", "upvotes", "maker", "beta"],
+    "typical_events": ["launch day"],
+    "site_hint": "site:producthunt.com",
+    "framing": "Product Hunt launches are framed around 'makers' and 'launch day' — prefer small launches with few upvotes over popular ones."
+  },
+  "accelerators": {
+    "typical_labels": ["cohort", "demo day", "batch", "portfolio company"],
+    "typical_events": ["Demo Day", "cohort kickoff"],
+    "site_hint": null,
+    "framing": "Accelerator/incubator sites use terms like 'cohort', 'batch', 'demo day', and 'portfolio company' — prefer regional/niche programs over globally famous ones (YC, Techstars)."
+  },
+  "youtube": {
+    "typical_labels": ["building in public", "day in the life of a founder", "solo founder", "indie hacker", "startup vlog", "demo video"],
+    "typical_events": [],
+    "site_hint": "site:youtube.com",
+    "framing": "Idea-stage founders on YouTube post 'building in public' vlogs, 'day in the life of a founder' content, and short product demo videos, often as solo/indie creators long before any company site exists."
+  },
+  "twitter": {
+    "typical_labels": ["building in public", "solo founder", "indie hacker", "shipped", "launching soon", "day 1"],
+    "typical_events": [],
+    "site_hint": "site:twitter.com OR site:x.com",
+    "framing": "Twitter/X is where idea-stage founders post short 'building in public' threads, 'shipped' announcements, and indie-hacker content — this is often the very first public trace of a startup, before a website or company page exists."
+  },
+  "reddit": {
+    "typical_labels": ["feedback wanted", "just launched", "solo founder", "AMA", "show r/"],
+    "typical_events": [],
+    "site_hint": "site:reddit.com",
+    "framing": "Reddit founders post in niche subreddits (r/startups, r/SaaS, r/indiehackers, or niche-specific subs) asking for feedback or sharing early progress, often under a pseudonym rather than a company identity."
+  }
+}
