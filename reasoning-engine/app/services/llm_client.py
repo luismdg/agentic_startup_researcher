@@ -5,7 +5,9 @@ a schema-conformant object back directly instead of parsing JSON out of a
 free-text blob.
 
 Provider is chosen via LLM_PROVIDER=anthropic|openai|fake (default:
-anthropic). scorer_service.py / memo_service.py only ever call
+openai -- the provider this project has actually been tested against;
+Anthropic is fully supported too, just opt-in via LLM_PROVIDER=anthropic).
+scorer_service.py / memo_service.py only ever call
 call_structured() -- they never know which provider is behind it, so
 swapping providers is a one-line env var change, not a code change anywhere
 else.
@@ -47,17 +49,25 @@ import os
 import ssl
 from typing import Dict, List, Optional, Type, TypeVar
 
+from dotenv import load_dotenv
 from pydantic import BaseModel, ValidationError
+
+# Loaded here, before any os.environ reads below, so a .env file in
+# reasoning-engine/ (see .env.example) works the same way the sourcing
+# agent's does -- copy it to .env once, no need to export vars every
+# session. Explicit env vars already set in the shell still take priority
+# (load_dotenv default never overrides an existing os.environ value).
+load_dotenv()
 
 T = TypeVar("T", bound=BaseModel)
 
-PROVIDER = os.environ.get("LLM_PROVIDER", "anthropic").lower()
+PROVIDER = os.environ.get("LLM_PROVIDER", "openai").lower()
 
 _DEFAULT_MODELS = {
     "anthropic": "claude-sonnet-5",
     "openai": "gpt-4o-2024-08-06",
 }
-MODEL = os.environ.get("REASONING_ENGINE_MODEL", _DEFAULT_MODELS.get(PROVIDER, "claude-sonnet-5"))
+MODEL = os.environ.get("REASONING_ENGINE_MODEL", _DEFAULT_MODELS.get(PROVIDER, "gpt-4o-2024-08-06"))
 MAX_TOKENS = int(os.environ.get("REASONING_ENGINE_MAX_TOKENS", "4096"))
 _RELAX_TLS_STRICT_X509 = os.environ.get("RELAX_TLS_STRICT_X509") == "1"
 
